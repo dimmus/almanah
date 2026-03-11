@@ -1,0 +1,10 @@
+{
+  "basedOnStyle": "LLVM",
+  "indentWidth": 4,
+  "useTab": false,
+  "columnLimit": 100,
+  "spaceBeforeParens": false,
+  "keepSimpleBlocksInOneLine": true,
+  "alignAfterOpenBracket": true,
+  "breakBeforeBraces": "Attach"
+}
