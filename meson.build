@@ -28,7 +28,7 @@ libecal = dependency('libecal-2.0', version: '>= 3.33.2', required: false)
 libedataserver = dependency('libedataserver-1.2', version: '>= 2.28', required: false)
 have_evolution = libecal.found() and libedataserver.found()
 
-libspelling = dependency('libspelling-1', version: '>= 0.4.0', required: true)
+libspelling = dependency('libspelling-1', version: '>= 0.2.0', required: true)
 have_spell_check = libspelling.found()
 
 appstreamcli = find_program('appstreamcli', required: false)
