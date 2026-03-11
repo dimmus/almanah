@@ -1,0 +1,36 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+using Gtk 4.0;
+using Adw 1;
+
+template $AlmanahPreferencesDialog : Adw.PreferencesDialog {
+  content-width: 480;
+  content-height: 260;
+
+  Adw.PreferencesPage {
+    Adw.PreferencesGroup {
+      title: _("Encryption");
+
+      Adw.ActionRow {
+        title: _("Encryption key");
+
+        Button {
+          label: _("New _Key");
+          use-underline: true;
+          clicked => $pd_new_key_button_clicked_cb();
+        }
+
+        DropDown key_combo {}
+      }
+
+      Adw.ActionRow {
+        title: _("Spell checking");
+
+        CheckButton spell_checking_enabled_check_button {
+          label: _("Enable _spell checking");
+          use-underline: true;
+        }
+      }
+    }
+  }
+}

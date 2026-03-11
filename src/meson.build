@@ -1,109 +1,39 @@
-enum_headers = [
-  'event-factory.h',
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+blueprint_compiler = find_program('blueprint-compiler', required: true)
+
+blueprint_ui_names = [
+  'main-window',
+  'calendar-button',
+  'search-dialog',
+  'preferences-dialog',
 ]
 
-sources = [
-  'main.c',
-  'application.c',
-  'gtktextbufferserialize.c',
-  'interface.c',
-  'main-window.c',
-  'storage-manager.c',
-  'search-dialog.c',
-  'preferences-dialog.c',
-  'printing.c',
-  'entry.c',
-  'event.c',
-  'event-factory.c',
-  'event-manager.c',
-  'date-entry-dialog.c',
-  'import-export-dialog.c',
-  'import-operation.c',
-  'export-operation.c',
-  'secret-keys-store.c',
-  'uri-entry-dialog.c',
-  'widgets/calendar.c',
-  'widgets/calendar-button.c',
-  'widgets/entry-tags-area.c',
-  'widgets/hyperlink-tag.c',
-  'widgets/tag-accessible.c',
-  'widgets/tag.c',
-  'widgets/tag-entry.c',
-  'vfs.c',
-  config,
-]
+generated_uis = []
+foreach name : blueprint_ui_names
+  gt = custom_target(name + '.ui',
+    input: 'ui/' + name + '.blp',
+    output: name + '.ui',
+    command: [
+      'sh', '-c',
+      'd=$(dirname "@OUTPUT@") && mkdir -p "$d/ui" && ' +
+      blueprint_compiler.full_path() + ' compile --output "$d/ui/' + name + '.ui" "@INPUT@" && touch "@OUTPUT@"',
+    ],
+  )
+  generated_uis += gt
+endforeach
 
-if have_evolution
-  sources += [
-    'event-factories/calendar.c',
-    'event-factories/calendar-client.c',
-    'event-factories/calendar-sources.c',
-    'event-factories/e-cell-renderer-color.c',
-    'event-factories/e-source-selector.c',
-    'events/calendar-appointment.c',
-    'events/calendar-task.c',
-  ]
-endif
-
-sources += gnome.compile_resources(
-  'almanah-resources',
+almanah_resources = gnome.compile_resources('almanah-resources',
   'almanah.gresource.xml',
   source_dir: [
-    data_dir,
+    meson.project_build_root(),
+    meson.current_build_dir(),
+    meson.current_source_dir(),
+    meson.project_source_root() / 'data',
   ],
   c_name: 'almanah',
   export: true,
+  dependencies: generated_uis,
 )
 
-sources += gnome.mkenums_simple(
-  'enums',
-  sources: enum_headers,
-)
-
-inc = include_directories(
-  '..',
-  'events',
-  'event-factories',
-)
-
-almanah = executable(
-  meson.project_name(),
-  sources,
-  dependencies: almanah_deps,
-  include_directories: inc,
-  install: true,
-)
-
-if cppcheck.found()
-  # cppcheck needs the workspace to exist
-  cppcheck_workspace = custom_target(
-    '_cppcheck_workspace',
-    command: [
-      'mkdir',
-      '-p',
-      '@OUTPUT@',
-    ],
-    output: '_cppcheck',
-  )
-
-  run_target(
-    'cppcheck',
-    command: [
-      cppcheck,
-      '--enable=all',
-      '--inline-suppr',
-      '--error-exitcode=1',
-      '--suppress=missingIncludeSystem',
-      '--suppress=constParameterCallback',
-      '--suppress=*:/nix/store/**',
-      '--check-level=exhaustive',
-      '--cppcheck-build-dir=@0@'.format(cppcheck_workspace.full_path()),
-      '--project=@0@'.format(meson.project_build_root() / 'compile_commands.json'),
-      '--file-filter=@0@/'.format(meson.current_source_dir()),
-      '--library=gtk',
-    ],
-    depends: [
-      cppcheck_workspace,
-    ],
-  )
-endif
+subdir('vala')

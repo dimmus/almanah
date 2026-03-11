@@ -1,11 +1,27 @@
-AlmanahTagEntry {
-   color: #aaa;
-   font-size: 8px;
-   transition: none;
+/* Stolen from Dippi */
+/* :root { */
+/*   --sidebar-bg-color: color-mix(in oklab, var(--accent-color), var(--view-bg-color) 85%); */
+/*   --sidebar-backdrop-color: color-mix(in oklab, var(--accent-color), var(--view-bg-color) 90%); */
+/*   --window-bg-color: color-mix(in oklab, var(--accent-color), var(--view-bg-color) 95%); */
+/* } */
+
+/* .body { */
+/*   line-height: 1.25; */
+/* } */
+
+.tag {
+    border-radius: 6px;
+    padding: 1px 6px;
+    margin: 0 2px;
+    background-color: #fce94f;
+    color: #2e3436;
+    border: 1px solid #c4a000;
 }
 
-AlmanahTagEntry:focus {
-   color: @theme_fg_color;
+.tag button {
+    min-width: 16px;
+    min-height: 16px;
+    padding: 0;
 }
 
 .almanah-mw-scrolled {
@@ -20,4 +36,13 @@ AlmanahTagEntry:focus {
     border-top-width: 1px;
     border-left-width: 0px;
     border-right-width: 0px;
+}
+
+/* Lighten calendar background inside the date popover to better match the surrounding panel. */
+calendar {
+    background-color: @view_bg_color;
+}
+
+calendar:backdrop {
+    background-color: @view_bg_color;
 }

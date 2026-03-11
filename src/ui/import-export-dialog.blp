@@ -1,0 +1,43 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+using Gtk 4.0;
+using Adw 1;
+
+template $AlmanahImportExportDialog : Adw.Dialog {
+  default-width: 480;
+
+  Adw.PreferencesPage {
+    Adw.PreferencesGroup {
+      Adw.ActionRow {
+        title: _("Format");
+
+        [suffix]
+        DropDown mode_dropdown;
+      }
+
+      Adw.ActionRow {
+        title: _("Location");
+
+        [suffix]
+        Button path_button {
+          label: _("Select…");
+        }
+      }
+
+      Adw.ActionRow {
+        title: _("Details");
+
+        Label description_label {
+          wrap: true;
+          xalign: 0;
+        }
+      }
+    }
+
+    Adw.PreferencesGroup {
+      ProgressBar progress_bar {
+        hexpand: true;
+      }
+    }
+  }
+}

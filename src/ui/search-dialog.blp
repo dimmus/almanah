@@ -1,0 +1,83 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+using Gtk 4.0;
+using Adw 1;
+
+template $AlmanahSearchDialog : Adw.Dialog {
+  Box vbox2 {
+    orientation: vertical;
+    spacing: 6;
+    margin-start: 6;
+    margin-end: 6;
+    margin-top: 6;
+    margin-bottom: 6;
+
+    Box almanah_search_dialog_vbox {
+      orientation: vertical;
+      spacing: 6;
+
+      Box hbox0 {
+        spacing: 6;
+
+        Entry sd_search_entry {
+          activates-default: true;
+          placeholder-text: _("Search entry");
+          activate => $sd_search_button_clicked_cb();
+        }
+
+        Button sd_search_button {
+          label: _("Search");
+          clicked => $sd_search_button_clicked_cb();
+        }
+
+        Button sd_cancel_button {
+          label: _("_Cancel");
+          use-underline: true;
+          clicked => $sd_cancel_button_clicked_cb();
+        }
+      }
+
+      Box sd_results_alignment {
+        vexpand: true;
+        margin-top: 12;
+        visible: false;
+
+        Box almanah_sd_results_vbox {
+          orientation: vertical;
+          spacing: 6;
+
+          Box almanah_sd_results_hbox {
+            spacing: 6;
+
+            Label sd_results_label {
+              hexpand: true;
+              xalign: 0;
+            }
+
+            Spinner sd_search_spinner {}
+          }
+
+          ScrolledWindow almanah_sd_results_scrolled {
+            vexpand: true;
+
+            ListView sd_results_list_view {
+              single-click-activate: true;
+              activate => $sd_results_list_view_activate_cb();
+            }
+          }
+        }
+      }
+
+      Box hbuttonbox2 {
+        orientation: horizontal;
+        spacing: 6;
+
+        Button sd_view_button {
+          label: _("View Entry");
+          sensitive: false;
+          clicked => $sd_view_button_clicked_cb();
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+using Gtk 4.0;
+
+template $AlmanahUriEntryDialog : Adw.Dialog {
+  Box vbox11 {
+    orientation: vertical;
+    spacing: 6;
+
+    Box almanah_ued_vbox {
+      orientation: vertical;
+      spacing: 6;
+      margin-start: 6;
+      margin-end: 6;
+      margin-top: 6;
+      margin-bottom: 6;
+
+      Entry uri_entry {
+        activates-default: true;
+        changed => $ued_uri_entry_notify_text_cb();
+      }
+
+      Label almanah_ued_description_label {
+        xalign: 0;
+        label: _("e.g. \"http://google.com/\" or \"file:///home/me/Photos/photo.jpg\".");
+      }
+    }
+  }
+}

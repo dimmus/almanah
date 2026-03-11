@@ -1,0 +1,46 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+using Gtk 4.0;
+using Adw 1;
+
+template $AlmanahImportResultsDialog : Adw.Dialog {
+  default-width: 600;
+  default-height: 400;
+  title: _("Import results");
+
+  Adw.ToolbarView {
+    [content]
+    Box {
+      orientation: vertical;
+      spacing: 6;
+
+      Box {
+        spacing: 6;
+        margin-start: 12;
+        margin-end: 12;
+        margin-top: 6;
+
+        Label {
+          label: _("Show");
+        }
+
+        DropDown view_dropdown {
+          margin-start: 6;
+        }
+
+        Button view_button {
+          label: _("View entry");
+          halign: end;
+        }
+      }
+
+      ScrolledWindow {
+        vexpand: true;
+
+        ListView results_list_view {
+          single-click-activate: true;
+        }
+      }
+    }
+  }
+}

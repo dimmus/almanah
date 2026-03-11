@@ -1,0 +1,46 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+using Gtk 4.0;
+
+template $AlmanahCalendarButton : Gtk.Button {
+  Popover dock {
+    hide => $dock_closed();
+
+    child: Box almanah_cw_vbox {
+      orientation: vertical;
+      spacing: 6;
+      margin-start: 12;
+      margin-end: 12;
+      margin-top: 12;
+      margin-bottom: 12;
+
+      Calendar calendar {
+        vexpand: true;
+        width-request: 200;
+        focusable: true;
+        day-selected => $day_selected_cb();
+        next-month => $month_changed_cb();
+        prev-month => $month_changed_cb();
+      }
+
+      Box almanah_cw_button_box {
+        orientation: horizontal;
+        styles ["linked"]
+
+        Button today_button {
+          label: _("Go to Today");
+          focusable: true;
+          clicked => $today_clicked_cb();
+        }
+
+        Button select_date_button {
+          label: _("Select Date…");
+          focusable: true;
+          clicked => $select_date_clicked_cb();
+        }
+      }
+    };
+  }
+
+  clicked => $button_clicked_cb();
+}

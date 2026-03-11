@@ -1,0 +1,169 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+using Gtk 4.0;
+using GtkSource 5;
+using Adw 1;
+
+menu formatting_menu {
+  section {
+    item { label: _("_Bold"); action: "win.bold"; }
+    item { label: _("_Italic"); action: "win.italic"; }
+    item { label: _("_Underline"); action: "win.underline"; }
+  }
+
+  section {
+    item { label: _("_Cut"); action: "win.cut"; }
+    item { label: _("_Copy"); action: "win.copy"; }
+    item { label: _("_Paste"); action: "win.paste"; }
+    item { label: _("_Delete"); action: "win.cut"; }
+  }
+
+  section {
+    item { label: _("Insert _Time"); action: "win.insert-time"; }
+    item { label: _("Add/Remove _Hyperlink"); action: "win.hyperlink"; }
+  }
+}
+
+menu main_window_menu {
+  section {
+    item { label: _("_Search"); action: "app.search"; }
+    item { label: _("Select _Date"); action: "win.select-date"; }
+  }
+
+  section {
+    item { label: _("Pr_eferences"); action: "app.preferences"; }
+    item { label: _("_Import"); action: "app.import"; }
+    item { label: _("_Export"); action: "app.export"; }
+    item { label: _("_Print diary"); action: "app.print"; }
+  }
+
+  section {
+    item { label: _("_About Almanah Diary"); action: "app.about"; }
+    item { label: _("_Quit"); action: "app.quit"; }
+  }
+}
+
+template $AlmanahMainWindow : Adw.ApplicationWindow {
+  title: _("Almanah Diary");
+  default-width: 640;
+  default-height: 480;
+
+  close-request => $mw_delete_event_cb();
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {
+      [start]
+      $AlmanahCalendarButton calendar_button { }
+
+      [end]
+      MenuButton {
+        menu-model: main_window_menu;
+        child: Image {
+          icon-name: "open-menu-symbolic";
+        };
+      }
+
+      [end]
+      MenuButton {
+        menu-model: formatting_menu;
+        child: Image {
+          icon-name: "format-text-rich-symbolic";
+        };
+      }
+
+      [end]
+      ToggleButton {
+        action-name: "win.important";
+        tooltip-text: _("Mark this entry as important");
+        child: Image {
+          icon-name: "starred-symbolic";
+        };
+      }
+
+      [end]
+      ToggleButton show_tags_toggle_button {
+        action-name: "win.show-tags";
+        child: Image {
+          resource: "/org/gnome/Almanah/icons/scalable/org.gnome.Almanah-tags-symbolic.svg";
+        };
+      }
+    }
+
+    content: Box vbox3 {
+    orientation: vertical;
+    spacing: 6;
+
+    Grid content_grid {
+      vexpand: true;
+      styles ["almanah-mw-main-content"]
+
+      $AlmanahEntryTagsArea entry_tags_area {
+        visible: false;
+        vexpand: false;
+        hexpand: true;
+        margin-top: 6;
+        margin-bottom: 6;
+
+        layout {
+          column: 0;
+          row: 0;
+        }
+      }
+
+      ScrolledWindow entry_scrolled {
+        focusable: true;
+        hscrollbar-policy: never;
+        vscrollbar-policy: automatic;
+        hexpand: true;
+        vexpand: true;
+        styles ["almanah-mw-scrolled", "view"]
+
+        child: GtkSource.View entry_view {
+          focusable: true;
+          wrap-mode: word_char;
+          halign: fill;
+          hexpand: true;
+          vexpand: true;
+          margin-start: 10;
+          margin-end: 10;
+          styles ["almanah-mw-entry-view"]
+        };
+
+        layout {
+          column: 0;
+          row: 1;
+        }
+      }
+    }
+
+    Expander events_expander {
+      valign: center;
+      margin-start: 10;
+      margin-bottom: 6;
+
+      label-widget: Box almanah_mw_events_expander_label_box {
+        spacing: 6;
+
+        Label almanah_mw_events_label {
+          label: _("Past events");
+        }
+
+        Label events_count_label { }
+      };
+
+      child: ScrolledWindow scrolledwindow2 {
+        focusable: true;
+        height-request: 150;
+        styles ["almanah-events-scrolled"]
+
+        child: ListView events_list_view {
+          focusable: true;
+          single-click-activate: true;
+        };
+      };
+    }
+  };
+  };
+}
+

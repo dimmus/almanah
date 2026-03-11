@@ -1,0 +1,8 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+namespace Almanah {
+
+public const string PROJECT_VERSION = "@project_version@";
+
+}
+

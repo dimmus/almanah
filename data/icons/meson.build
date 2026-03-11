@@ -7,18 +7,15 @@ icon_sizes = [
 ]
 
 foreach icon_size : icon_sizes
-  install_data(
-    join_paths(icon_size, 'org.gnome.Almanah.png'),
-    install_dir: join_paths(icondir, icon_size, 'apps'),
+  install_data(icon_size / 'org.gnome.Almanah.png',
+    install_dir: icondir / icon_size / 'apps',
   )
 endforeach
 
-install_data(
-  join_paths('scalable', 'org.gnome.Almanah-tags-symbolic.svg'),
-  install_dir: join_paths(icondir, 'scalable', 'actions'),
+install_data('scalable' / 'org.gnome.Almanah-tags-symbolic.svg',
+  install_dir: icondir / 'scalable' / 'actions',
 )
 
-install_data(
-  join_paths('scalable', 'org.gnome.Almanah-symbolic.svg'),
-  install_dir: join_paths(icondir, 'scalable', 'apps'),
+install_data('scalable' / 'org.gnome.Almanah-symbolic.svg',
+  install_dir: icondir / 'scalable' / 'apps',
 )

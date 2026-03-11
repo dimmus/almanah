@@ -1,12 +1,12 @@
 service_conf = configuration_data()
-service_conf.set('bindir', join_paths(get_option('prefix'), get_option('bindir')))
+service_conf.set('bindir', get_option('prefix') / get_option('bindir'))
 
 service = 'org.gnome.Almanah.service'
 configure_file(
   input: service + '.in',
   output: service,
   install: true,
-  install_dir: join_paths(datadir, 'dbus-1', 'services'),
+  install_dir: datadir / 'dbus-1' / 'services',
   configuration: service_conf,
 )
 
@@ -17,7 +17,7 @@ i18n.merge_file(
   output: desktop,
   po_dir: po_dir,
   install: true,
-  install_dir: join_paths(datadir, 'applications'),
+  install_dir: datadir / 'applications',
 )
 if desktop_file_validate.found()
   test(
@@ -34,7 +34,7 @@ i18n.merge_file(
   output: appdata,
   po_dir: po_dir,
   install: true,
-  install_dir: join_paths(datadir, 'metainfo'),
+  install_dir: datadir / 'metainfo',
 )
 if (appstreamcli.found())
   test(

@@ -1,0 +1,29 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+using Gtk 4.0;
+
+template $AlmanahDateEntryDialog : Adw.Dialog {
+  Box vbox1 {
+    orientation: vertical;
+    spacing: 6;
+
+    Box almanah_ded_vbox {
+      orientation: vertical;
+      spacing: 6;
+      margin-start: 6;
+      margin-end: 6;
+      margin-top: 6;
+      margin-bottom: 6;
+
+      Entry date_entry {
+        activates-default: true;
+        changed => $ded_date_entry_notify_text_cb();
+      }
+
+      Label almanah_ded_description_label {
+        xalign: 0;
+        label: _("e.g. \"14/03/2009\" or \"14th March 2009\".");
+      }
+    }
+  }
+}
