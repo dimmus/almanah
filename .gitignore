@@ -1,3 +1,5 @@
-.direnv/
-_build/
-installed/
+.attic
+build
+Makefile
+scripts
+TODO
