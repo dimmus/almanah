@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master, libadwaita-port ]
+  pull_request:
+    branches: [ main, master, libadwaita-port ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    env:
+      MESON_ARGS: >
+        -Dbuildtype=debug
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            meson ninja-build build-essential \
+            valac \
+            libglib2.0-dev \
+            libgtk-4-dev \
+            libadwaita-1-dev \
+            libsqlite3-dev \
+            libgee-0.8-dev \
+            libgtksourceview-5-dev \
+            libecal-2.0-dev \
+            libedataserver1.2-dev \
+            libspelling-1-dev \
+            gi-docgen
+
+      - name: Configure (Meson)
+        run: |
+          meson setup build ${MESON_ARGS}
+
+      - name: Build (Ninja)
+        run: |
+          ninja -C build
+
+      - name: Run tests
+        run: |
+          meson test -C build --print-errorlogs
+
