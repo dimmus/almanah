@@ -1,1 +1,56 @@
+Author:
 Philip Withnall <philip@tecnocode.co.uk>
+
+Maintainer (GTK4, C, UI):
+Jan Tojnar <jtojnar@gmail.com>
+
+Maintainer (Adwaita, Vala, Blueprint):
+Dmitri Chudinov <dmitri.chudinov@gmail.com>
+
+Acknowledgment:
+Álvaro Peña <alvaropg@src.gnome.org> - former maintainer
+Balló György <ballogyor@gmail.com> - committer
+
+Translators:
+Arabic: Djihed Afifi <djihed@gmail.com>
+Azerbaijani: Ramal Rəhimov <jhonaluman@gmail.com>
+Basque: Asier Sarasua Garmendia <asiersarasua@ni.eus>
+Bosnian: Samir Ribić <megaribi@epn.ba>
+Catalan: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>
+Chinese (China): Dingzhong Chen <wsxy162@gmail.com>
+Chinese (Simplified): Dingzhong Chen <wsxy162@gmail.com>
+Czech: Marek Černocký <marek@manet.cz>
+Danish: Alan Mortensen <alanmortensen.am@gmail.com>
+Dutch: Heimen <vistausss@gmail.com>
+English (UK): Bruce Cowan <bruce@bcowan.me.uk>
+Esperanto: Kristjan Schmidt <kristjan.schmidt@googlemail.com>
+Finnish: Ilkka Tuohela <hile@iki.fi>
+French: Charles Monzat <charles.monzat@numericable.fr>
+Galician: Fran Dieguez <frandieguez@gnome.org>
+Georgian: Temuri Doghonadze <temuri.doghonadze@gmail.com>
+German: Mario Blättermann <mario.blaettermann@gmail.com>
+Greek: Giannis Antypas <gianni.antypas@gmail.com>
+Hindi: Scrambled777 <weblate.scrambled777@simplelogin.com>
+Hungarian: Balázs Úr <urbalazs@gmail.com>
+Icelandic: Sveinn í Felli <sv1@fellsnet.is>
+Indonesian: Andika Triwidada <andika@gmail.com>
+Italian: Matteo Cappannelli <cappamatti80@gmail.com>
+Japanese: Tomo Dote <fu7mu4@gmail.com>
+Latvian: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>
+Malay: abuyop <abuyop@gmail.com>
+Norwegian Bokmål: Kjartan Maraas <kmaraas@gnome.org>
+Norwegian: Kjartan Maraas <kmaraas@gnome.org>
+Occitan: Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>
+Polish: Piotr Drąg <piotrdrag@gmail.com>
+Portuguese (Brazil): Rafael Fontenelle <rffontenelle@gmail.com>
+Romanian: Florentina Mușat <florentina.musat.28 [at] gmail [dot] >
+Russian: Stas Solovey <whats_up@tut.by>
+Serbian (Latin): Miroslav Nikolić <miroslavnikolic@rocketmail.com>
+Serbian: Мирослав Николић <miroslavnikolic@rocketmail.com>
+Slovak: Matej Urbančič <mateju@svn.gnome.org>
+Slovenian: Matej Urbančič <mateju@svn.gnome.org>
+Spanish: Daniel Mustieles <daniel.mustieles@gmail.com>
+Swedish: Anders Jonsson <anders.jonsson@norsjovallen.se>
+Thai: อนุชิต สกุลวิไลเลิศ <sarapaowa_it12@hotmail.com>
+Turkish: Sabri Ünal <libreajans@gmail.com>
+Ukrainian: Yuri Chornoivan <yurchor@ukr.net>

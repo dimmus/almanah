@@ -1,0 +1,20 @@
+[project]
+name = "Almanah"
+version = "@project_version@"
+license = "GPL-3.0-or-later"
+description = "A helpful diary keeper."
+website_url = "https://wiki.gnome.org/Apps/Almanah_Diary"
+
+[content]
+# Landing page for the documentation site
+index = "index.md"
+
+# Additional pages in navigation order
+pages = [
+  "usage.md",
+  "build.md",
+  "debug.md",
+  "todo.md",
+]
+
+
