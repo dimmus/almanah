@@ -36,10 +36,12 @@ desktop_file_validate = find_program('desktop-file-validate', required: false)
 
 vala_deps = [
 	dependency('glib-2.0', version: '>= 2.80'),
-	dependency('gtk4', version: '>= 4.21'),
+	# Ubuntu 24.04 ships GTK 4.14, so require a slightly older baseline.
+	dependency('gtk4', version: '>= 4.10'),
 	dependency('libadwaita-1', version: '>= 1.4'),
 	dependency('gio-2.0'),
-	dependency('gtksourceview-5', version: '>= 5.19'),
+	# Ubuntu 24.04 ships GtkSourceView 5.12; require a compatible baseline.
+	dependency('gtksourceview-5', version: '>= 5.4'),
 	dependency('sqlite3'),
 	dependency('cairo'),
  	dependency('gee-0.8'),
