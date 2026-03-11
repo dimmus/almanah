@@ -386,40 +386,14 @@ msgstr ""
 msgid "Write the tag and press enter to save it"
 msgstr ""
 
-#~ msgid "Result List"
-#~ msgstr "Resultatliste"
 
-#~ msgid "translator-credits"
-#~ msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 
-#~ msgid "Almanah Website"
-#~ msgstr "Almanah nettsted"
 
-#~ msgid "Calendar Task"
-#~ msgstr "Kalenderoppgave"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Import"
-#~ msgstr "_Importer"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Export"
-#~ msgstr "_Eksporter"
 
-#~ msgid "Export successful"
-#~ msgstr "Eksport fullført"
 
-#~ msgid "%A, %e %B %Y"
-#~ msgstr "%A, %e %B %Y"
 
-#~ msgid "_Edit"
-#~ msgstr "R_ediger"
 
-#~ msgid "Start date:"
-#~ msgstr "Startdato:"
 
-#~ msgid "End date:"
-#~ msgstr "Sluttdato:"
 
-#~ msgid "Search canceled."
-#~ msgstr "Søk avbrutt"

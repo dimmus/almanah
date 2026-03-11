@@ -434,545 +434,172 @@ msgstr "engadir etiqueta"
 msgid "Write the tag and press enter to save it"
 msgstr ""
 
-#~ msgid "Entry editing area"
-#~ msgstr "Área de edición da entrada"
 
-#~ msgid "Past Event List"
-#~ msgstr "Lista de actividades pasadas"
 
-#~ msgid "Result List"
-#~ msgstr "Lista de resultados"
 
-#~ msgid "Successful Entries"
-#~ msgstr "Entradas correctas"
 
-#~ msgid "Merged Entries"
-#~ msgstr "Entradas combinadas"
 
-#~ msgid "Failed Entries"
-#~ msgstr "Entradas fallidas"
 
-#~ msgid "Import Results List"
-#~ msgstr "Importar a lista de resultados"
 
-#~ msgid "Error opening database"
-#~ msgstr "Produciuse un erro ao abrir a base de datos"
 
-#~ msgid "Enable debug mode"
-#~ msgstr "Activar o modo de depuración"
 
-#~ msgid ""
-#~ "Manage your diary. Only one instance of the program may be open at any "
-#~ "time."
-#~ msgstr ""
-#~ "Xestione o seu diario. Só é posíbel abrir unha instancia do programa á "
-#~ "vez."
 
 #, c-format
-#~ msgid "Command line options could not be parsed: %s\n"
-#~ msgstr "Non foi posíbel analizar as opcións da liña de ordes: %s\n"
 
-#~ msgid "Error encrypting database"
-#~ msgstr "Produciuse un erro ao cifrar a base de datos"
 
-#~ msgid ""
-#~ "Almanah is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "Almanah é software libre: vostede pode redistribuílo e/ou modificalo "
-#~ "baixo os termos da Licenza Pública de GNU publicada pola Free Software "
-#~ "Foundation, na versión 3 da licenza ou calquera versión posterior."
 
-#~ msgid ""
-#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
-#~ msgstr ""
-#~ "Almanah distribúese coa esperanza de que lle sexa útil, pero SEN GARANTÍA "
-#~ "NINGUNHA; incluso sen a garantía implícita da MERCANTIBILIDADE ou "
-#~ "ADECUACIÓN A UN PROPÓSITO ESPECÍFICO. Olle a Licenza Pública Xeral de GNU "
-#~ "para obter máis información."
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "Debería recibir unha copia da Licenza Pública Xeral de GNU xunto co "
-#~ "Almanah. Se non é así olle <http://www.gnu.org/licenses/>."
 
-#~ msgid "Copyright © 2008-2009 Philip Withnall"
-#~ msgstr "Copyright © 2008-2009 Philip Withnall"
 
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Leandro Regueiro <leandro.regueiro@gmail.com>, 2012\n"
-#~ "Oscar Blanco <dev.4m1g0@gmail.com>, 2012\n"
-#~ "Fran Diéguez <frandieguez@ubuntu.com>, 2009-2012\n"
-#~ "Xosé M. Lamas <correo.xmgz@gmail.com>, 2011\n"
-#~ "Marcos Lans <marcoslansgarza@gmail.com>, 2010\n"
-#~ "Proxecto Trasno - Tradución de software libre ao galego "
-#~ "<proxecto@trasno.net>, 1999-2012"
 
-#~ msgid "Almanah Website"
-#~ msgstr "Sitio web de Almanah"
 
 #, c-format
-#~| msgid ""
-#~| "Couldn't load the CSS file '%s'. The interface might not be styled "
-#~| "correctly"
-#~ msgid ""
-#~ "Couldn't load the CSS resources. The interface might not be styled "
-#~ "correctly: %s"
-#~ msgstr ""
-#~ "Non foi posíbel cargar o recurso CSS. É posíbel que a interface non se "
-#~ "mostre correctamente: %s"
 
-#~| msgid "UI file \"%s\" could not be loaded"
-#~ msgid "UI data could not be loaded"
-#~ msgstr "Non foi posíbel cargar o ficheiro da IU"
 
 #, c-format
-#~ msgid "Invalid data version number %u."
-#~ msgstr "O número de versión %u dos datos non é válido."
 
-#~ msgid "Calendar Appointment"
-#~ msgstr "Cita do calendario"
 
-#~ msgid "An appointment on an Evolution calendar."
-#~ msgstr "Unha cita nun calendario do Evolution."
 
 #, c-format
-#~ msgid "%.2d:%.2d"
-#~ msgstr "%.2d:%.2d"
 
-#~ msgid "Error launching Evolution"
-#~ msgstr "Produciuse un erro ao iniciar Evolution"
 
-#~ msgid "Calendar Task"
-#~ msgstr "Tarefa do calendario"
 
-#~ msgid "A task on an Evolution calendar."
-#~ msgstr "Unha tarefa nun calendario do Evolution."
 
-#~ msgid ""
-#~ "Select a _folder to export the entries to as text files, one per entry, "
-#~ "with names in the format 'yyyy-mm-dd', and no extension. All entries will "
-#~ "be exported, unencrypted in plain text format."
-#~ msgstr ""
-#~ "Seleccionar un carta_fol ao que exportar as entradas como ficheiros de "
-#~ "texto, un por entrada, cos nomes no formato «yyyy-mm-dd» e sen extensión. "
-#~ "Todas as entradas exportaranse sen cifrar en formato de texto plano."
 
-#~ msgid "Import _mode: "
-#~ msgstr "_Modo importación: "
 
-#~ msgid "Export _mode: "
-#~ msgstr "_Modo exportación: "
 
-#~ msgid "Import Entries"
-#~ msgstr "Importar entradas"
 
-#~ msgid "Export Entries"
-#~ msgstr "Exportar as entradas"
 
-#~| msgid "_Import"
-#~ msgctxt "Dialog button"
-#~ msgid "_Import"
-#~ msgstr "I_mportar"
 
-#~| msgid "_Export"
-#~ msgctxt "Dialog button"
-#~ msgid "_Export"
-#~ msgstr "_Exportar"
 
-#~ msgid "Export successful"
-#~ msgstr "A exportación rematou correctamente"
 
-#~ msgid "The diary was successfully exported."
-#~ msgstr "O diario exportouse correctamente."
 
-#~ msgid "%A, %e %B %Y"
-#~ msgstr "%A, %e de %B de %Y"
 
 #, c-format
-#~ msgid "Error deserializing imported entry into buffer: %s"
-#~ msgstr "Produciuse un erro ao deserializar a entrada no búfer: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Error deserializing existing entry into buffer; overwriting with imported "
-#~ "entry: %s"
-#~ msgstr ""
-#~ "Produciuse un erro ao deserializar a entrada existente no búfer, vaise "
-#~ "sobrescribir a entrada importada: %s"
 
 #, c-format
-#~ msgid "Are you sure you want to edit this diary entry for %s?"
-#~ msgstr "Está seguro que quere editar esta entrada do diario para %s?"
 
-#~ msgid "_Edit"
-#~ msgstr "_Editar"
 
 #, c-format
-#~ msgid "Are you sure you want to delete this diary entry for %s?"
-#~ msgstr "Está seguro que quere eliminar esta entrada do diario para %s?"
 
 #, c-format
-#~ msgid "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
-#~ msgstr ""
-#~ "Detectouse unha etiqueta de texto «%s» descoñecida ou duplicada na "
-#~ "entrada. Ignorándoa."
 
-#~ msgid "Error opening URI"
-#~ msgstr "Produciuse un erro ao abrir o URI"
 
 #, c-format
-#~ msgid "%s @ %s"
-#~ msgstr "%s @ %s"
 
-#~ msgid "Entry content could not be loaded"
-#~ msgstr "Non foi posíbel cargar o contido da entrada"
 
-#~ msgid "Spelling checker could not be initialized"
-#~ msgstr "Non foi posíbel inicializar a comprobación ortográfica"
 
-#~ msgid "None (don't encrypt)"
-#~ msgstr "Ningunha (non cifrar)"
 
-#~ msgid "Error saving the encryption key"
-#~ msgstr "Produciuse un erro ao gardar a chave de cifrado"
 
-#~ msgid "This entry is marked as important."
-#~ msgstr "Esta entrada está marcada como importante."
 
-#~ msgid "No entry for this date."
-#~ msgstr "Non hai ningunha entrada para esta data."
 
-#~ msgid "Start date:"
-#~ msgstr "Data de inicio:"
 
-#~ msgid "End date:"
-#~ msgstr "Data de finalización:"
 
-#~ msgid "Line spacing:"
-#~ msgstr "Espazado de liña:"
 
-#~ msgid "Search canceled."
-#~ msgstr "Busca cancelada."
 
 #, c-format
-#~ msgid ""
-#~ "Could not open database \"%s\". SQLite provided the following error "
-#~ "message: %s"
-#~ msgstr ""
-#~ "Non foi posíbel abrir a base de datos «%s». SQLite devolveu o seguinte "
-#~ "mensaxe de erro: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Could not run query \"%s\". SQLite provided the following error message: "
-#~ "%s"
-#~ msgstr ""
-#~ "Non foi posíbel executar a consulta «%s». SQLite devolveu a seguinte "
-#~ "mensaxe de erro: %s"
 
-#~ msgid "Error deserializing entry into buffer while searching."
-#~ msgstr "Produciuse un erro ao deserializar a entrada no búfer ao buscar."
 
 #, c-format
-#~ msgid "GPGME is not at least version %s"
-#~ msgstr "GPGME non é cando menos a versión %s"
 
 #, c-format
-#~ msgid "GPGME doesn't support OpenPGP: %s"
-#~ msgstr "GPGME non é compatíbel con OpenPGP: %s"
 
 #, c-format
-#~ msgid "Error creating cipher context: %s"
-#~ msgstr "Produciuse un erro ao crear o contexto de cifrado: %s"
 
 #, c-format
-#~ msgid "Can't create a new GIOChannel for the encrypted database: %s"
-#~ msgstr ""
-#~ "Non foi posíbel crear un novo GIOChannel para a base de datos cifrada: %s"
 
 #, c-format
-#~ msgid "Error opening encrypted database file \"%s\": %s"
-#~ msgstr ""
-#~ "Produciuse un erro ao abrir o ficheiro da base de datos cifrada «%s»: %s"
 
 #, fuzzy, c-format
-#~| msgid "Error decrypting database: %s"
-#~ msgid "Error creating Callback base data buffer: %s"
-#~ msgstr "Produciuse un erro ao descifrar a base de datos: %s"
 
 #, c-format
-#~ msgid "Error opening plain database file \"%s\": %s"
-#~ msgstr ""
-#~ "Produciuse un erro ao abrir o ficheiro da base de datos en texto plano "
-#~ "«%s»: %s"
 
 #, c-format
-#~ msgid "Error getting encryption key: %s"
-#~ msgstr "Produciuse un erro ao obter a chave de cifrado: %s"
 
 #, c-format
-#~ msgid "Error encrypting database: %s"
-#~ msgstr "Produciuse un erro ao cifrar a base de datos: %s"
 
 #, fuzzy, c-format
-#~| msgid "Error opening plain database file \"%s\": %s"
-#~ msgid "Error copying the file from %s to %s: %s"
-#~ msgstr ""
-#~ "Produciuse un erro ao abrir o ficheiro da base de datos en texto plano "
-#~ "«%s»: %s"
 
 #, fuzzy, c-format
-#~| msgid "Error opening plain database file \"%s\": %s"
-#~ msgid "Error changing database backup file permissions: %s"
-#~ msgstr ""
-#~ "Produciuse un erro ao abrir o ficheiro da base de datos en texto plano "
-#~ "«%s»: %s"
 
 #, fuzzy, c-format
-#~| msgid "Error opening file"
-#~ msgid "Error closing file: %s"
-#~ msgstr "Produciuse un erro ao abrir o ficheiro"
 
 #, c-format
-#~ msgid "Error decrypting database: %s"
-#~ msgstr "Produciuse un erro ao descifrar a base de datos: %s"
 
 #, fuzzy, c-format
-#~| msgid "Error opening plain database file \"%s\": %s"
-#~ msgid "Error changing database file permissions: %s"
-#~ msgstr ""
-#~ "Produciuse un erro ao abrir o ficheiro da base de datos en texto plano "
-#~ "«%s»: %s"
 
 #, fuzzy, c-format
-#~| msgid "UI file \"%s\" could not be loaded: %s"
-#~ msgid "UI data could not be loaded: %s"
-#~ msgstr "Non foi posíbel cargar o ficheiro da IU «%s»: %s"
 
-#~ msgid "Can't load calendar window object from UI file"
-#~ msgstr ""
-#~ "Non é posíbel cargar o obxecto de xanela do calendario desde o ficheiro "
-#~ "da UI"
 
-#~ msgid "Important!"
-#~ msgstr "Importante"
 
 #, fuzzy
-#~| msgid "Show tags for the current entry"
-#~ msgid "Remove the tag from the entry"
-#~ msgstr "Mostra as etiquetas para a entrada actual"
 
 #, fuzzy
-#~| msgid "Search entry"
-#~ msgid "Tag entry"
-#~ msgstr "Buscar a entrada"
 
-#~ msgid "Toggle whether the currently selected text is bold."
-#~ msgstr "Alternar a letra grosa do texto seleccionado."
 
-#~ msgid "Toggle whether the currently selected text is italic."
-#~ msgstr "Alternar a letra cursiva do texto seleccionado."
 
-#~ msgid "Toggle whether the currently selected text is underlined."
-#~ msgstr "Alternar o subliñado do texto seleccionado."
 
-#~ msgid ""
-#~ "Add or remove a hyperlink from the currently selected text to a specified "
-#~ "URI."
-#~ msgstr ""
-#~ "Engadir ou retirar a hiperligazón do texto actualmente seleccionado a "
-#~ "unha URI especificada."
 
-#~ msgid "I_mportant"
-#~ msgstr "I_mportante"
 
-#~ msgid "Toggle whether the current entry is marked as important."
-#~ msgstr "Alternar se a entrada actual está marcada como importante."
 
-#~ msgid "_Help"
-#~ msgstr "_Axuda"
 
-#~ msgid "Jump to the current date in the diary."
-#~ msgstr "Ir á data actual no diario."
 
-#~ msgid "Almanah Preferences"
-#~ msgstr "Preferencias de Almanah"
 
-#~ msgid ""
-#~ "The encrypted database is empty. The plain database file has been left "
-#~ "undeleted as backup."
-#~ msgstr ""
-#~ "A base de datos cifrada está baleira. Deixouse sen eliminar un ficheiro "
-#~ "de base de datos en texto plano como copia de seguranza."
 
-#~ msgid "Could not delete plain database file \"%s\"."
-#~ msgstr ""
-#~ "Non foi posíbel eliminar o ficheiro da base de datos en texto plano «%s»."
 
-#~ msgid "Unknown input device"
-#~ msgstr "Dispositivo de entrada descoñecido"
 
-#~ msgid "_File"
-#~ msgstr "_Ficheiro"
 
-#~ msgid "_Import…"
-#~ msgstr "_Importar…"
 
-#~ msgid "_Export…"
-#~ msgstr "_Exportar…"
 
-#~ msgid "_Print…"
-#~ msgstr "_Imprimir…"
 
-#~ msgid "_Search…"
-#~ msgstr "_Buscar…"
 
-#~ msgid "Font Style"
-#~ msgstr "Estilo do tipo de letra"
 
-#~ msgid "Change font style for selected text."
-#~ msgstr "Cambiar o estilo do tipo de letra para o texto seleccionado."
 
-#~ msgid "_Font Style"
-#~ msgstr "Estilo do _tipo de letra"
 
-#~ msgid "View"
-#~ msgstr "Visualizar"
 
-#~ msgid "View Event"
-#~ msgstr "Visualizar a actividade"
 
-#~ msgid "Main window X position"
-#~ msgstr "Posición X da xanela principal"
 
-#~ msgid "Main window Y position"
-#~ msgstr "Posición Y da xanela principal"
 
-#~ msgid "Main window height"
-#~ msgstr "Altura da xanela principal"
 
-#~ msgid "Main window maximization"
-#~ msgstr "Maximizado da xanela pricipal"
 
-#~ msgid "Main window width"
-#~ msgstr "Largura da xanela principal"
 
-#~ msgid "The X position of the main window."
-#~ msgstr "A posición X da xanela principal."
 
-#~ msgid "The Y position of the main window."
-#~ msgstr "A posición Y da xanela principal."
 
-#~ msgid "The height of the main window."
-#~ msgstr "A altura da xanela principal."
 
-#~ msgid "The width of the main window."
-#~ msgstr "A largura da xanela principal."
 
-#~ msgid "Whether the main window should start maximized."
-#~ msgstr "Indica se a xanela principal debería iniciarse maximizada."
 
-#~ msgid "Add a definition for the currently selected text."
-#~ msgstr "Engadir unha descrición para o texto seleccionado actualmente."
 
-#~ msgid "Definition Description"
-#~ msgstr "Descrición das definicións"
 
-#~ msgid "Definition List"
-#~ msgstr "Lista de definicións"
 
-#~ msgid "Definition Type"
-#~ msgstr "Tipo de definición"
 
-#~ msgid "Definition type:"
-#~ msgstr "Tipo de definición:"
 
-#~ msgid "Nothing selected"
-#~ msgstr "Non hai nada seleccionado"
 
-#~ msgid "Results:"
-#~ msgstr "Resultados:"
 
-#~ msgid "_Add Definition"
-#~ msgstr "_Engadir unha definición"
 
-#~ msgid "_Definitions"
-#~ msgstr "_Definicións"
 
-#~ msgid "_Remove Definition"
-#~ msgstr "_Eliminar a definición"
 
-#~ msgid "_View Definitions"
-#~ msgstr "_Ver as definicións"
 
-#~ msgid "Add Definition"
-#~ msgstr "Engadir unha definición"
 
-#~ msgid "Definition Manager"
-#~ msgstr "Xestor de definicións"
 
-#~ msgid "Are you sure you want to delete the definition for \"%s\"?"
-#~ msgstr "Está seguro que quere eliminar a definición de «%s»?"
 
-#~ msgid "Contact"
-#~ msgstr "Contacto"
 
-#~ msgid "An Evolution contact."
-#~ msgstr "Un contacto do Evolution."
 
-#~ msgid "Select Contact"
-#~ msgstr "Seleccionar un contacto"
 
-#~ msgid "Error opening contact"
-#~ msgstr "Produciuse un erro ao abrir o contacto"
 
-#~ msgid "Error opening Evolution"
-#~ msgstr "Produciuse un erro ao abrir Evolution"
 
-#~ msgid "File"
-#~ msgstr "Ficheiro"
 
-#~ msgid "An attached file."
-#~ msgstr "Un ficheiro anexado."
 
-#~ msgid "Select File"
-#~ msgstr "Seleccionar un ficheiro"
 
-#~ msgid "Note"
-#~ msgstr "Nota"
 
-#~ msgid "A note about an important event."
-#~ msgstr "Unha nota sobre un evento importante."
 
-#~ msgid "URI"
-#~ msgstr "URI"
 
-#~ msgid "A URI of a file or web page."
-#~ msgstr "Unha URI dun ficheiro ou páxina web."
 
-#~ msgid "URI: "
-#~ msgstr "URI: "
 
-#~ msgid "- Manage your diary"
-#~ msgstr "- Xestione o seu diario"
 
-#~ msgid "F-Spot Photo"
-#~ msgstr "Foto de F-Spot"
 
-#~ msgid "A photo stored in F-Spot."
-#~ msgstr "Unha foto almacenada en F-Spot."
 
-#~ msgid "Error launching F-Spot"
-#~ msgstr "Produciuse un erro ao abrir F-Spot."
 
-#~ msgid "Enable import mode"
-#~ msgstr "Activar modo de importación"

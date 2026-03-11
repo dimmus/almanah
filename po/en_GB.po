@@ -420,601 +420,194 @@ msgstr "add tag"
 msgid "Write the tag and press enter to save it"
 msgstr "Write the tag and press enter to save it"
 
-#~ msgid "Entry editing area"
-#~ msgstr "Entry editing area"
 
-#~ msgid "Past Event List"
-#~ msgstr "Past Event List"
 
-#~ msgid "Result List"
-#~ msgstr "Result List"
 
-#~ msgid "Successful Entries"
-#~ msgstr "Successful Entries"
 
-#~ msgid "Merged Entries"
-#~ msgstr "Merged Entries"
 
-#~ msgid "Failed Entries"
-#~ msgstr "Failed Entries"
 
-#~ msgid "Import Results List"
-#~ msgstr "Import Results List"
 
-#~ msgid "Error opening database"
-#~ msgstr "Error opening database"
 
-#~ msgid "Enable debug mode"
-#~ msgstr "Enable debug mode"
 
-#~ msgid ""
-#~ "Manage your diary. Only one instance of the program may be open at any "
-#~ "time."
-#~ msgstr ""
-#~ "Manage your diary. Only one instance of the program may be open at any "
-#~ "time."
 
 #, c-format
-#~ msgid "Command line options could not be parsed: %s\n"
-#~ msgstr "Command line options could not be parsed: %s\n"
 
-#~ msgid "Error encrypting database"
-#~ msgstr "Error encrypting database"
 
-#~ msgid ""
-#~ "Almanah is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "Almanah is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public Licence as published by the Free "
-#~ "Software Foundation, either version 3 of the Licence, or (at your option) "
-#~ "any later version."
 
-#~ msgid ""
-#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
-#~ msgstr ""
-#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for "
-#~ "more details."
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "You should have received a copy of the GNU General Public Licence along "
-#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
 
-#~ msgid "Copyright © 2008-2009 Philip Withnall"
-#~ msgstr "Copyright © 2008-2009 Philip Withnall"
 
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Philip Withnall <philip@tecnocode.co.uk>\n"
-#~ "Jen Ockwell <jenfraggleubuntu@gmail.com>\n"
-#~ "Chris Leonard <cjl@laptop.org>"
 
-#~ msgid "Almanah Website"
-#~ msgstr "Almanah Website"
 
 #, c-format
-#~ msgid ""
-#~ "Couldn't load the CSS resources. The interface might not be styled "
-#~ "correctly: %s"
-#~ msgstr ""
-#~ "Couldn’t load the CSS resources. The interface might not be styled "
-#~ "correctly: %s"
 
-#~ msgid "UI data could not be loaded"
-#~ msgstr "UI data could not be loaded"
 
 #, c-format
-#~ msgid "Invalid data version number %u."
-#~ msgstr "Invalid data version number %u."
 
-#~ msgid "Calendar Appointment"
-#~ msgstr "Calendar Appointment"
 
-#~ msgid "An appointment on an Evolution calendar."
-#~ msgstr "An appointment on an Evolution calendar."
 
 #, c-format
-#~ msgid "%.2d:%.2d"
-#~ msgstr "%.2d:%.2d"
 
-#~ msgid "Error launching Evolution"
-#~ msgstr "Error launching Evolution"
 
-#~ msgid "Calendar Task"
-#~ msgstr "Calendar Task"
 
-#~ msgid "A task on an Evolution calendar."
-#~ msgstr "A task on an Evolution calendar."
 
-#~ msgid ""
-#~ "Select a _folder to export the entries to as text files, one per entry, "
-#~ "with names in the format 'yyyy-mm-dd', and no extension. All entries will "
-#~ "be exported, unencrypted in plain text format."
-#~ msgstr ""
-#~ "Select a _folder to export the entries to as text files, one per entry, "
-#~ "with names in the format 'yyyy-mm-dd', and no extension. All entries will "
-#~ "be exported, unencrypted in plain text format."
 
-#~ msgid "Import _mode: "
-#~ msgstr "Import _mode: "
 
-#~ msgid "Export _mode: "
-#~ msgstr "Export _mode: "
 
-#~ msgid "Import Entries"
-#~ msgstr "Import Entries"
 
-#~ msgid "Export Entries"
-#~ msgstr "Export Entries"
 
-#~| msgid "_Import"
-#~ msgctxt "Dialog button"
-#~ msgid "_Import"
-#~ msgstr "_Import"
 
-#~| msgid "_Export"
-#~ msgctxt "Dialog button"
-#~ msgid "_Export"
-#~ msgstr "_Export"
 
-#~ msgid "Export successful"
-#~ msgstr "Export successful"
 
-#~ msgid "The diary was successfully exported."
-#~ msgstr "The diary was successfully exported."
 
-#~ msgid "%A, %e %B %Y"
-#~ msgstr "%A, %e %B %Y"
 
 #, c-format
-#~ msgid "Error deserializing imported entry into buffer: %s"
-#~ msgstr "Error deserialising imported entry into buffer: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Error deserializing existing entry into buffer; overwriting with imported "
-#~ "entry: %s"
-#~ msgstr ""
-#~ "Error deserialising existing entry into buffer; overwriting with imported "
-#~ "entry: %s"
 
 #, c-format
-#~ msgid "Are you sure you want to edit this diary entry for %s?"
-#~ msgstr "Are you sure you want to edit this diary entry for %s?"
 
-#~ msgid "_Edit"
-#~ msgstr "_Edit"
 
 #, c-format
-#~ msgid "Are you sure you want to delete this diary entry for %s?"
-#~ msgstr "Are you sure you want to delete this diary entry for %s?"
 
 #, c-format
-#~ msgid "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
-#~ msgstr "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
 
-#~ msgid "Error opening URI"
-#~ msgstr "Error opening URI"
 
 #, c-format
-#~ msgid "%s @ %s"
-#~ msgstr "%s @ %s"
 
-#~ msgid "Entry content could not be loaded"
-#~ msgstr "Entry content could not be loaded"
 
-#~ msgid ""
-#~ "This is just a fifteen words sentence to calculate the diary entry text "
-#~ "view size"
-#~ msgstr ""
-#~ "This is just a fifteen words sentence to calculate the diary entry text "
-#~ "view size"
 
-#~ msgid "Spelling checker could not be initialized"
-#~ msgstr "Spelling checker could not be initialised"
 
-#~ msgid "None (don't encrypt)"
-#~ msgstr "None (don't encrypt)"
 
-#~ msgid "Error saving the encryption key"
-#~ msgstr "Error saving the encryption key"
 
-#~ msgid "This entry is marked as important."
-#~ msgstr "This entry is marked as important."
 
-#~ msgid "No entry for this date."
-#~ msgstr "No entry for this date."
 
-#~ msgid "Start date:"
-#~ msgstr "Start date:"
 
-#~ msgid "End date:"
-#~ msgstr "End date:"
 
-#~ msgid "Line spacing:"
-#~ msgstr "Line spacing:"
 
-#~ msgid "Search canceled."
-#~ msgstr "Search cancelled."
 
 #, c-format
-#~ msgid ""
-#~ "Could not open database \"%s\". SQLite provided the following error "
-#~ "message: %s"
-#~ msgstr ""
-#~ "Could not open database \"%s\". SQLite provided the following error "
-#~ "message: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Could not run query \"%s\". SQLite provided the following error message: "
-#~ "%s"
-#~ msgstr ""
-#~ "Could not run query \"%s\". SQLite provided the following error message: "
-#~ "%s"
 
-#~ msgid "Error deserializing entry into buffer while searching."
-#~ msgstr "Error deserialising entry into buffer while searching."
 
 #, c-format
-#~ msgid "GPGME is not at least version %s"
-#~ msgstr "GPGME is not at least version %s"
 
 #, c-format
-#~ msgid "GPGME doesn't support OpenPGP: %s"
-#~ msgstr "GPGME doesn't support OpenPGP: %s"
 
 #, c-format
-#~ msgid "Error creating cipher context: %s"
-#~ msgstr "Error creating cipher context: %s"
 
 #, c-format
-#~ msgid "Can't create a new GIOChannel for the encrypted database: %s"
-#~ msgstr "Can’t create a new GIOChannel for the encrypted database: %s"
 
 #, c-format
-#~ msgid "Error opening encrypted database file \"%s\": %s"
-#~ msgstr "Error opening encrypted database file \"%s\": %s"
 
 #, c-format
-#~ msgid "Error creating Callback base data buffer: %s"
-#~ msgstr "Error creating Callback base data buffer: %s"
 
 #, c-format
-#~ msgid "Can't create a new GIOChannel for the plain database: %s"
-#~ msgstr "Can't create a new GIOChannel for the plain database: %s"
 
 #, c-format
-#~ msgid "Error opening plain database file \"%s\": %s"
-#~ msgstr "Error opening plain database file \"%s\": %s"
 
 #, c-format
-#~ msgid "Error getting encryption key: %s"
-#~ msgstr "Error getting encryption key: %s"
 
 #, c-format
-#~ msgid "Error encrypting database: %s"
-#~ msgstr "Error encrypting database: %s"
 
 #, c-format
-#~ msgid "Error copying the file from %s to %s: %s"
-#~ msgstr "Error copying the file from %s to %s: %s"
 
 #, c-format
-#~ msgid "Error changing database backup file permissions: %s"
-#~ msgstr "Error changing database backup file permissions: %s"
 
 #, c-format
-#~ msgid "Error closing file: %s"
-#~ msgstr "Error closing file: %s"
 
 #, c-format
-#~ msgid "Error backing up file ‘%s’"
-#~ msgstr "Error backing up file ‘%s’"
 
 #, c-format
-#~ msgid "Error decrypting database: %s"
-#~ msgstr "Error decrypting database: %s"
 
 #, c-format
-#~ msgid "Error changing database file permissions: %s"
-#~ msgstr "Error changing database file permissions: %s"
 
 #, c-format
-#~ msgid "UI data could not be loaded: %s"
-#~ msgstr "UI data could not be loaded: %s"
 
-#~ msgid "Can't load calendar window object from UI file"
-#~ msgstr "Can't load calendar window object from UI file"
 
-#~ msgid "Important!"
-#~ msgstr "Important!"
 
-#~ msgid "Remove the tag from the entry"
-#~ msgstr "Remove the tag from the entry"
 
-#~ msgid "Tag entry"
-#~ msgstr "Tag entry"
 
-#~ msgid "Almanah Preferences"
-#~ msgstr "Almanah Preferences"
 
-#~ msgid "Toggle whether the currently selected text is bold."
-#~ msgstr "Toggle whether the currently selected text is bold."
 
-#~ msgid "Toggle whether the currently selected text is italic."
-#~ msgstr "Toggle whether the currently selected text is italic."
 
-#~ msgid "Toggle whether the currently selected text is underlined."
-#~ msgstr "Toggle whether the currently selected text is underlined."
 
-#~ msgid ""
-#~ "Add or remove a hyperlink from the currently selected text to a specified "
-#~ "URI."
-#~ msgstr ""
-#~ "Add or remove a hyperlink from the currently selected text to a specified "
-#~ "URI."
 
-#~ msgid "I_mportant"
-#~ msgstr "I_mportant"
 
-#~ msgid "Toggle whether the current entry is marked as important."
-#~ msgstr "Toggle whether the current entry is marked as important."
 
-#~ msgid "Show tags for the current entry"
-#~ msgstr "Show tags for the current entry"
 
-#~ msgid "_Help"
-#~ msgstr "_Help"
 
-#~ msgid "Jump to the current date in the diary."
-#~ msgstr "Jump to the current date in the diary."
 
-#~ msgid "Unknown input device"
-#~ msgstr "Unknown input device"
 
-#~ msgid "_File"
-#~ msgstr "_File"
 
-#~ msgid "_Import…"
-#~ msgstr "_Import…"
 
-#~ msgid "_Export…"
-#~ msgstr "_Export…"
 
-#~ msgid "_Print…"
-#~ msgstr "_Print…"
 
-#~ msgid "_Search…"
-#~ msgstr "_Search…"
 
-#~ msgid "Font Style"
-#~ msgstr "Font Style"
 
-#~ msgid "Change font style for selected text."
-#~ msgstr "Change font style for selected text."
 
-#~ msgid "_Font Style"
-#~ msgstr "_Font Style"
 
-#~ msgid ""
-#~ "The encrypted database is empty. The plain database file has been left "
-#~ "undeleted as backup."
-#~ msgstr ""
-#~ "The encrypted database is empty. The plain database file has been left "
-#~ "undeleted as backup."
 
-#~ msgid "Could not delete plain database file \"%s\"."
-#~ msgstr "Could not delete plain database file \"%s\"."
 
-#~ msgid "Add a definition for the currently selected text."
-#~ msgstr "Add a definition for the currently selected text."
 
-#~ msgid "Definition Description"
-#~ msgstr "Definition Description"
 
-#~ msgid "Definition List"
-#~ msgstr "Definition List"
 
-#~ msgid "Definition Type"
-#~ msgstr "Definition Type"
 
-#~ msgid "Definition type:"
-#~ msgstr "Definition type:"
 
-#~ msgid "Nothing selected"
-#~ msgstr "Nothing selected"
 
-#~ msgid "Results:"
-#~ msgstr "Results:"
 
-#~ msgid "View"
-#~ msgstr "View"
 
-#~ msgid "View Event"
-#~ msgstr "View Event"
 
-#~ msgid "_Add Definition"
-#~ msgstr "_Add Definition"
 
-#~ msgid "_Definitions"
-#~ msgstr "_Definitions"
 
-#~ msgid "_Remove Definition"
-#~ msgstr "_Remove Definition"
 
-#~ msgid "_View Definitions"
-#~ msgstr "_View Definitions"
 
-#~ msgid "Add Definition"
-#~ msgstr "Add Definition"
 
-#~ msgid "Definition Manager"
-#~ msgstr "Definition Manager"
 
-#~ msgid "Are you sure you want to delete the definition for \"%s\"?"
-#~ msgstr "Are you sure you want to delete the definition for \"%s\"?"
 
-#~ msgid "Contact"
-#~ msgstr "Contact"
 
-#~ msgid "An Evolution contact."
-#~ msgstr "An Evolution contact."
 
-#~ msgid "Select Contact"
-#~ msgstr "Select Contact"
 
-#~ msgid "Error opening contact"
-#~ msgstr "Error opening contact"
 
-#~ msgid "Error opening Evolution"
-#~ msgstr "Error launching Evolution"
 
-#~ msgid "File"
-#~ msgstr "File"
 
-#~ msgid "An attached file."
-#~ msgstr "An attached file."
 
-#~ msgid "Select File"
-#~ msgstr "Select File"
 
-#~ msgid "Note"
-#~ msgstr "Note"
 
-#~ msgid "A note about an important event."
-#~ msgstr "A note about an important event."
 
-#~ msgid "URI"
-#~ msgstr "URI"
 
-#~ msgid "A URI of a file or web page."
-#~ msgstr "A URI of a file or web page."
 
-#~ msgid "URI: "
-#~ msgstr "URI: "
 
-#~ msgid "- Manage your diary"
-#~ msgstr "- Manage your diary"
 
-#~ msgid "Main window X position"
-#~ msgstr "Main window X position"
 
-#~ msgid "Main window Y position"
-#~ msgstr "Main window Y position"
 
-#~ msgid "Main window height"
-#~ msgstr "Main window height"
 
-#~ msgid "Main window maximization"
-#~ msgstr "Main window maximisation"
 
-#~ msgid "Main window width"
-#~ msgstr "Main window width"
 
-#~ msgid "The X position of the main window."
-#~ msgstr "The X position of the main window."
 
-#~ msgid "The Y position of the main window."
-#~ msgstr "The Y position of the main window."
 
-#~ msgid "The height of the main window."
-#~ msgstr "The height of the main window."
 
-#~ msgid "The width of the main window."
-#~ msgstr "The width of the main window."
 
-#~ msgid "Whether the main window should start maximized."
-#~ msgstr "Whether the main window should start maximised."
 
-#~ msgid "F-Spot Photo"
-#~ msgstr "F-Spot Photo"
 
-#~ msgid "A photo stored in F-Spot."
-#~ msgstr "A photo stored in F-Spot."
 
-#~ msgid "Error launching F-Spot"
-#~ msgstr "Error launching F-Spot"
 
-#~ msgid "Enable import mode"
-#~ msgstr "Enable import mode"
 
-#~ msgid "Description"
-#~ msgstr "Description"
 
-#~ msgid "Type"
-#~ msgstr "Type"
 
-#~ msgid "%X"
-#~ msgstr "%X"
 
-#~ msgid "Error closing database"
-#~ msgstr "Error closing database"
 
-#~ msgid ""
-#~ "Error getting encryption key: GConf key \"%s\" invalid or empty. Your "
-#~ "diary will not be encrypted; please install Seahorse and set up a default "
-#~ "key, or ignore this message."
-#~ msgstr ""
-#~ "Error getting encryption key: GConf key \"%s\" invalid or empty. Your "
-#~ "diary will not be encrypted; please install Seahorse and set up a default "
-#~ "key, or ignore this message."
 
-#~ msgid "Add Link"
-#~ msgstr "Add Link"
 
-#~ msgid "Attached Links"
-#~ msgstr "Attached Links"
 
-#~ msgid "Due to an unknown error the file cannot be opened."
-#~ msgstr "Due to an unknown error the file cannot be opened."
 
-#~ msgid "Due to an unknown error the URI cannot be opened."
-#~ msgstr "Due to an unknown error the URI cannot be opened."
 
-#~ msgid "Diary Website"
-#~ msgstr "Diary Website"
 
-#~ msgid ""
-#~ "Both an encrypted and plaintext version of the database exist as \"%s\" "
-#~ "and \"%s\", and one is likely corrupt. Please delete the corrupt one "
-#~ "(i.e. one which is 0KiB in size) before continuing. If neither file is "
-#~ "0KiB, the problem will most likely have been caused by Diary being unable "
-#~ "to encrypt the database, so you should move the first file."
-#~ msgstr ""
-#~ "Both an encrypted and plaintext version of the database exist as \"%s\" "
-#~ "and \"%s\", and one is likely corrupt. Please delete the corrupt one "
-#~ "(i.e. one which is 0KiB in size) before continuing. If neither file is "
-#~ "0KiB, the problem will most likely have been caused by Diary being unable "
-#~ "to encrypt the database, so you should move the first file."
 
-#~ msgid "<b>%A, %e %B %Y</b>"
-#~ msgstr "<b>%A, %e %B %Y</b>"
 
-#~ msgid "Error getting encryption key: GConf key \"%s\" invalid or empty."
-#~ msgstr "Error getting encryption key: GConf key \"%s\" invalid or empty."
 
-#~ msgid "Picasa Album"
-#~ msgstr "Picasa Album"
 
-#~ msgid "A Picasa album on the Internet."
-#~ msgstr "A Picasa album on the Internet."
 
-#~ msgid "Picasa: %s by %s"
-#~ msgstr "Picasa: %s by %s"
 
-#~ msgid "Google Username"
-#~ msgstr "Google Username"
 
-#~ msgid "Album Name"
-#~ msgstr "Album Name"

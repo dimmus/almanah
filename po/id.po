@@ -418,324 +418,111 @@ msgstr "tambah tag"
 msgid "Write the tag and press enter to save it"
 msgstr "Tulis tag dan tekan enter untuk menyimpannya"
 
-#~ msgid "Entry editing area"
-#~ msgstr "Wilayah penyuntingan entri"
 
-#~ msgid "Past Event List"
-#~ msgstr "Daftar Kejadian Lalu"
 
-#~ msgid "Result List"
-#~ msgstr "Daftar Hasil"
 
-#~ msgid "Successful Entries"
-#~ msgstr "Entri Sukses"
 
-#~ msgid "Merged Entries"
-#~ msgstr "Entri Tergabung"
 
-#~ msgid "Failed Entries"
-#~ msgstr "Entri Gagal"
 
-#~ msgid "Import Results List"
-#~ msgstr "Daftar Hasil Impor"
 
-#~ msgid "Error opening database"
-#~ msgstr "Galat membuka basis data"
 
-#~ msgid "Enable debug mode"
-#~ msgstr "Aktifkan moda awakutu"
 
-#~ msgid ""
-#~ "Manage your diary. Only one instance of the program may be open at any "
-#~ "time."
-#~ msgstr ""
-#~ "Kelola buku harian Anda. Hanya satu instansi program yang boleh dibuka "
-#~ "pada suatu saat."
 
 #, c-format
-#~ msgid "Command line options could not be parsed: %s\n"
-#~ msgstr "Opsi baris perintah tak dapat diurai: %s\n"
 
-#~ msgid "Error encrypting database"
-#~ msgstr "Galat menyandikan basis data"
 
-#~ msgid ""
-#~ "Almanah is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "Almanah adalah perangkat lunak bebas, Anda dapat menyebarkan dan/atau "
-#~ "mengubahnya di bawah syarat GNU General Public License sebagaimana "
-#~ "dipublikasikan oleh Free Software Foundation, apakah Lisensi versi 3 atau "
-#~ "(sesuai pilihan Anda) versi selanjutnya."
 
-#~ msgid ""
-#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
-#~ msgstr ""
-#~ "Almanah ini didistribusikan dengan harapan bahwa program ini akan "
-#~ "berguna,tetapi TANPA GARANSI; tanpa garansi yang termasuk dari DAGANGAN "
-#~ "atau KECOCOKAN UNTUK TUJUAN TERTENTU sekalipun. Lihat GNU General Public "
-#~ "License untuk rincian lebih lanjut."
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "Anda mestinya menerima salinan GNU General Public License bersamaan "
-#~ "dengan Almanah. Jika tidak, lihat <http://www.gnu.org/licenses/>."
 
-#~ msgid "Copyright © 2008-2009 Philip Withnall"
-#~ msgstr "Hak Cipta © 2008-2009 Philip Withnall"
 
-#~ msgid "translator-credits"
-#~ msgstr "Andika Triwidada <andika@gmail.com>, 2009-2014"
 
-#~ msgid "Almanah Website"
-#~ msgstr "Situs Web Almanah"
 
 #, c-format
-#~ msgid ""
-#~ "Couldn't load the CSS resources. The interface might not be styled "
-#~ "correctly: %s"
-#~ msgstr ""
-#~ "Tak bisa memuat sumber daya CSS. Antar muka mungkin tak ditata gayanya "
-#~ "secara benar: %s"
 
-#~ msgid "UI data could not be loaded"
-#~ msgstr "Data UI tak bisa dimuat"
 
 #, c-format
-#~ msgid "Invalid data version number %u."
-#~ msgstr "Nomor versi data %u tak valid."
 
-#~ msgid "Calendar Appointment"
-#~ msgstr "Jadwal Pertemuan Kalendar"
 
-#~ msgid "An appointment on an Evolution calendar."
-#~ msgstr "Janji pertemuan pada kalender Evolution."
 
 #, c-format
-#~ msgid "%.2d:%.2d"
-#~ msgstr "%.2d:%.2d"
 
-#~ msgid "Error launching Evolution"
-#~ msgstr "Galat meluncurkan Evolution"
 
-#~ msgid "Calendar Task"
-#~ msgstr "Tugas Kalender"
 
-#~ msgid "A task on an Evolution calendar."
-#~ msgstr "Suatu tugas pada kalender Evolution."
 
-#~ msgid ""
-#~ "Select a _folder to export the entries to as text files, one per entry, "
-#~ "with names in the format 'yyyy-mm-dd', and no extension. All entries will "
-#~ "be exported, unencrypted in plain text format."
-#~ msgstr ""
-#~ "Pilih suatu _folder yang memuat berkas teks, satu per entri, dengan nama "
-#~ "dalam bentuk 'yyyy-mm-dd', dan tanpa ekstensi. Semua entri akan diekspor, "
-#~ "tak terenkripsi dalam bentuk teks polos."
 
-#~ msgid "Import _mode: "
-#~ msgstr "_Moda impor: "
 
-#~ msgid "Export _mode: "
-#~ msgstr "_Moda ekspor: "
 
-#~ msgid "Import Entries"
-#~ msgstr "Impor Entri"
 
-#~ msgid "Export Entries"
-#~ msgstr "Ekspor Entri"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Import"
-#~ msgstr "_Impor"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Export"
-#~ msgstr "_Ekspor"
 
-#~ msgid "Export successful"
-#~ msgstr "Pengeksporan sukses"
 
-#~ msgid "The diary was successfully exported."
-#~ msgstr "Buku harian sukses diekspor."
 
-#~ msgid "%A, %e %B %Y"
-#~ msgstr "%A, %e %B %Y"
 
 #, c-format
-#~ msgid "Error deserializing imported entry into buffer: %s"
-#~ msgstr "Galat deserialisasi entri yang diimpor ke dalam penyangga: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Error deserializing existing entry into buffer; overwriting with imported "
-#~ "entry: %s"
-#~ msgstr ""
-#~ "Galat deserialisasi entri yang telah ada ke dalam penyangga; menimpa "
-#~ "dengan entri yang diimpor: %s"
 
 #, c-format
-#~ msgid "Are you sure you want to edit this diary entry for %s?"
-#~ msgstr "Anda yakin ingin menyunting entri buku harian ini bagi %s?"
 
-#~ msgid "_Edit"
-#~ msgstr "_Sunting"
 
 #, c-format
-#~ msgid "Are you sure you want to delete this diary entry for %s?"
-#~ msgstr "Anda yakin ingin menghapus entri buku harian ini bagi %s?"
 
 #, c-format
-#~ msgid "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
-#~ msgstr "Tag teks tak dikenal atau berganda \"%s\" dalam entri. Diabaikan."
 
-#~ msgid "Error opening URI"
-#~ msgstr "Galat membuka URI"
 
 #, c-format
-#~ msgid "%s @ %s"
-#~ msgstr "%s @ %s"
 
-#~ msgid "Entry content could not be loaded"
-#~ msgstr "Isi entri tak dapat dimuat"
 
-#~ msgid ""
-#~ "This is just a fifteen words sentence to calculate the diary entry text "
-#~ "view size"
-#~ msgstr ""
-#~ "Ini adalah sebuah kalimat lima belas kata untuk menghitung ukuran tilikan "
-#~ "teks entri buku harian"
 
-#~ msgid "Spelling checker could not be initialized"
-#~ msgstr "Pemeriksa ejaan tak dapat diinisialisasi"
 
-#~ msgid "None (don't encrypt)"
-#~ msgstr "Tak ada (jangan disandikan)"
 
-#~ msgid "Error saving the encryption key"
-#~ msgstr "Galat menyimpan kunci penyandian"
 
-#~ msgid "This entry is marked as important."
-#~ msgstr "Entri ini ditandai sebagai penting."
 
-#~ msgid "No entry for this date."
-#~ msgstr "Tak ada entri untuk tanggal ini."
 
-#~ msgid "Start date:"
-#~ msgstr "Tanggal mulai:"
 
-#~ msgid "End date:"
-#~ msgstr "Tanggal selesai:"
 
-#~ msgid "Line spacing:"
-#~ msgstr "Jarak baris:"
 
-#~ msgid "Search canceled."
-#~ msgstr "Pencarian dibatalkan."
 
 #, c-format
-#~ msgid ""
-#~ "Could not open database \"%s\". SQLite provided the following error "
-#~ "message: %s"
-#~ msgstr ""
-#~ "Tak bisa membuka basis data \"%s\". SQLite memberikan pesan galat "
-#~ "berikut: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Could not run query \"%s\". SQLite provided the following error message: "
-#~ "%s"
-#~ msgstr ""
-#~ "Tak bisa menjalankan query \"%s\". SQLite memberikan pesan galat berikut: "
-#~ "%s"
 
-#~ msgid "Error deserializing entry into buffer while searching."
-#~ msgstr "Galat deserialisasi entri ke dalam penyangga ketika mencari."
 
 #, c-format
-#~ msgid "GPGME is not at least version %s"
-#~ msgstr "GPGME kurang dari versi minimal %s"
 
 #, c-format
-#~ msgid "GPGME doesn't support OpenPGP: %s"
-#~ msgstr "GPGME tak mendukung OpenPGP: %s"
 
 #, c-format
-#~ msgid "Error creating cipher context: %s"
-#~ msgstr "Galat membuat konteks cipher: %s"
 
 #, c-format
-#~ msgid "Can't create a new GIOChannel for the encrypted database: %s"
-#~ msgstr ""
-#~ "Tak bisa membuat suatu GIOChannel baru bagi basis data terenkripsi: %s"
 
 #, c-format
-#~ msgid "Error opening encrypted database file \"%s\": %s"
-#~ msgstr "Galat membuka berkas basis data tersandi \"%s\": %s"
 
 #, c-format
-#~ msgid "Error creating Callback base data buffer: %s"
-#~ msgstr "Kesalahan saat membuat penyangga data basis Callback: %s"
 
 #, c-format
-#~ msgid "Can't create a new GIOChannel for the plain database: %s"
-#~ msgstr "Tak bisa membuat suatu GIOChannel baru bagi basis data polos: %s"
 
 #, c-format
-#~ msgid "Error opening plain database file \"%s\": %s"
-#~ msgstr "Galat membuka berkas basis data polos \"%s\": %s"
 
 #, c-format
-#~ msgid "Error getting encryption key: %s"
-#~ msgstr "Galat memperoleh kunci penyandian: %s"
 
 #, c-format
-#~ msgid "Error encrypting database: %s"
-#~ msgstr "Galat menyandikan basis data: %s"
 
 #, c-format
-#~ msgid "Error copying the file from %s to %s: %s"
-#~ msgstr "Galat saat menyalin berkas dari %s ke %s: %s"
 
 #, c-format
-#~ msgid "Error changing database backup file permissions: %s"
-#~ msgstr "Galat saat mengubah ijin berkas cadangan basis data: %s"
 
 #, c-format
-#~ msgid "Error closing file: %s"
-#~ msgstr "Kesalahan saat menutup berkas: %s"
 
 #, c-format
-#~ msgid "Error backing up file ‘%s’"
-#~ msgstr "Galat saat membuat cadangan berkas '%s'"
 
 #, c-format
-#~ msgid "Error decrypting database: %s"
-#~ msgstr "Galat membongkar sandi basis data: %s"
 
 #, c-format
-#~ msgid "Error changing database file permissions: %s"
-#~ msgstr "Galat saat mengubah ijin berkas basis data: %s"
 
 #, c-format
-#~ msgid "UI data could not be loaded: %s"
-#~ msgstr "Data UI tidak bisa dimuat: %s"
 
-#~ msgid "Can't load calendar window object from UI file"
-#~ msgstr "Tak bisa memuat objek jendela kalender dari berkas UI"
 
-#~ msgid "Important!"
-#~ msgstr "Penting!"
 
-#~ msgid "Remove the tag from the entry"
-#~ msgstr "Hapus tag dari entri"
 
-#~ msgid "Tag entry"
-#~ msgstr "Entri tag"

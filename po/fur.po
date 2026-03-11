@@ -412,183 +412,56 @@ msgstr ""
 msgid "Write the tag and press enter to save it"
 msgstr ""
 
-#~ msgid "Entry editing area"
-#~ msgstr "Aree di modifiche de vôs"
 
-#~ msgid "Past Event List"
-#~ msgstr "Liste events passats"
 
-#~ msgid "Result List"
-#~ msgstr "Liste risultâts"
 
-#~ msgid "Successful Entries"
-#~ msgstr "Vôs riessude"
 
-#~ msgid "Merged Entries"
-#~ msgstr "Vôs unidis"
 
-#~ msgid "Failed Entries"
-#~ msgstr "Vôs falidis"
 
-#~ msgid "Import Results List"
-#~ msgstr "Impuarte liste dai risultâts"
 
-#~ msgid "Error opening database"
-#~ msgstr "Erôr tal vierzi la base di dâts"
 
-#~ msgid "Enable debug mode"
-#~ msgstr "Abilite la modalitât di debug"
 
-#~ msgid ""
-#~ "Manage your diary. Only one instance of the program may be open at any "
-#~ "time."
-#~ msgstr ""
-#~ "Gjestìs il to diari. Al è pussibil vierzi dome une istance dal program ae "
-#~ "volte."
 
 #, c-format
-#~ msgid "Command line options could not be parsed: %s\n"
-#~ msgstr "Impussibil analizâ lis opzions a rie di comant: %s\n"
 
-#~ msgid "Error encrypting database"
-#~ msgstr "Erôr tal cifrâ la base di dâts"
 
-#~ msgid ""
-#~ "Almanah is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "Almanah al è un software libar: tu puedis tornâ a distribuîlu e /o "
-#~ "modificâlu sot i tiermins de Licence Publiche Gjenerâl GNU tant che "
-#~ "publicade de Free Software Foundation, sedi la version 3 de licence che "
-#~ "(a tô sielte) cualsisei version sucessive."
 
-#~ msgid ""
-#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
-#~ msgstr ""
-#~ "Almanah al è distribuît inte sperance che al sedi util, ma CENCE NISSUNE "
-#~ "GARANZIE, cence nancje la implicite garanzie di CUMIERÇABILITÂT o "
-#~ "IDONEITÂT A UNE FINALITÂT PARTICOLÂR. Consultâ la licence GNU GPL par vê "
-#~ "plui detais."
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "Cun Almanah ti varessin di vê dât ancje une copie de licence GNU General "
-#~ "Public License, in câs diviers consultâ la pagjine <http://www.gnu.org/"
-#~ "licenses/>."
 
-#~ msgid "Copyright © 2008-2009 Philip Withnall"
-#~ msgstr "Copyright © 2008-2009 Philip Withnall"
 
-#~ msgid "translator-credits"
-#~ msgstr "Fabio Tomat <f.t.public@gmail.com>"
 
-#~ msgid "Almanah Website"
-#~ msgstr "Sît web Almanah"
 
 #, c-format
-#~ msgid ""
-#~ "Couldn't load the CSS resources. The interface might not be styled "
-#~ "correctly: %s"
-#~ msgstr ""
-#~ "Impussibil cjariâ lis risorsis CSS. Al è pussibil che la interface no "
-#~ "sedi dissegnade ben: %s"
 
-#~ msgid "UI data could not be loaded"
-#~ msgstr "Impussibil cjariâ i dâts de interface utent."
 
 #, c-format
-#~ msgid "Invalid data version number %u."
-#~ msgstr "Numar di version dai dâts %u no valit."
 
-#~ msgid "Calendar Appointment"
-#~ msgstr "Apontament calendari"
 
-#~ msgid "An appointment on an Evolution calendar."
-#~ msgstr "Un apontament suntun calendari di Evolution."
 
 #, c-format
-#~ msgid "%.2d:%.2d"
-#~ msgstr "%.2d:%.2d"
 
-#~ msgid "Error launching Evolution"
-#~ msgstr "Erôr tal inviâ Evolution"
 
-#~ msgid "Calendar Task"
-#~ msgstr "Ativitât calendari"
 
-#~ msgid "A task on an Evolution calendar."
-#~ msgstr "Une ativitât suntun calendari di Evolution."
 
-#~ msgid "Import _mode: "
-#~ msgstr "_Modalitât di importazion:"
 
-#~ msgid "Export _mode: "
-#~ msgstr "_Modalitât di esportazion:"
 
-#~ msgid "Import Entries"
-#~ msgstr "Impuarte vôs"
 
-#~ msgid "Export Entries"
-#~ msgstr "Espuarte vôs"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Import"
-#~ msgstr "_Impuarte"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Export"
-#~ msgstr "_Espuarte"
 
-#~ msgid "Export successful"
-#~ msgstr "Esportazion lade ben"
 
-#~ msgid "The diary was successfully exported."
-#~ msgstr "Il diari al è stât espuartât cun sucès."
 
-#~ msgid "%A, %e %B %Y"
-#~ msgstr "%A, %e di %B dal %Y"
 
-#~ msgid "_Edit"
-#~ msgstr "_Modifiche"
 
-#~ msgid "Error opening URI"
-#~ msgstr "Erôr tal vierzi il URI"
 
 #, c-format
-#~ msgid "%s @ %s"
-#~ msgstr "%s - %s"
 
-#~ msgid "None (don't encrypt)"
-#~ msgstr "Nissune (no stâ cifrâ)"
 
-#~ msgid "Error saving the encryption key"
-#~ msgstr "Erôr tal salvâ la clâf di cifradure"
 
-#~ msgid "This entry is marked as important."
-#~ msgstr "Cheste vôs e je segnade come impuartante."
 
-#~ msgid "No entry for this date."
-#~ msgstr "Nissune vôs par cheste date."
 
-#~ msgid "Start date:"
-#~ msgstr "Date inizi:"
 
-#~ msgid "End date:"
-#~ msgstr "Date fin:"
 
-#~ msgid "Search canceled."
-#~ msgstr "Cirî anulât."
 
 #, c-format
-#~ msgid "Error closing file: %s"
-#~ msgstr "Erôr tal sierâ il file: %s"
 
-#~ msgid "Important!"
-#~ msgstr "Impuartant!"

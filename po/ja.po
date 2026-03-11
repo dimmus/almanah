@@ -416,328 +416,111 @@ msgstr "タグの追加"
 msgid "Write the tag and press enter to save it"
 msgstr "タグを書いてエンターを入力して保存します"
 
-#~ msgid "Entry editing area"
-#~ msgstr "編集領域へ"
 
-#~ msgid "Past Event List"
-#~ msgstr "過去のイベントリスト"
 
-#~ msgid "Result List"
-#~ msgstr "結果リスト"
 
-#~ msgid "Successful Entries"
-#~ msgstr "成功したエントリー"
 
-#~ msgid "Merged Entries"
-#~ msgstr "マージしたエントリー"
 
-#~ msgid "Failed Entries"
-#~ msgstr "失敗したエントリー"
 
-#~ msgid "Import Results List"
-#~ msgstr "結果リストのインポート"
 
-#~ msgid "Error opening database"
-#~ msgstr "データベースオープンエラー"
 
-#~ msgid "Enable debug mode"
-#~ msgstr "デバッグモードを有効にする"
 
-#~ msgid ""
-#~ "Manage your diary. Only one instance of the program may be open at any "
-#~ "time."
-#~ msgstr ""
-#~ "あなたの日記を管理します。このプログラムは同時複数のインスタンスを開くこと"
-#~ "はできません。"
 
 #, c-format
-#~ msgid "Command line options could not be parsed: %s\n"
-#~ msgstr "コマンドラインオプションをパースできませんでした: %s\n"
 
-#~ msgid "Error encrypting database"
-#~ msgstr "データベース暗号化エラー"
 
-#~ msgid ""
-#~ "Almanah is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "Almanah is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
 
-#~ msgid ""
-#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
-#~ msgstr ""
-#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
 
-#~ msgid "Copyright © 2008-2009 Philip Withnall"
-#~ msgstr "Copyright © 2008-2009 Philip Withnall"
 
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Tomo Dote 1 <fu7mu4@gmail.com>\n"
-#~ "Kusano Takayuki <https://bsky.app/profile/tkusano.jp>\n"
-#~ "Japanese Translation Team https://l10n.gnome.org/teams/ja/"
 
-#~ msgid "Almanah Website"
-#~ msgstr "アルマナのウェブサイト"
 
 #, c-format
-#~ msgid ""
-#~ "Couldn't load the CSS resources. The interface might not be styled "
-#~ "correctly: %s"
-#~ msgstr ""
-#~ "CSSリソースをロードできませんでした。インターフェースは正しいスタイルで表"
-#~ "示できないかもしれません： %s"
 
-#~ msgid "UI data could not be loaded"
-#~ msgstr "ユーザーインターフェースのデータがロードできませんでした"
 
 #, c-format
-#~ msgid "Invalid data version number %u."
-#~ msgstr "不正なデータバージョンナンバー %u。"
 
-#~ msgid "Calendar Appointment"
-#~ msgstr "カレンダーの予約"
 
-#~ msgid "An appointment on an Evolution calendar."
-#~ msgstr "Evolutionカレンダーの予約。"
 
 #, c-format
-#~ msgid "%.2d:%.2d"
-#~ msgstr "%.2d:%.2d"
 
-#~ msgid "Error launching Evolution"
-#~ msgstr "Evolution起動エラー"
 
-#~ msgid "Calendar Task"
-#~ msgstr "カレンダータスク"
 
-#~ msgid "A task on an Evolution calendar."
-#~ msgstr "Evolutionカレンダーのタスク。"
 
-#~ msgid ""
-#~ "Select a _folder to export the entries to as text files, one per entry, "
-#~ "with names in the format 'yyyy-mm-dd', and no extension. All entries will "
-#~ "be exported, unencrypted in plain text format."
-#~ msgstr ""
-#~ "エントリーをテキストファイルでエクスポートするフォルダ(_F) を選択してくだ"
-#~ "さい。エントリー毎に1ファイルになり、ファイル名は'yyyy-mm-dd'という形式"
-#~ "で、拡張子はありません。すべてのエントリーがエクスポートされますが、プレー"
-#~ "ンテキストで、暗号化はされません。"
 
-#~ msgid "Import _mode: "
-#~ msgstr "インポートモード(_M): "
 
-#~ msgid "Export _mode: "
-#~ msgstr "エクスポートモード(_m): "
 
-#~ msgid "Import Entries"
-#~ msgstr "エントリーのインポート"
 
-#~ msgid "Export Entries"
-#~ msgstr "エントリーのエクスポート"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Import"
-#~ msgstr "インポート(_I)"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Export"
-#~ msgstr "エクスポート(_E)"
 
-#~ msgid "Export successful"
-#~ msgstr "エクスポートに成功"
 
-#~ msgid "The diary was successfully exported."
-#~ msgstr "日記のエクスポートに成功しました。"
 
-#~ msgid "%A, %e %B %Y"
-#~ msgstr "%A, %e %B %Y"
 
 #, c-format
-#~ msgid "Error deserializing imported entry into buffer: %s"
-#~ msgstr "インポートしたエントリをバッファへデシリアライズ時のエラー: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Error deserializing existing entry into buffer; overwriting with imported "
-#~ "entry: %s"
-#~ msgstr ""
-#~ "既存のエントリをバッファへデシリアライズ時のエラー; インポートしたエントリ"
-#~ "で上書き: %s"
 
 #, c-format
-#~ msgid "Are you sure you want to edit this diary entry for %s?"
-#~ msgstr "本当に %s のためにこの日記エントリーを編集しますか?"
 
-#~ msgid "_Edit"
-#~ msgstr "編集(_E)"
 
 #, c-format
-#~ msgid "Are you sure you want to delete this diary entry for %s?"
-#~ msgstr "本当に %s のためにこの日記エントリーを削除しますか?"
 
 #, c-format
-#~ msgid "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
-#~ msgstr "不明または重複したタグがあります \"%s\" 無視します。"
 
-#~ msgid "Error opening URI"
-#~ msgstr "URIオープンエラー"
 
 #, c-format
-#~ msgid "%s @ %s"
-#~ msgstr "%s @ %s"
 
-#~ msgid "Entry content could not be loaded"
-#~ msgstr "エントリの内容をロードできませんでした"
 
-#~ msgid ""
-#~ "This is just a fifteen words sentence to calculate the diary entry text "
-#~ "view size"
-#~ msgstr ""
-#~ "この文章はエントリの幅の目安を得るために作成されたランダムな文章です"
 
-#~ msgid "Spelling checker could not be initialized"
-#~ msgstr "スペルチェッカーの初期化ができませんでした"
 
-#~ msgid "None (don't encrypt)"
-#~ msgstr "なし (暗号化無効)"
 
-#~ msgid "Error saving the encryption key"
-#~ msgstr "復号キーの保存エラー"
 
-#~ msgid "This entry is marked as important."
-#~ msgstr "このエントリは重要に指定しました。"
 
-#~ msgid "No entry for this date."
-#~ msgstr "この日付のエントリはありません。"
 
-#~ msgid "Start date:"
-#~ msgstr "開始日:"
 
-#~ msgid "End date:"
-#~ msgstr "終了日:"
 
-#~ msgid "Line spacing:"
-#~ msgstr "行間:"
 
-#~ msgid "Search canceled."
-#~ msgstr "検索をキャンセルしました。"
 
 #, c-format
-#~ msgid ""
-#~ "Could not open database \"%s\". SQLite provided the following error "
-#~ "message: %s"
-#~ msgstr ""
-#~ "データベース \"%s\"を開くことができませんでした。SQLite は次のエラーメッ"
-#~ "セージを出しました: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Could not run query \"%s\". SQLite provided the following error message: "
-#~ "%s"
-#~ msgstr ""
-#~ "クエリー \"%s\"を実行できませんでした。SQLite は次のエラーメッセージを出し"
-#~ "ました: %s"
 
-#~ msgid "Error deserializing entry into buffer while searching."
-#~ msgstr "検索中にエントリをバッファにデシリアライズする際にエラー。"
 
 #, c-format
-#~ msgid "GPGME is not at least version %s"
-#~ msgstr "GPGME は少くとも %s バージョン以上でなければなりません"
 
 #, c-format
-#~ msgid "GPGME doesn't support OpenPGP: %s"
-#~ msgstr "GPGME は OpenPGP をサポートしていません: %s"
 
 #, c-format
-#~ msgid "Error creating cipher context: %s"
-#~ msgstr "暗号コンテキストの作成エラー: %s"
 
 #, c-format
-#~ msgid "Can't create a new GIOChannel for the encrypted database: %s"
-#~ msgstr "暗号化データベースのための新しい GIOChannel が作成できません: %s"
 
 #, c-format
-#~ msgid "Error opening encrypted database file \"%s\": %s"
-#~ msgstr "暗号化データベース\"%s\"のオープン時にエラー: %s"
 
 #, c-format
-#~ msgid "Error creating Callback base data buffer: %s"
-#~ msgstr "コールバックベースデータバッファ作成エラー: %s"
 
 #, c-format
-#~ msgid "Can't create a new GIOChannel for the plain database: %s"
-#~ msgstr "平文データベースのための新しい GIOChannel の作成エラー: %s"
 
 #, c-format
-#~ msgid "Error opening plain database file \"%s\": %s"
-#~ msgstr "平文データベース\"%s\"のオープンエラー: %s"
 
 #, c-format
-#~ msgid "Error getting encryption key: %s"
-#~ msgstr "復号キー取得エラー: %s"
 
 #, c-format
-#~ msgid "Error encrypting database: %s"
-#~ msgstr "データベース暗号化エラー: %s"
 
 #, c-format
-#~ msgid "Error copying the file from %s to %s: %s"
-#~ msgstr "%s から %s へファイルをコピー時にエラー: %s"
 
 #, c-format
-#~ msgid "Error changing database backup file permissions: %s"
-#~ msgstr "データベースのバックアップファイルのパーミッション変更エラー: %s"
 
 #, c-format
-#~ msgid "Error closing file: %s"
-#~ msgstr "ファイルクローズエラー: %s"
 
 #, c-format
-#~ msgid "Error backing up file ‘%s’"
-#~ msgstr "バックアップファイルエラー、ファイル名 %s"
 
 #, c-format
-#~ msgid "Error decrypting database: %s"
-#~ msgstr "データベースの復号エラー: %s"
 
 #, c-format
-#~ msgid "Error changing database file permissions: %s"
-#~ msgstr "データベースファイルのパーミッション変更エラー: %s"
 
 #, c-format
-#~ msgid "UI data could not be loaded: %s"
-#~ msgstr "ユーザーインターフェースのデータがロードできませんでした: %s"
 
-#~ msgid "Can't load calendar window object from UI file"
-#~ msgstr ""
-#~ "ユーザーインターフェースファイルからカレンダーのウィンドウオブジェクトの"
-#~ "ロードできません"
 
-#~ msgid "Important!"
-#~ msgstr "重要!"
 
-#~ msgid "Remove the tag from the entry"
-#~ msgstr "このエントリーのタグを削除"
 
-#~ msgid "Tag entry"
-#~ msgstr "エントリーのタグ"

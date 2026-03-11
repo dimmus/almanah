@@ -387,101 +387,35 @@ msgstr ""
 msgid "Write the tag and press enter to save it"
 msgstr ""
 
-#~ msgid "Add Link"
-#~ msgstr "เพิ่มการเชื่อมโยง"
 
-#~ msgid "Attached Links"
-#~ msgstr "การเชื่อมโยงที่แนบ"
 
-#~ msgid "Link Type"
-#~ msgstr "ชนิดของการเชื่อมโยง"
 
-#~ msgid "Results"
-#~ msgstr "ผลลัพธ์"
 
-#~ msgid "View"
-#~ msgstr "แสดง"
 
-#~ msgid "_Edit"
-#~ msgstr "แ_ก้ไข"
 
-#~ msgid "_File"
-#~ msgstr "แ_ฟ้ม"
 
-#~ msgid "_Help"
-#~ msgstr "_วิธีใช้"
 
 #, c-format
-#~ msgid "UI file \"%s/almanah/almanah.ui\" could not be loaded."
-#~ msgstr "ไม่สามารถโหลดแฟ้ม UI \"%s/almanah/almanah.ui\""
 
-#~ msgid "File"
-#~ msgstr "แฟ้ม"
 
-#~ msgid "An attached file."
-#~ msgstr "แฟ้มแนบ"
 
-#~ msgid "Note"
-#~ msgstr "บันทึกข้อความ"
 
-#~ msgid "A note about an important event."
-#~ msgstr "บันทึกเกี่ยวกับเหตุการณ์สำคัญ"
 
-#~ msgid "URI"
-#~ msgstr "URI"
 
-#~ msgid "A URI of a file or web page."
-#~ msgstr "URI ของแฟ้มหรือหน้าเว็บ"
 
-#~ msgid "Due to an unknown error the file cannot be opened."
-#~ msgstr "เปิดแฟ้มไม่ได้ โดยเกิดข้อผิดพลาดที่ไม่ทราบสาเหตุ"
 
-#~ msgid "Due to an unknown error the URI cannot be opened."
-#~ msgstr "เปิด URI ไม่ได้ โดยเกิดข้อผิดพลาดที่ไม่ทราบสาเหตุ"
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Diary.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "คุณควรจะได้รับสำเนาของ GNU General Public License มาพร้อมกับโปรแกรมนี้ "
-#~ "ถ้าคุณไม่ได้รับกรุณาดูได้ที่ <http://www.gnu.org/licenses/>"
 
-#~ msgid "Copyright © 2008 Philip Withnall"
-#~ msgstr "สงวนลิขสิทธิ์ © 2008 Philip Withnall"
 
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "อนุชิต สกุลวิไลเลิศ\n"
-#~ "\n"
-#~ "ถ้ามีเวลาโปรดมาช่วยกันแปล :-)\n"
-#~ "http://gnome-th.sf.net"
 
-#~ msgid "Diary Website"
-#~ msgstr "เว็บไซต์ของสมุดบันทึก"
 
-#~ msgid "Enable debug mode"
-#~ msgstr "เปิดโหมดแก้จุดบกพร่อง"
 
-#~ msgid "- Manage your diary"
-#~ msgstr "- จัดการสมุดบันทึกของคุณ"
 
-#~ msgid "No entry for this date."
-#~ msgstr "ไม่มีรายการสำหรับวันที่นี้"
 
-#~ msgid "Start Date"
-#~ msgstr "วันเริ่มต้น"
 
-#~ msgid "End Date"
-#~ msgstr "วันสิ้นสุด"
 
 #, c-format
-#~ msgid "GPGME doesn't support OpenPGP: %s"
-#~ msgstr "GPGME ไม่รองรับ OpenPGP: %s"
 
 #, c-format
-#~ msgid "Are you sure you want to edit this diary entry for %s?"
-#~ msgstr "คุณแน่ใจว่าต้องการแก้ไขรายการบันทึกสำหรับ %s หรือไม่?"
 
 #, c-format
-#~ msgid "Are you sure you want to delete this diary entry for %s?"
-#~ msgstr "คุณแน่ใจว่าต้องการลบรายการบันทึกสำหรับ %s หรือไม่?"

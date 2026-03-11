@@ -425,539 +425,172 @@ msgstr "προσθήκη ετικέτας"
 msgid "Write the tag and press enter to save it"
 msgstr "Γράψτε την ετικέτα και πατήστε εισαγωγή για να την αποθηκεύσετε"
 
-#~ msgid "Entry editing area"
-#~ msgstr "Περιοχή επεξεργασίας καταχώρισης"
 
-#~ msgid "Past Event List"
-#~ msgstr "Κατάλογος προηγούμενου γεγονότος"
 
-#~ msgid "Result List"
-#~ msgstr "Λίστα αποτελέσματος"
 
-#~ msgid "Successful Entries"
-#~ msgstr "Επιτυχημένες καταχωρίσεις"
 
-#~ msgid "Merged Entries"
-#~ msgstr "Συγχωνευμένες καταχωρίσεις"
 
-#~ msgid "Failed Entries"
-#~ msgstr "Αποτυχημένες καταχωρίσεις"
 
-#~ msgid "Import Results List"
-#~ msgstr "Εισαγωγής λίστας αποτελεσμάτων"
 
-#~ msgid "Error opening database"
-#~ msgstr "Σφάλμα ανοίγματος βάσης δεδομένων"
 
-#~ msgid "Enable debug mode"
-#~ msgstr "Ενεργοποίηση κατάστασης εκσφαλμάτωσης"
 
-#~ msgid ""
-#~ "Manage your diary. Only one instance of the program may be open at any "
-#~ "time."
-#~ msgstr ""
-#~ "Διαχείριση του ημερολογίου σας. Μόνο ένα στιγμιότυπο του προγράμματος "
-#~ "μπορεί να ανοιχθεί οποτεδήποτε."
 
 #, c-format
-#~ msgid "Command line options could not be parsed: %s\n"
-#~ msgstr "Οι επιλογές της γραμμής εντολών δεν μπορούν να αναλυθούν: %s\n"
 
-#~ msgid "Error encrypting database"
-#~ msgstr "Σφάλμα κρυπτογράφησης βάσης δεδομένων"
 
-#~ msgid ""
-#~ "Almanah is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "Το Almanah είναι ένα ελεύθερο λογισμικό: μπορείτε να το επαναδιανέμεται "
-#~ "και/ή να το τροποποιήσετε σύμφωνα με τους όρους GNU General Public "
-#~ "License όπως δημοσιοποιήθηκαν από Ίδρυμα Ελεύθερου Λογισμικού, είτε η "
-#~ "έκδοση 3 της άδειας, ή (κατά επιλογή σας) αποιαδήποτε μεταγενέστερη "
-#~ "έκδοση."
 
-#~ msgid ""
-#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
-#~ msgstr ""
-#~ "Το Almanah διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ "
-#~ "ΚΑΜΙΑ ΕΓΓΥΗΣΗ, χωρίς καν την συνεπαγόμενη εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή "
-#~ "ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΕΙΔΙΚΟ ΣΚΟΠΟ. Δείτε τη GNU  Geneal Public License για "
-#~ "περισσότερες λεπτομέρειες."
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "Πρέπει να έχετε λάβει ένα αντίγραφο της  GNU General Public License "
-#~ "σύμφωνα με το Almanah. Αν όχι , δείτε <http://www.gnu.org/licenses/>."
 
-#~ msgid "Copyright © 2008-2009 Philip Withnall"
-#~ msgstr "Πνευματικά δικαιώματα © 2008-2009 Philip Withnall"
 
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Ελληνική μεταφραστική ομάδα GNOME\n"
-#~ " Δημήτρης Σπίγγος <dmtrs32@gmail.com>\n"
-#~ " Βασίλης Κοντογιάννης <vasilisk@ics.forth.gr>\n"
-#~ " Μύρων Αποστολάκης <myapos@yahoo.com>\n"
-#~ "\n"
-#~ "Για περισσότερες πληροφορίες, επισκεφθείτε τη σελίδα\n"
-#~ "http://gnome.gr/"
 
-#~ msgid "Almanah Website"
-#~ msgstr "Ιστοσελίδα Almanah"
 
 #, c-format
-#~ msgid ""
-#~ "Couldn't load the CSS resources. The interface might not be styled "
-#~ "correctly: %s"
-#~ msgstr ""
-#~ "Αδύνατη η φόρτωση του αρχείου CSS. Η διεπαφή μπορεί να μην έχει σωστή "
-#~ "τεχνοτροπία: %s"
 
-#~ msgid "UI data could not be loaded"
-#~ msgstr "Τα δεδομένα UI δεν μπορούν να φορτωθούν"
 
 #, c-format
-#~ msgid "Invalid data version number %u."
-#~ msgstr "Άκυρος αριθμός έκδοσης δεδομένων %u."
 
-#~ msgid "Calendar Appointment"
-#~ msgstr "Ημερολογιακή συνάντηση"
 
-#~ msgid "An appointment on an Evolution calendar."
-#~ msgstr "Μία συνάντηση σε ημερολόγιο Evolution."
 
 #, c-format
-#~ msgid "%.2d:%.2d"
-#~ msgstr "%.2d:%.2d"
 
-#~ msgid "Error launching Evolution"
-#~ msgstr "Σφάλμα εκκίνησης Evolution"
 
-#~ msgid "Calendar Task"
-#~ msgstr "Εργασία ημερολογίου"
 
-#~ msgid "A task on an Evolution calendar."
-#~ msgstr "Μία εργασία στο ημερολόγιο του Evolution."
 
-#~ msgid ""
-#~ "Select a _folder to export the entries to as text files, one per entry, "
-#~ "with names in the format 'yyyy-mm-dd', and no extension. All entries will "
-#~ "be exported, unencrypted in plain text format."
-#~ msgstr ""
-#~ "Επιλέξτε ένα _φάκελο για να εξάγετε τις καταχωρίσεις ως αρχείο κειμένου, "
-#~ "ένα ανά καταχώριση, με τα ονόματα στην μορφή 'yyyy-mm-dd', χωρίς "
-#~ "κατάληξη. Όλες οι καταχωρίσεις θα εξαχθούν, χωρίς κωδικοποίηση σε μορφή "
-#~ "απολού κειμένου."
 
-#~ msgid "Import _mode: "
-#~ msgstr "Λειτουργία _εισαγωγής: "
 
-#~ msgid "Export _mode: "
-#~ msgstr "Λειτουργία ε_ξαγωγής: "
 
-#~ msgid "Import Entries"
-#~ msgstr "Εισαγωγή καταχωρίσεων"
 
-#~ msgid "Export Entries"
-#~ msgstr "Εξαγωγή καταχωρίσεων"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Import"
-#~ msgstr "Ε_ισαγωγή"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Export"
-#~ msgstr "Ε_ξαγωγή"
 
-#~ msgid "Export successful"
-#~ msgstr "Επιτυχής εξαγωγή"
 
-#~ msgid "The diary was successfully exported."
-#~ msgstr "Το ημερολόγιο εξήχθη επιτυχώς."
 
-#~ msgid "%A, %e %B %Y"
-#~ msgstr "%A, %e %B %Y"
 
 #, c-format
-#~ msgid "Error deserializing imported entry into buffer: %s"
-#~ msgstr ""
-#~ "Σφάλμα αποσειριοποίησης εισαγόμενης καταχώρισης στην ενδιάμεση μνήμη: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Error deserializing existing entry into buffer; overwriting with imported "
-#~ "entry: %s"
-#~ msgstr ""
-#~ "Σφάλμα αποσειριοποίησης υφιστάμενης καταχώρισης στην ενδιάμεση μνήμη· "
-#~ "αντικατάσταση με την εισαγόμενη καταχώριση: %s"
 
 #, c-format
-#~ msgid "Are you sure you want to edit this diary entry for %s?"
-#~ msgstr ""
-#~ "Είστε σίγουροι ότι θέλετε να επεξεργαστείτε αυτή την καταχώριση του "
-#~ "ημερολογίου για %s;"
 
-#~ msgid "_Edit"
-#~ msgstr "_Επεξεργασία"
 
 #, c-format
-#~ msgid "Are you sure you want to delete this diary entry for %s?"
-#~ msgstr ""
-#~ "Είστε σίγουρος ότι θέλετε να σβήσετε αυτή την καταχώριση του ημερολογίου "
-#~ "για %s;"
 
 #, c-format
-#~ msgid "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
-#~ msgstr ""
-#~ "Άγνωστη ή διπλότυπη ετικέτα κειμένου \"%s\" στην καταχώριση. Παράβλεψη."
 
-#~ msgid "Error opening URI"
-#~ msgstr "Σφάλμα ανοίγματος URI"
 
 #, c-format
-#~ msgid "%s @ %s"
-#~ msgstr "%s @ %s"
 
-#~ msgid "Entry content could not be loaded"
-#~ msgstr "Το περιεχόμενο της καταχώρισης δε μπορεί να φορτωθεί"
 
-#~ msgid ""
-#~ "This is just a fifteen words sentence to calculate the diary entry text "
-#~ "view size"
-#~ msgstr ""
-#~ "Αυτή είναι μια πρόταση δεκαπέντε λέξεων για υπολογισμό του μεγέθους της "
-#~ "όψης κειμένου καταχώρισης ημερολογίου"
 
-#~ msgid "Spelling checker could not be initialized"
-#~ msgstr "Ο ορθογράφος δε μπόρεσε να αρχικοποιηθεί"
 
-#~ msgid "None (don't encrypt)"
-#~ msgstr "Κανένα (να μην κρυπτογραφηθεί)"
 
-#~ msgid "Error saving the encryption key"
-#~ msgstr "Σφάλμα αποθήκευσης κλειδιού κρυπτογράφησης"
 
-#~ msgid "This entry is marked as important."
-#~ msgstr "Αυτή ή καταχώριση έχει χαρακτηριστεί ως σημαντική."
 
-#~ msgid "No entry for this date."
-#~ msgstr "Καμία εισαγωγή για αυτή την ημερομηνία."
 
-#~ msgid "Start date:"
-#~ msgstr "Ημερομηνία έναρξης:"
 
-#~ msgid "End date:"
-#~ msgstr "Ημερομηνία τέλους:"
 
-#~ msgid "Line spacing:"
-#~ msgstr "Απόσταση γραμμών:"
 
-#~ msgid "Search canceled."
-#~ msgstr "Η αναζήτηση ακυρώθηκε."
 
 #, c-format
-#~ msgid ""
-#~ "Could not open database \"%s\". SQLite provided the following error "
-#~ "message: %s"
-#~ msgstr ""
-#~ "Δεν μπορεί να ανοίξει την βάση δεδομένων \"%s\". Το SQLite παρήγαγε το "
-#~ "παρακάτω μήνυμα σφάλματος: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Could not run query \"%s\". SQLite provided the following error message: "
-#~ "%s"
-#~ msgstr ""
-#~ "Δεν μπορεί να εκτελέσει το ερώτημα \"%s\". To SQLite παρήγαγε το παρακάτω "
-#~ "μήνυμα σφάλματος: %s"
 
-#~ msgid "Error deserializing entry into buffer while searching."
-#~ msgstr ""
-#~ "Σφάλμα αποσειριοποίησης εισαγωγής στην ενδιάμεση μνήμη κατά την αναζήτηση."
 
 #, c-format
-#~ msgid "GPGME is not at least version %s"
-#~ msgstr "Το GPGME είναι κάτω από την ελάχιστη έκδοση %s"
 
 #, c-format
-#~ msgid "GPGME doesn't support OpenPGP: %s"
-#~ msgstr "Το GPGME δεν υποστηρίζει το OpenPGP: %s"
 
 #, c-format
-#~ msgid "Error creating cipher context: %s"
-#~ msgstr "Σφάλμα ανοίγματος κρυπτογραφημένου περιβάλλοντος: %s"
 
 #, c-format
-#~ msgid "Can't create a new GIOChannel for the encrypted database: %s"
-#~ msgstr ""
-#~ "Δεν μπορεί να δημιουργηθεί ένα καινουριο GIOChannel για την "
-#~ "κρυπτογραφημένη βάση δεδομένων:%s"
 
 #, c-format
-#~ msgid "Error opening encrypted database file \"%s\": %s"
-#~ msgstr ""
-#~ "Σφάλμα ανοίγματος κρυπτογραφημένου αρχείου βάσης δεδομένων \"%s\": %s"
 
 #, c-format
-#~ msgid "Error creating Callback base data buffer: %s"
-#~ msgstr ""
-#~ "Σφάλμα δημιουργίας επανάκλησης βασικών δεδομένων ενδιάμεσης μνήμης: %s"
 
 #, c-format
-#~ msgid "Can't create a new GIOChannel for the plain database: %s"
-#~ msgstr ""
-#~ "Δεν μπορεί να δημιουργηθεί νέο GIOChannel για την απλή βάση δεδομένων:%s"
 
 #, c-format
-#~ msgid "Error opening plain database file \"%s\": %s"
-#~ msgstr "Σφάλμα ανοίγματος απλού αρχείου βάσης δεδομένων \"%s\": %s"
 
 #, c-format
-#~ msgid "Error getting encryption key: %s"
-#~ msgstr "Σφάλμα ανάκτησης κλειδιού κρυπτογράφησης: %s"
 
 #, c-format
-#~ msgid "Error encrypting database: %s"
-#~ msgstr "Σφάλμα κρυπτογράφησης βάσης δεδομένων: %s"
 
 #, c-format
-#~ msgid "Error copying the file from %s to %s: %s"
-#~ msgstr "Σφάλμα κατά την αντιγραφή του αρχείου από %s  σε %s : %s "
 
 #, c-format
-#~ msgid "Error changing database backup file permissions: %s"
-#~ msgstr ""
-#~ "Σφάλμα κατά την αλλαγή δικαιωμάτων αρχείου εφεδρικής βάσης δεδομένων: %s"
 
 #, c-format
-#~ msgid "Error closing file: %s"
-#~ msgstr "Σφάλμα κλεισίματος αρχείου: %s"
 
 #, c-format
-#~ msgid "Error backing up file ‘%s’"
-#~ msgstr "Σφάλμα κατά την δημιουργία εφεδρικού αρχείου ‘%s’"
 
 #, c-format
-#~ msgid "Error decrypting database: %s"
-#~ msgstr "Σφάλμα αποκρυπτογράφησης βάσης δεδομένων: %s"
 
 #, c-format
-#~ msgid "Error changing database file permissions: %s"
-#~ msgstr "Σφάλμα κατά την αλλαγή δικαιωμάτων αρχείου βάσης δεδομένων: %s"
 
 #, c-format
-#~ msgid "UI data could not be loaded: %s"
-#~ msgstr "Τα δεδομένα UI δεν μπορούν να φορτωθούν: %s"
 
-#~ msgid "Can't load calendar window object from UI file"
-#~ msgstr "Αδύνατη η φόρτωση αντικειμένου παραθύρου ημερολογίου από αρχείο UI"
 
-#~ msgid "Important!"
-#~ msgstr "Σημαντικό!"
 
-#~ msgid "Remove the tag from the entry"
-#~ msgstr "Αφαιρέστε την ετικέτα από την καταχώριση"
 
-#~ msgid "Tag entry"
-#~ msgstr "Καταχώριση ετικέτας"
 
-#~ msgid "Almanah Preferences"
-#~ msgstr "Προτιμήσεις Almanah"
 
-#~ msgid "Toggle whether the currently selected text is bold."
-#~ msgstr "Εναλλαγή μορφοποίησης του τρέχοντος επιλεγμένου κειμένου ως έντονο."
 
-#~ msgid "Toggle whether the currently selected text is italic."
-#~ msgstr ""
-#~ "Εναλλαγή της μορφοποίησης του τρέχοντος επιλεγμένου κειμένου ως πλαγιαστό."
 
-#~ msgid "Toggle whether the currently selected text is underlined."
-#~ msgstr ""
-#~ "Εναλλαγή της μορφοποίησης του τρέχοντος επιλεγμένου κειμένου ως "
-#~ "υπογραμμισμένο."
 
-#~ msgid ""
-#~ "Add or remove a hyperlink from the currently selected text to a specified "
-#~ "URI."
-#~ msgstr ""
-#~ "Προσθήκη ή αφαίρεση υπερσυνδέσμου από το τρέχον επιλεγμένο κείμενο σε μια "
-#~ "συγκεκριμένη URI."
 
-#~ msgid "I_mportant"
-#~ msgstr "Σ_ημαντικό"
 
-#~ msgid "Toggle whether the current entry is marked as important."
-#~ msgstr "Εναλλαγής σημείωσης της τρέχουσας καταχώρισης ως σημαντικής."
 
-#~ msgid "Show tags for the current entry"
-#~ msgstr "Εμφάνιση ετικετών για την τρέχουσα καταχώριση"
 
-#~ msgid "_Help"
-#~ msgstr "_Βοήθεια"
 
-#~ msgid "Jump to the current date in the diary."
-#~ msgstr "Μετάβαση στην τρέχουσα ημερομηνία στο ημερολόγιο."
 
-#~ msgid ""
-#~ "The encrypted database is empty. The plain database file has been left "
-#~ "undeleted as backup."
-#~ msgstr ""
-#~ "Η κρυπτογραφημένη βάση δεδομένων είναι άδεια. Το απλό αρχείο βάσης "
-#~ "δεδομένων παραμένει για χρήση ως αντιγράφου ασφαλείας."
 
-#~ msgid "Could not delete plain database file \"%s\"."
-#~ msgstr "Αδυναμία διαγραφής απλού αρχείου βάσης δεδομένων \"%s\"."
 
-#~ msgid "Unknown input device"
-#~ msgstr "Άγνωστη συσκευή εισόδου"
 
-#~ msgid "Main window X position"
-#~ msgstr "Θέση X κεντρικού παραθύρου"
 
-#~ msgid "Main window Y position"
-#~ msgstr "Θέση Y κεντρικού παραθύρου"
 
-#~ msgid "Main window height"
-#~ msgstr "Ύψος κεντρικού παραθύρου"
 
-#~ msgid "Main window maximization"
-#~ msgstr "Μεγιστοποίηση κεντρικού παραθύρου"
 
-#~ msgid "Main window width"
-#~ msgstr "Πλάτος κεντρικού παραθύρου"
 
-#~ msgid "The X position of the main window."
-#~ msgstr "Η θέση X του κεντρικού παραθύρου."
 
-#~ msgid "The Y position of the main window."
-#~ msgstr "Η θέση Y του κεντρικού παραθύρου."
 
-#~ msgid "The height of the main window."
-#~ msgstr "Το Ύψος του κεντρικού παραθύρου."
 
-#~ msgid "The width of the main window."
-#~ msgstr "Το πλάτος του κεντρικού παραθύρου."
 
-#~ msgid "Whether the main window should start maximized."
-#~ msgstr "Εάν το κεντρικό παράθυρο θα μπορούσε να ξεκινάει μεγιστοποιημένο."
 
-#~ msgid "Add a definition for the currently selected text."
-#~ msgstr "Προσθήκη ενός ορισμού για το τρέχον επιλεγμένο κείμενο."
 
-#~ msgid "Definition Description"
-#~ msgstr "Περιγραφή ορισμών"
 
-#~ msgid "Definition List"
-#~ msgstr "Λίστα ορισμών"
 
-#~ msgid "Definition Type"
-#~ msgstr "Τύπος ορισμού"
 
-#~ msgid "Definition type:"
-#~ msgstr "Τύπος ορισμού:"
 
-#~ msgid "Nothing selected"
-#~ msgstr "Δεν έχει επιλεχτεί τίποτα"
 
-#~ msgid "Results:"
-#~ msgstr "Αποτελέσματα:"
 
-#~ msgid "View"
-#~ msgstr "Προβολή"
 
-#~ msgid "View Event"
-#~ msgstr "Προβολή γεγονότος"
 
-#~ msgid "_Add Definition"
-#~ msgstr "_Προσθήκη ορισμού"
 
-#~ msgid "_Definitions"
-#~ msgstr "_Ορισμοί"
 
-#~ msgid "_Export…"
-#~ msgstr "_Εξαγωγή..."
 
-#~ msgid "_File"
-#~ msgstr "_Αρχείο"
 
-#~ msgid "_Import…"
-#~ msgstr "Ε_ισαγωγή..."
 
-#~ msgid "_Print…"
-#~ msgstr "Εκτύ_πωση"
 
-#~ msgid "_Remove Definition"
-#~ msgstr "_Διαγραφή ορισμού"
 
-#~ msgid "_View Definitions"
-#~ msgstr "_Προβολή ορισμών"
 
-#~ msgid "Add Definition"
-#~ msgstr "Προσθήκη ορισμού"
 
-#~ msgid "Definition Manager"
-#~ msgstr "Διαχείριση ορισμών"
 
-#~ msgid "Are you sure you want to delete the definition for \"%s\"?"
-#~ msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε τον ορισμό για \"%s\";"
 
-#~ msgid "Contact"
-#~ msgstr "Επαφή"
 
-#~ msgid "An Evolution contact."
-#~ msgstr "Μία επαφή του Evolution."
 
-#~ msgid "Select Contact"
-#~ msgstr "Επιλογή επαφής"
 
-#~ msgid "Error opening contact"
-#~ msgstr "Σφάλμα ανοίγματος επαφής"
 
-#~ msgid "Error opening Evolution"
-#~ msgstr "Σφάλμα ανοίγματος Evolution"
 
-#~ msgid "File"
-#~ msgstr "Αρχείο"
 
-#~ msgid "An attached file."
-#~ msgstr "Συνημμένο αρχείο."
 
-#~ msgid "Select File"
-#~ msgstr "Επιλογή αρχείου"
 
-#~ msgid "Note"
-#~ msgstr "Σημείωση"
 
-#~ msgid "A note about an important event."
-#~ msgstr "Μία σημείωση για ένα σοβαρό γεγονός."
 
-#~ msgid "URI"
-#~ msgstr "URI"
 
-#~ msgid "A URI of a file or web page."
-#~ msgstr " URI αρχείου ή ιστοσελίδας"
 
-#~ msgid "URI: "
-#~ msgstr "URI:"
 
-#~ msgid "- Manage your diary"
-#~ msgstr "- Διαχείριση του ημερολογίου σου"
 
-#~ msgid "F-Spot Photo"
-#~ msgstr "Φωτογραφία F-Spot"
 
-#~ msgid "A photo stored in F-Spot."
-#~ msgstr "Μία αποθηκευμένη φωτογραφία στο F-Spot."
 
-#~ msgid "Error launching F-Spot"
-#~ msgstr "Σφάλμα εκκίνησης F-Spot"
 
-#~ msgid "Enable import mode"
-#~ msgstr "Ενεργοποίηση κατάστασης εισαγωγής"

@@ -387,128 +387,47 @@ msgstr ""
 msgid "Write the tag and press enter to save it"
 msgstr ""
 
-#~ msgid "Add Link"
-#~ msgstr "اضف الوصلة"
 
 #, fuzzy
-#~ msgid "Attached Links"
-#~ msgstr "ايجاد وصلات:"
 
-#~ msgid "Link Type"
-#~ msgstr "نوع الوصلة"
 
-#~ msgid "Results"
-#~ msgstr "النتائج"
 
-#~ msgid "View"
-#~ msgstr "عرض"
 
-#~ msgid "_Edit"
-#~ msgstr "ت_حرير"
 
-#~ msgid "_File"
-#~ msgstr "_ملف"
 
-#~ msgid "_Help"
-#~ msgstr "م_ساعدة"
 
-#~ msgid "File"
-#~ msgstr "ملف"
 
 #, fuzzy
-#~ msgid "An attached file."
-#~ msgstr "إنتقي ملف"
 
-#~ msgid "Note"
-#~ msgstr "ملاحظة"
 
-#~ msgid "URI"
-#~ msgstr "URI"
 
 #, fuzzy
-#~ msgid "A URI of a file or web page."
-#~ msgstr "%s: اسم ملف أو URI سيئ التركيب.\n"
 
 #, fuzzy, c-format
-#~ msgid "The spelling checker could not be initialized: %s"
-#~ msgstr ""
-#~ "لم يمكن ابتداء المَخزن المُتشارك!\n"
-#~ "\n"
-#~ "%s"
 
 #, fuzzy
-#~ msgid ""
-#~ "Diary is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "جلاء برنامج حر؛ بامكانك إعادة توزيعه و/أو تعديله تحت شروط الرخصة العامة "
-#~ "لجنو والتي نشرتها منظمة البرمجيات الحرة؛ سواء كانت الإصدارة 2 للرخصة أو "
-#~ "أي إصدارة بعدها حسب الرغبة. \n"
 
 #, fuzzy
-#~ msgid ""
-#~ "Diary is distributed in the hope that it will be useful, but WITHOUT ANY "
-#~ "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-#~ "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-#~ "details."
-#~ msgstr ""
-#~ "يوزّع جلاء  على أمل أن يكون مفيدال لمن يستخدمه دون أدنى مسؤولية؛ ولا حتى "
-#~ "أيضشمان يضمن صلاحية العرض في السوق أو توافقه مع أي استخدام محدد. يمكنم "
-#~ "مراجعة الرخصة العامة لجنو لمزيد من التفاصيل. \n"
 
-#~ msgid "Copyright © 2008 Philip Withnall"
-#~ msgstr "جميع الحقوق محفوظة © 2008 فيليب وثنل (Philip Withnall)"
 
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "فريق عربآيز للترجمة http://www.arabeyes.org :\n"
-#~ "جهاد عفيفي\t<djihed@gmail.com>"
 
-#~ msgid "Diary Website"
-#~ msgstr "موقع برنامج المفكرة"
 
-#~ msgid "%A, %e %B %Y"
-#~ msgstr "%A, %e %B %Y"
 
-#~ msgid "Enable debug mode"
-#~ msgstr "فعّل نمط التنقيح"
 
 #, fuzzy
-#~ msgid "- Manage your diary"
-#~ msgstr "أدر حلقة المفاتيح الخاصة بك"
 
 #, fuzzy
-#~ msgid "No entry for this date."
-#~ msgstr "<date> مخصص مرتان لهذه التيمة"
 
-#~ msgid "Start Date"
-#~ msgstr "تاريخ البدء"
 
-#~ msgid "End Date"
-#~ msgstr "تاريخ الإنتهاء"
 
 #, fuzzy, c-format
-#~ msgid "GPGME doesn't support OpenPGP: %s"
-#~ msgstr "هذه اللّعبة لا تدعم المتفرجين."
 
 #, fuzzy, c-format
-#~ msgid "Error creating cipher context: %s"
-#~ msgstr "خطأ إنشاء أنبوب الإشارة."
 
 #, fuzzy, c-format
-#~ msgid "Error decrypting database: %s"
-#~ msgstr "خطأ عند إنشاء قاعدة البيانات \"%1\" على الخادم."
 
 #, fuzzy, c-format
-#~ msgid "Error encrypting database: %s"
-#~ msgstr "خطأ عند إنشاء قاعدة البيانات \"%1\" على الخادم."
 
 #, fuzzy, c-format
-#~ msgid "Could not delete plain database file \"%s\"."
-#~ msgstr "تعذّر حذف ملف ملخّص المجلّد `%s': %s"
 
 #, fuzzy, c-format
-#~ msgid "Are you sure you want to delete this diary entry for %s?"
-#~ msgstr "هل انت اكيد انك تريد محو كل المعلومات لِهذه الهوية ؟"

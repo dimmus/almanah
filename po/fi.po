@@ -395,206 +395,78 @@ msgstr ""
 msgid "Write the tag and press enter to save it"
 msgstr ""
 
-#~ msgid "_Help"
-#~ msgstr "O_hje"
 
 #, fuzzy
-#~| msgid "Results"
-#~ msgid "Result List"
-#~ msgstr "Tulokset"
 
 #, fuzzy
-#~| msgid "Error encrypting database: %s"
-#~ msgid "Error opening database"
-#~ msgstr "Virhe salattaessa tietokantaa: %s"
 
-#~ msgid "Enable debug mode"
-#~ msgstr "Käytä vianetsintätilaa"
 
 #, fuzzy, c-format
-#~| msgid "Command-line options could not be parsed. Error: %s"
-#~ msgid "Command line options could not be parsed: %s\n"
-#~ msgstr "Komentorivivalitsimia ei voitu tulkita. Virhe: %s"
 
 #, fuzzy
-#~| msgid "Error encrypting database: %s"
-#~ msgid "Error encrypting database"
-#~ msgstr "Virhe salattaessa tietokantaa: %s"
 
 #, fuzzy, c-format
-#~| msgid "UI file \"%s/almanah/almanah.ui\" could not be loaded."
-#~ msgid "UI file \"%s\" could not be loaded"
-#~ msgstr "Käyttöliittymätiedostoa \"%s/almanah/almanah.ui\" ei voitu ladata."
 
 #, fuzzy
-#~| msgid "Copyright © 2008 Philip Withnall"
-#~ msgid "Copyright © 2008-2009 Philip Withnall"
-#~ msgstr "Tekijänoikeudet © 2008 Philip Withnall"
 
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Ilkka Tuohela, 2008.\n"
-#~ "\n"
-#~ "https://l10n.gnome.org/teams/fi/"
 
-#~ msgid "Almanah Website"
-#~ msgstr "Almanahin www-sivut"
 
 #, fuzzy
-#~| msgid "Calendar"
-#~ msgid "Calendar Task"
-#~ msgstr "Kalenteri"
 
-#~ msgid "%A, %e %B %Y"
-#~ msgstr "%A, %e. %Bta %Y"
 
 #, c-format
-#~ msgid "Are you sure you want to edit this diary entry for %s?"
-#~ msgstr "Haluatko varmasti muokata tätä kalenterimerkintää %s?"
 
 #, c-format
-#~ msgid "Are you sure you want to delete this diary entry for %s?"
-#~ msgstr "Haluatko varmasti poistaa tämän kalenterimerkinnän %s?"
 
 #, fuzzy
-#~| msgid "The spelling checker could not be initialized: %s"
-#~ msgid "Spelling checker could not be initialized"
-#~ msgstr "Oikolukua ei voitu alustaa: %s"
 
 #, fuzzy
-#~| msgid "Error getting encryption key: %s"
-#~ msgid "Error saving the encryption key"
-#~ msgstr "Virhe haettaessa salausavainta: %s"
 
-#~ msgid "No entry for this date."
-#~ msgstr "Tänään ei ole merkintöjä."
 
 #, fuzzy
-#~| msgid "Start Date"
-#~ msgid "Start date:"
-#~ msgstr "Aloituspäivä"
 
 #, fuzzy
-#~| msgid "End Date"
-#~ msgid "End date:"
-#~ msgstr "Päättymispäivä"
 
 #, c-format
-#~ msgid ""
-#~ "Could not open database \"%s\". SQLite provided the following error "
-#~ "message: %s"
-#~ msgstr ""
-#~ "Tietokantaa \"%s\" ei voitu avata. SQLite antoi seuraavan virhee: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Could not run query \"%s\". SQLite provided the following error message: "
-#~ "%s"
-#~ msgstr ""
-#~ "Kyselyä \"%s\" ei voitu suorittaa. SQLite antoi seuraavan virheen: %s"
 
 #, c-format
-#~ msgid "GPGME doesn't support OpenPGP: %s"
-#~ msgstr "GPGME ei tue OpenPGP:tä: %s"
 
 #, c-format
-#~ msgid "Error creating cipher context: %s"
-#~ msgstr "Virhe luotaessa sifferikontekstia: %s"
 
 #, c-format
-#~ msgid "Error opening encrypted database file \"%s\": %s"
-#~ msgstr "Virhe avattaessa salattua tietokantatiedostoa \"%s\": %s"
 
 #, c-format
-#~ msgid "Error opening plain database file \"%s\": %s"
-#~ msgstr "Virhe avattaessa selväkielistä tietokantatiedostoa \"%s\": %s"
 
 #, c-format
-#~ msgid "Error decrypting database: %s"
-#~ msgstr "Virhe purettaessa tietokannan salausta: %s"
 
 #, c-format
-#~ msgid "Error getting encryption key: %s"
-#~ msgstr "Virhe haettaessa salausavainta: %s"
 
 #, c-format
-#~ msgid "Error encrypting database: %s"
-#~ msgstr "Virhe salattaessa tietokantaa: %s"
 
 #, c-format
-#~ msgid "Could not delete plain database file \"%s\"."
-#~ msgstr "Selväkielistä tietokantatiedostoa \"%s\" ei voitu poistaa."
 
 #, fuzzy, c-format
-#~| msgid "Error opening plain database file \"%s\": %s"
-#~ msgid "Error copying the file from %s to %s: %s"
-#~ msgstr "Virhe avattaessa selväkielistä tietokantatiedostoa \"%s\": %s"
 
 #, fuzzy, c-format
-#~| msgid "Error opening plain database file \"%s\": %s"
-#~ msgid "Error changing database backup file permissions: %s"
-#~ msgstr "Virhe avattaessa selväkielistä tietokantatiedostoa \"%s\": %s"
 
 #, fuzzy, c-format
-#~| msgid "Error opening plain database file \"%s\": %s"
-#~ msgid "Error changing database file permissions: %s"
-#~ msgstr "Virhe avattaessa selväkielistä tietokantatiedostoa \"%s\": %s"
 
 #, fuzzy, c-format
-#~| msgid "UI file \"%s/almanah/almanah.ui\" could not be loaded."
-#~ msgid "UI file \"%s\" could not be loaded: %s"
-#~ msgstr "Käyttöliittymätiedostoa \"%s/almanah/almanah.ui\" ei voitu ladata."
 
-#~ msgid "Add Link"
-#~ msgstr "Lisää linkki"
 
-#~ msgid "Attached Links"
-#~ msgstr "Liitetyt linkit"
 
-#~ msgid "Link Type"
-#~ msgstr "Linkin tyyppi"
 
-#~ msgid "View"
-#~ msgstr "Näytä"
 
-#~ msgid "_Edit"
-#~ msgstr "_Muokkaa"
 
-#~ msgid "_File"
-#~ msgstr "_Tiedosto"
 
-#~ msgid "File"
-#~ msgstr "Tiedosto"
 
-#~ msgid "An attached file."
-#~ msgstr "Liitetiedosto."
 
-#~ msgid "Note"
-#~ msgstr "Huomautus"
 
-#~ msgid "A note about an important event."
-#~ msgstr "Huomautus tärkeästä tapahtumasta."
 
-#~ msgid "URI"
-#~ msgstr "URI"
 
-#~ msgid "A URI of a file or web page."
-#~ msgstr "Tiedoston tai www-sivun URI."
 
-#~ msgid "Due to an unknown error the file cannot be opened."
-#~ msgstr "Tuntemattoman virheen takia tiedostoa ei voi avata."
 
-#~ msgid "Due to an unknown error the URI cannot be opened."
-#~ msgstr "URIa ei voi avata tuntemattomasta syystä."
 
-#~ msgid "- Manage your diary"
-#~ msgstr "- hallitse kalenteriasi"
 
-#~ msgid ""
-#~ "Error getting encryption key: GConf key \"%s\" invalid or empty. Your "
-#~ "diary will not be encrypted; please install Seahorse and set up a default "
-#~ "key, or ignore this message."
-#~ msgstr ""
-#~ "Virhe noudettaessa salausavainta: GConf-avain \"%s\" on viallinen tai "
-#~ "tyhjä. Kalenterisi ei ole salattu; asenna Seahorse ja aseta oletusavain, "
-#~ "tai jätä tämä viesti huomioimatta."

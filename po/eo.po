@@ -388,111 +388,33 @@ msgstr ""
 msgid "Write the tag and press enter to save it"
 msgstr ""
 
-#~ msgid ""
-#~ "Almanah is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "Almanah estas libera programaro: vi povas distribui kaj/aŭ modifi ĝin sub "
-#~ "la kondiĉoj de la Ĝenerala Publika Permesilo de GNU eldonite de la 'Free "
-#~ "Software Foundation'; aŭ en la 3a versio de la permesilo aŭ (laŭ via "
-#~ "volo) en iu sekva versio."
 
-#~ msgid ""
-#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
-#~ msgstr ""
-#~ "Almanah estas distribuite kun la espero ke ĝi estos utila, sed SEN IA AJN "
-#~ "GARANTIO; eĉ sen la implica garantio de NEGOCEBLO aŭ ADAPTADO AL IU "
-#~ "APARTA CELO.  Vidu la Ĝeneralan Publikan Permesilon de GNU por pli da "
-#~ "detaloj."
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "Vi devintus ricevi kopion de la Ĝenerala Publika Permesilo de GNU kune "
-#~ "kun Almanah.  Se ne, iru al <http://www.gnu.org/licenses/>."
 
-#~ msgid "Copyright © 2008-2009 Philip Withnall"
-#~ msgstr "Kopirajto © 2008-2009 Philip WITHNALL"
 
-#~ msgid "translator-credits"
-#~ msgstr "Kristjan SCHMIDT"
 
-#~ msgid "Almanah Website"
-#~ msgstr "Retpaĝaro de Almanah"
 
 #, c-format
-#~ msgid "%.2d:%.2d"
-#~ msgstr "%.2d:%.2d"
 
-#~ msgid "Import _mode: "
-#~ msgstr "Enport_reĝimo: "
 
-#~ msgid "Export _mode: "
-#~ msgstr "Elport_reĝimo: "
 
 #, fuzzy
-#~| msgid "_Import"
-#~ msgctxt "Dialog button"
-#~ msgid "_Import"
-#~ msgstr "E_nporti"
 
 #, fuzzy
-#~| msgid "_Export"
-#~ msgctxt "Dialog button"
-#~ msgid "_Export"
-#~ msgstr "E_lporti"
 
-#~ msgid "Export successful"
-#~ msgstr "Elporto sukcesis"
 
-#~ msgid "_Edit"
-#~ msgstr "R_edakti"
 
 #, c-format
-#~ msgid "%s @ %s"
-#~ msgstr "%s @ %s"
 
-#~ msgid "Start date:"
-#~ msgstr "Komencdato:"
 
-#~ msgid "End date:"
-#~ msgstr "Findato:"
 
-#~ msgid "Important!"
-#~ msgstr "Grave!"
 
-#~ msgid "Font Style"
-#~ msgstr "Tiparstilo"
 
-#~ msgid "I_mportant"
-#~ msgstr "_Grave"
 
-#~ msgid "_Export…"
-#~ msgstr "E_lporti…"
 
-#~ msgid "_File"
-#~ msgstr "_Dosiero"
 
-#~ msgid "_Font Style"
-#~ msgstr "_Tiparstilo"
 
-#~ msgid "_Help"
-#~ msgstr "_Helpo"
 
-#~ msgid "_Import…"
-#~ msgstr "E_nporti…"
 
-#~ msgid "_Print…"
-#~ msgstr "_Presi…"
 
-#~ msgid "_Search…"
-#~ msgstr "_Serĉi…"
 
-#~ msgid "Almanah Preferences"
-#~ msgstr "Aagordoj de Almanah"

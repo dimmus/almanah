@@ -410,425 +410,139 @@ msgstr ""
 msgid "Write the tag and press enter to save it"
 msgstr ""
 
-#~ msgid "Main window X position"
-#~ msgstr "Algemeen venster X-positie"
 
-#~ msgid "Main window Y position"
-#~ msgstr "Algemeen venster Y-positie"
 
-#~ msgid "Main window height"
-#~ msgstr "Algemene vensterhoogte"
 
-#~ msgid "Main window maximization"
-#~ msgstr "Algemene venstermaximalisatie"
 
-#~ msgid "Main window width"
-#~ msgstr "Algemene vensterbreedte"
 
-#~ msgid "The X position of the main window."
-#~ msgstr "De X-positie van het algemene venster."
 
-#~ msgid "The Y position of the main window."
-#~ msgstr "De Y-positie van het algemene venster."
 
-#~ msgid "The height of the main window."
-#~ msgstr "De hoogte van het algemene venster."
 
-#~ msgid "The width of the main window."
-#~ msgstr "De breedte van het algemene venster."
 
-#~ msgid "Whether the main window should start maximized."
-#~ msgstr "Of het algemene venster gemaximaliseerd moet starten."
 
-#~ msgid "Add a definition for the currently selected text."
-#~ msgstr "Voeg een definitie toe voor de huigde geselecteerde tekst."
 
-#~ msgid "Definition Description"
-#~ msgstr "Definitie-beschrijving"
 
-#~ msgid "Definition List"
-#~ msgstr "Definitie-lijst"
 
-#~ msgid "Definition Type"
-#~ msgstr "Definitie-type"
 
-#~ msgid "Definition type:"
-#~ msgstr "Definitie-type:"
 
-#~ msgid "Entry editing area"
-#~ msgstr "Invoer-bewerkingsveld"
 
-#~ msgid "Failed Entries"
-#~ msgstr "Mislukte invoeren"
 
-#~ msgid "I_mportant"
-#~ msgstr "Be_langrijk"
 
-#~ msgid "Import Results List"
-#~ msgstr "Importeer Resultatenlijst"
 
-#~ msgid "Jump to the current date in the diary."
-#~ msgstr "Spring naar de huidige datum in het dagboek."
 
-#~ msgid "Merged Entries"
-#~ msgstr "Samengevoegde invoeren"
 
-#~ msgid "Nothing selected"
-#~ msgstr "Niets geselecteerd"
 
-#~ msgid "Past Event List"
-#~ msgstr "Lijst met gebeurtenissen uit het verleden"
 
-#~ msgid "Remove the definition from the currently selected text."
-#~ msgstr "Verwijder de definitie van de hudige geselecteerde tekst."
 
-#~ msgid "Result List"
-#~ msgstr "Resultatenlijst"
 
-#~ msgid "Results:"
-#~ msgstr "Resultaten:"
 
-#~ msgid "Successful Entries"
-#~ msgstr "Succesvolle gebeurtenissen"
 
-#~ msgid "Toggle whether the current entry is marked as important."
-#~ msgstr ""
-#~ "Schakelt of de huidige invoer gemarkeerd moet worden als belangrijk of "
-#~ "niet."
 
-#~ msgid "Toggle whether the currently selected text is bold."
-#~ msgstr ""
-#~ "Schakelt of de huidige geselecteerde tekst dikgedrukt moet zijn of niet."
 
-#~ msgid "Toggle whether the currently selected text is italic."
-#~ msgstr ""
-#~ "Schakelt of de huidige geselecteerde tekst schuingedrukt moet zijn of "
-#~ "niet."
 
-#~ msgid "Toggle whether the currently selected text is underlined."
-#~ msgstr ""
-#~ "Schakelt of de huidige geselecteerde tekst onderstreept moet zijn of niet."
 
-#~ msgid "View"
-#~ msgstr "Bekijk"
 
-#~ msgid "View Event"
-#~ msgstr "Bekijk gebeurtenis"
 
-#~ msgid "_Add Definition"
-#~ msgstr "_Voeg definitie toe"
 
-#~ msgid "_Definitions"
-#~ msgstr "_Definities"
 
-#~ msgid "_Edit"
-#~ msgstr "_Bewerk"
 
-#~ msgid "_Export…"
-#~ msgstr "_Exporteer…"
 
-#~ msgid "_File"
-#~ msgstr "_Bestand"
 
-#~ msgid "_Help"
-#~ msgstr "_Help"
 
-#~ msgid "_Import…"
-#~ msgstr "_Importeer…"
 
-#~ msgid "_Print…"
-#~ msgstr "_Druk af…"
 
-#~ msgid "_Remove Definition"
-#~ msgstr "_Verwijder definitie"
 
-#~ msgid "_View Definitions"
-#~ msgstr "_Bekijk definities"
 
-#~ msgid "Add Definition"
-#~ msgstr "Voeg definitie toe"
 
 #, c-format
-#~ msgid "UI file \"%s\" could not be loaded"
-#~ msgstr "UI-bestand \"%s\" kon niet worden geladen"
 
-#~ msgid "Calendar Appointment"
-#~ msgstr "Kalender-afspraak"
 
-#~ msgid "An appointment on an Evolution calendar."
-#~ msgstr "Een afspraak op een Evolution-kalender."
 
-#~ msgid "Error launching Evolution"
-#~ msgstr "Fout bij het laden van Evolution"
 
-#~ msgid "Calendar Task"
-#~ msgstr "Kalender-taak"
 
-#~ msgid "A task on an Evolution calendar."
-#~ msgstr "Een taak op een Evolution-kalender."
 
-#~ msgid "F-Spot Photo"
-#~ msgstr "F-Spot Foto"
 
-#~ msgid "A photo stored in F-Spot."
-#~ msgstr "Een foto opgeslagen in F-Spot."
 
-#~ msgid "Error launching F-Spot"
-#~ msgstr "Fout bij het laden van F-Spot"
 
-#~ msgid ""
-#~ "Select a folder to export the entries to as text files, one per entry, "
-#~ "with names in the format 'yyyy-mm-dd', and no extension. All entries will "
-#~ "be exported, unencrypted in plain text format."
-#~ msgstr ""
-#~ "Selecteer een map voor het exporteren van de invoeren als tekstbestanden, "
-#~ "één per invoer, met namen in het formaat 'yyyy-mm-dd', en geen extensie. "
-#~ "Alle invoerenzullen worden geexporteerd, onversleuteld in het kale tekst-"
-#~ "formaat."
 
-#~ msgid "Import Entries"
-#~ msgstr "Importeer invoeren"
 
-#~ msgid "Export Entries"
-#~ msgstr "Exporteer invoeren"
 
 #, c-format
-#~ msgid "Error deserializing imported entry into buffer: %s"
-#~ msgstr "Fout deserialising geïmporteerde invoer in de buffer: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Error deserializing existing entry into buffer; overwriting with imported "
-#~ "entry: %s"
-#~ msgstr ""
-#~ "Fout deserialising bestaande invoer in de buffer; overschrijven met "
-#~ "geimporteerde invoer: %s"
 
-#~ msgid "Import failed"
-#~ msgstr "Importeren mislukt"
 
-#~ msgid "Export failed"
-#~ msgstr "Exporteren mislukt"
 
-#~ msgid "Export successful"
-#~ msgstr "Exporteren succesvol"
 
-#~ msgid "The diary was successfully exported."
-#~ msgstr "Het dagboek is succesvol geëxporteerd."
 
-#~ msgid "%A, %e %B %Y"
-#~ msgstr "%A, %e %B %Y"
 
-#~ msgid "Definition Manager"
-#~ msgstr "Definitie-beheerder"
 
 #, c-format
-#~ msgid "Are you sure you want to delete the definition for \"%s\"?"
-#~ msgstr "Weet u zeker dat u de definitie wilt verwijderen voor \"%s\"?"
 
-#~ msgid "Contact"
-#~ msgstr "Contactpersoon"
 
-#~ msgid "An Evolution contact."
-#~ msgstr "Een Evolution-contactpersoon."
 
-#~ msgid "Select Contact"
-#~ msgstr "Selecteer contactpersoon"
 
-#~ msgid "Error opening contact"
-#~ msgstr "Fout bij het openen van contactpersoon"
 
-#~ msgid "Error opening Evolution"
-#~ msgstr "Fout bij het laden van Evolution"
 
-#~ msgid "File"
-#~ msgstr "Bestand"
 
-#~ msgid "An attached file."
-#~ msgstr "Een bijlage."
 
-#~ msgid "Error opening file"
-#~ msgstr "Fout bij openen van bestand"
 
-#~ msgid "Select File"
-#~ msgstr "Selecteer bestand"
 
-#~ msgid "Note"
-#~ msgstr "Noot"
 
-#~ msgid "A note about an important event."
-#~ msgstr "Een notitie over een belangrijke gebeurtenis."
 
-#~ msgid "URI"
-#~ msgstr "URI"
 
-#~ msgid "A URI of a file or web page."
-#~ msgstr "Een URI van een bestand of webpagina."
 
-#~ msgid "Error opening URI"
-#~ msgstr "Fout bij het openen van een URI"
 
-#~ msgid "URI: "
-#~ msgstr "URI: "
 
 #, c-format
-#~ msgid "Are you sure you want to edit this diary entry for %s?"
-#~ msgstr "Weet u zeker dat u deze dagboek-invoer wilt bewerken voor %s?"
 
 #, c-format
-#~ msgid "Are you sure you want to delete this diary entry for %s?"
-#~ msgstr "Weet u zeker dat u deze dagboek-invoer wilt verwijderen voor %s?"
 
 #, c-format
-#~ msgid "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
-#~ msgstr "Onbekende of dubble tekst tag \"%s\" in invoer. Negeren."
 
-#~ msgid ""
-#~ "Almanah is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "Almanah is vrije software: u kunt het heruitgeven en/of aanpassen onder "
-#~ "de voorwaarden van de GNU General Public Licence zoals gepubliceerd door "
-#~ "de Free Software Foundation, danwel versie 3 van de Licence, of (indien u "
-#~ "dit wilt) elke latere versie."
 
-#~ msgid ""
-#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
-#~ msgstr ""
-#~ "Almanah is verspreid in de hoop dat het nuttig zal zijn, maar ZONDER "
-#~ "ENIGE GARANTIE; zelfs zonder de garantie MERCHANTABILITY of FITNESS VOOR "
-#~ "EEN PARTICULAR PURPOSE.  Zie de GNU General Public Licence voor meer "
-#~ "details."
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "U zou een kopie ontvangen moeten hebben van de GNU General Public Licence "
-#~ "tezamen met Almanah.  Indien dit niet het geval is, zie <http://"
-#~ "www.gnu.org/licences/>."
 
-#~ msgid "Copyright © 2008-2009 Philip Withnall"
-#~ msgstr "Copyright © 2008-2009 Philip Withnall"
 
-#~ msgid "translator-credits"
-#~ msgstr "Heimen <vistausss@gmail.com>"
 
-#~ msgid "Almanah Website"
-#~ msgstr "Almanah-website"
 
-#~ msgid "Entry content could not be loaded"
-#~ msgstr "Invoer-inhoud kon niet worden geladen"
 
-#~ msgid "Error encrypting database"
-#~ msgstr "Fout bij het versleutelen van de database"
 
-#~ msgid "Enable debug mode"
-#~ msgstr "Debug-modus inschakelen"
 
-#~ msgid "Enable import mode"
-#~ msgstr "Activeer import-modus"
 
-#~ msgid "- Manage your diary"
-#~ msgstr "- Beheer uw dagboek"
 
-#~ msgid "Command-line options could not be parsed"
-#~ msgstr "Commando-regel opties konden niet worden geparseerd"
 
-#~ msgid "Error opening database"
-#~ msgstr "Fout bij het openen van de atabase"
 
-#~ msgid "Almanah Preferences"
-#~ msgstr "Almanah-instellingen"
 
-#~ msgid "None (don't encrypt)"
-#~ msgstr "Geen (niet versleutelen)"
 
-#~ msgid "Error saving the encryption key"
-#~ msgstr "Fout bij het opslaan van de versleutelingssleutel"
 
-#~ msgid "Spelling checker could not be initialized"
-#~ msgstr "Spellingcontroleerder kon niet worden geïnitialiseerd"
 
-#~ msgid "This entry is marked as important."
-#~ msgstr "Deze invoer is gemarkeerd als belangrijk."
 
-#~ msgid "No entry for this date."
-#~ msgstr "Geen invoer voor deze datum."
 
-#~ msgid "Start date:"
-#~ msgstr "Start-datum:"
 
-#~ msgid "End date:"
-#~ msgstr "Eind-datum:"
 
-#~ msgid "Line spacing:"
-#~ msgstr "Regelafstand:"
 
 #, c-format
-#~ msgid "GPGME is not at least version %s"
-#~ msgstr "GPGME is niet minimaal versie %s"
 
 #, c-format
-#~ msgid "GPGME doesn't support OpenPGP: %s"
-#~ msgstr "GPGME ondersteunt geen OpenPGP: %s"
 
 #, c-format
-#~ msgid "Error creating cipher context: %s"
-#~ msgstr "Fout bij het maken van cipher context: %s"
 
 #, c-format
-#~ msgid "Error opening encrypted database file \"%s\": %s"
-#~ msgstr "Fout bij openen van versleuteld database-bestand \"%s\": %s"
 
 #, c-format
-#~ msgid "Error opening plain database file \"%s\": %s"
-#~ msgstr "Fout bij openen van kaal database-bestand \"%s\": %s"
 
-#~ msgid ""
-#~ "The encrypted database is empty. The plain database file has been left "
-#~ "undeleted as backup."
-#~ msgstr ""
-#~ "De versleutelde database is leeg. Het kale database-bestand is "
-#~ "achtergelaten als niet-verwijderd ter backup."
 
 #, c-format
-#~ msgid "Could not delete plain database file \"%s\"."
-#~ msgstr "Kon kaal database-bestand niet verwijderen \"%s\"."
 
 #, c-format
-#~ msgid "Error decrypting database: %s"
-#~ msgstr "Fout bij het onstleutelen van database: %s"
 
 #, c-format
-#~ msgid "Error getting encryption key: %s"
-#~ msgstr "Fout bij het verkrijgen van versleutelingssleutel: %s"
 
 #, c-format
-#~ msgid "Error encrypting database: %s"
-#~ msgstr "Fout bij het versleutelen van database: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Could not open database \"%s\". SQLite provided the following error "
-#~ "message: %s"
-#~ msgstr ""
-#~ "Kon database niet openen \"%s\". SQLite gaf de volgende foutmelding: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Could not run query \"%s\". SQLite provided the following error message: "
-#~ "%s"
-#~ msgstr ""
-#~ "Kon query niet draaien \"%s\". SQLite gaf de volgende foutmeldingen: %s"
 
-#~ msgid "Error deserializing entry into buffer while searching."
-#~ msgstr "Fout bij het deserialising invoer in de buffer tijdens het zoeken."
 
-#~ msgid "Important!"
-#~ msgstr "Belangrijk!"

@@ -420,401 +420,133 @@ msgstr "добавить метку"
 msgid "Write the tag and press enter to save it"
 msgstr "Наберите метку и нажмите Enter для её сохранения"
 
-#~ msgid "Entry editing area"
-#~ msgstr "Область редактирования записи"
 
-#~ msgid "Past Event List"
-#~ msgstr "Список прошедших событий"
 
-#~ msgid "Result List"
-#~ msgstr "Список результатов"
 
-#~ msgid "Successful Entries"
-#~ msgstr "Успешные записи"
 
-#~ msgid "Merged Entries"
-#~ msgstr "Объединённые записи"
 
-#~ msgid "Failed Entries"
-#~ msgstr "Неудачные записи"
 
-#~ msgid "Import Results List"
-#~ msgstr "Импортировать список результатов"
 
-#~ msgid "Error opening database"
-#~ msgstr "Ошибка при открытии базы данных"
 
-#~ msgid "Enable debug mode"
-#~ msgstr "Включить режим отладки"
 
-#~ msgid ""
-#~ "Manage your diary. Only one instance of the program may be open at any "
-#~ "time."
-#~ msgstr ""
-#~ "Управление дневником. В одно и то же время может быть запущен один "
-#~ "экземпляр программы."
 
 #, c-format
-#~ msgid "Command line options could not be parsed: %s\n"
-#~ msgstr "Не удалось разобрать аргументы командной строки: %s\n"
 
-#~ msgid "Error encrypting database"
-#~ msgstr "Ошибка при шифровании базы данных"
 
-#~ msgid ""
-#~ "Almanah is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "Almanah — свободное программное обеспечение; вы можете распространять его "
-#~ "и/или изменять на условиях 3-й или более поздней (на ваше усмотрение) "
-#~ "версии лицензии GNU General Public License, опубликованной Фондом "
-#~ "Свободного Программного Обеспечения (Free Software Foundation)."
 
-#~ msgid ""
-#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
-#~ msgstr ""
-#~ "Almanah распространяется с надеждой, что он будет полезен, но БЕЗ КАКОЙ "
-#~ "ЛИБО ГАРАНТИИ, даже без подразумеваемой гарантии ГОДНОСТИ или "
-#~ "СООТВЕТСТВИЯ КОНКРЕТНОЙ ЦЕЛИ. Смотрите лицензию GNU General Public "
-#~ "License для деталей."
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "Вы должны были получить копию лицензии GNU General Public License вместе "
-#~ "с Almanah. Если это не так, то смотрите <http://www.gnu.org/licenses/>."
 
-#~ msgid "Copyright © 2008-2009 Philip Withnall"
-#~ msgstr "Copyright В© 2008-2009 Philip Withnall"
 
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Диана Кузаченко <dianadea@rambler.ru>, 2010.\n"
-#~ "Юрий Мясоедов <omerta13@yandex.ru>, 2013.\n"
-#~ "Алексей Кабанов <ak099@mail.ru>, 2016."
 
-#~ msgid "Almanah Website"
-#~ msgstr "Веб-сайт Almanah"
 
 #, c-format
-#~ msgid ""
-#~ "Couldn't load the CSS resources. The interface might not be styled "
-#~ "correctly: %s"
-#~ msgstr ""
-#~ "Не удалось загрузить CSS-ресурсы. Стиль интерфейса может оказаться "
-#~ "неправильным: %s"
 
-#~ msgid "UI data could not be loaded"
-#~ msgstr "Не удалось загрузить данные пользовательского интерфейса"
 
 #, c-format
-#~ msgid "Invalid data version number %u."
-#~ msgstr "Неверные данные о номере версии %u."
 
-#~ msgid "Calendar Appointment"
-#~ msgstr "Календарная встреча"
 
-#~ msgid "An appointment on an Evolution calendar."
-#~ msgstr "Встреча из календаря Evolution."
 
 #, c-format
-#~ msgid "%.2d:%.2d"
-#~ msgstr "%.2d:%.2d"
 
-#~ msgid "Error launching Evolution"
-#~ msgstr "Ошибка при запуске Evolution"
 
-#~ msgid "Calendar Task"
-#~ msgstr "Календарная задача"
 
-#~ msgid "A task on an Evolution calendar."
-#~ msgstr "Задача из календаря Evolution."
 
-#~ msgid ""
-#~ "Select a _folder to export the entries to as text files, one per entry, "
-#~ "with names in the format 'yyyy-mm-dd', and no extension. All entries will "
-#~ "be exported, unencrypted in plain text format."
-#~ msgstr ""
-#~ "Выберите _папку с текстовыми файлам без расширения (один файл — одна "
-#~ "запись), имена которых имеют формат «гггг-мм-дд». Все такие файлы будут "
-#~ "экспортированы открытым текстом без шифрования."
 
-#~ msgid "Import _mode: "
-#~ msgstr "_Режим импортирования:"
 
-#~ msgid "Export _mode: "
-#~ msgstr "_Режим экспортирования:"
 
-#~ msgid "Import Entries"
-#~ msgstr "Импорт записей"
 
-#~ msgid "Export Entries"
-#~ msgstr "Экспоритрование записей"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Import"
-#~ msgstr "_Импортировать"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Export"
-#~ msgstr "_Экспортировать"
 
-#~ msgid "Export successful"
-#~ msgstr "Экспортирование прошло успешно"
 
-#~ msgid "The diary was successfully exported."
-#~ msgstr "Дневник успешно экспортирован."
 
-#~ msgid "%A, %e %B %Y"
-#~ msgstr "%A, %e %b. %Y"
 
 #, c-format
-#~ msgid "Error deserializing imported entry into buffer: %s"
-#~ msgstr "Ошибка при десериализации импортируемых записей в буфер: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Error deserializing existing entry into buffer; overwriting with imported "
-#~ "entry: %s"
-#~ msgstr ""
-#~ "Ошибка при десериализации существующих записей в буфер; перезаписывание "
-#~ "импортированными записями: %s"
 
 #, c-format
-#~ msgid "Are you sure you want to edit this diary entry for %s?"
-#~ msgstr "Действительно хотите изменить эту запись в дневнике для %s?"
 
-#~ msgid "_Edit"
-#~ msgstr "_Правка"
 
 #, c-format
-#~ msgid "Are you sure you want to delete this diary entry for %s?"
-#~ msgstr "Действительно хотите удалить эту запись в дневнике для %s?"
 
 #, c-format
-#~ msgid "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
-#~ msgstr ""
-#~ "Неизвестная или дублированная текстовая метка «%s» в записи. Пропуск."
 
-#~ msgid "Error opening URI"
-#~ msgstr "Ошибка при открытии URI"
 
 #, c-format
-#~ msgid "%s @ %s"
-#~ msgstr "%s в %s"
 
-#~ msgid "Entry content could not be loaded"
-#~ msgstr "Не удалось загрузить содержимое записи"
 
-#~ msgid ""
-#~ "This is just a fifteen words sentence to calculate the diary entry text "
-#~ "view size"
-#~ msgstr ""
-#~ "Это просто тестовое предложение из пятнадцати слов, дающее возможность "
-#~ "оценить ширину области просмотра записи дневника"
 
-#~ msgid "Spelling checker could not be initialized"
-#~ msgstr "Не удалось инициализировать модуль проверки орфографии"
 
-#~ msgid "None (don't encrypt)"
-#~ msgstr "Нет (не шифровать)"
 
-#~ msgid "Error saving the encryption key"
-#~ msgstr "Ошибка при сохранении ключа шифрования"
 
-#~ msgid "This entry is marked as important."
-#~ msgstr "Эта запись отмечена как важная."
 
-#~ msgid "No entry for this date."
-#~ msgstr "Нет записей на эту дату."
 
-#~ msgid "Start date:"
-#~ msgstr "Начальная дата:"
 
-#~ msgid "End date:"
-#~ msgstr "Последняя дата:"
 
-#~ msgid "Line spacing:"
-#~ msgstr "Межстрочный интервал:"
 
-#~ msgid "Search canceled."
-#~ msgstr "Поиск отменён."
 
 #, c-format
-#~ msgid ""
-#~ "Could not open database \"%s\". SQLite provided the following error "
-#~ "message: %s"
-#~ msgstr ""
-#~ "Не удалось открыть базу данных «%s». SQLite выдал следующую ошибку: %s"
 
 #, c-format
-#~ msgid ""
-#~ "Could not run query \"%s\". SQLite provided the following error message: "
-#~ "%s"
-#~ msgstr "Не удалось сделать запрос «%s». SQLite выдал следующую ошибку: %s"
 
-#~ msgid "Error deserializing entry into buffer while searching."
-#~ msgstr "Ошибка при десериализации записи в буфер во время поиска."
 
 #, c-format
-#~ msgid "GPGME is not at least version %s"
-#~ msgstr "GPGME версии не %s"
 
 #, c-format
-#~ msgid "GPGME doesn't support OpenPGP: %s"
-#~ msgstr "GPGME не поддерживает OpenPGP: %s"
 
 #, c-format
-#~ msgid "Error creating cipher context: %s"
-#~ msgstr "Ошибка при создании контекста шифра: %s"
 
 #, c-format
-#~ msgid "Can't create a new GIOChannel for the encrypted database: %s"
-#~ msgstr ""
-#~ "Не удаётся создать новый GIOChannel для зашифрованной базы данных: %s"
 
 #, c-format
-#~ msgid "Error opening encrypted database file \"%s\": %s"
-#~ msgstr "Ошибка при открытии файла зашифрованной базы данных «%s»: %s"
 
 #, c-format
-#~ msgid "Error creating Callback base data buffer: %s"
-#~ msgstr "Ошибка создания буфера базы данных Callback: %s"
 
 #, c-format
-#~ msgid "Can't create a new GIOChannel for the plain database: %s"
-#~ msgstr "Не удаётся создать новый GIOChannel для обычной базы данных: %s"
 
 #, c-format
-#~ msgid "Error opening plain database file \"%s\": %s"
-#~ msgstr "Ошибка при открытии файла обычной базы данных «%s»: %s"
 
 #, c-format
-#~ msgid "Error getting encryption key: %s"
-#~ msgstr "Ошибка при получении ключа шифрования: %s"
 
 #, c-format
-#~ msgid "Error encrypting database: %s"
-#~ msgstr "Ошибка при шифровании базы данных: %s"
 
 #, c-format
-#~ msgid "Error copying the file from %s to %s: %s"
-#~ msgstr "Ошибка при копировании файла из %s в %s: %s"
 
 #, c-format
-#~ msgid "Error changing database backup file permissions: %s"
-#~ msgstr ""
-#~ "Ошибка при изменении прав доступа к файлу резервной копии базы данных: %s"
 
 #, c-format
-#~ msgid "Error closing file: %s"
-#~ msgstr "Ошибка при закрытии файла: %s"
 
 #, c-format
-#~ msgid "Error backing up file ‘%s’"
-#~ msgstr "Ошибка при создании резервной копии файла «%s»"
 
 #, c-format
-#~ msgid "Error decrypting database: %s"
-#~ msgstr "Ошибка при расшифровке базы данных: %s"
 
 #, c-format
-#~ msgid "Error changing database file permissions: %s"
-#~ msgstr "Ошибка при изменении прав доступа к файлу базы данных: %s"
 
 #, c-format
-#~ msgid "UI data could not be loaded: %s"
-#~ msgstr "Не удалось загрузить данные пользовательского интерфейса: %s"
 
-#~ msgid "Can't load calendar window object from UI file"
-#~ msgstr ""
-#~ "Не удалось загрузить объект окна календаря из файла пользовательского "
-#~ "интерфейса"
 
-#~ msgid "Important!"
-#~ msgstr "Важное!"
 
-#~ msgid "Remove the tag from the entry"
-#~ msgstr "Убрать метку с записи"
 
-#~ msgid "Tag entry"
-#~ msgstr "Поставить метку записи"
 
-#~ msgid "Toggle whether the currently selected text is bold."
-#~ msgstr "Жирный"
 
-#~ msgid "Toggle whether the currently selected text is italic."
-#~ msgstr "Курсив"
 
-#~ msgid "Toggle whether the currently selected text is underlined."
-#~ msgstr "Подчёркнутый"
 
-#~ msgid ""
-#~ "Add or remove a hyperlink from the currently selected text to a specified "
-#~ "URI."
-#~ msgstr ""
-#~ "Добавить или удалить гиперссылку из выделенного текста в указанный URI."
 
-#~ msgid "I_mportant"
-#~ msgstr "В_ажное"
 
-#~ msgid "Toggle whether the current entry is marked as important."
-#~ msgstr "Пометить эту запись как важную."
 
-#~ msgid "_Help"
-#~ msgstr "_Справка"
 
-#~ msgid "Jump to the current date in the diary."
-#~ msgstr "Перейти к текущей дате в дневнике."
 
-#~ msgid "Almanah Preferences"
-#~ msgstr "Настройки Almanah"
 
-#~ msgid ""
-#~ "The encrypted database is empty. The plain database file has been left "
-#~ "undeleted as backup."
-#~ msgstr ""
-#~ "Зашифрованная база данных пуста. Файл незашифрованной базы данных "
-#~ "останется резервной копией."
 
-#~ msgid "Could not delete plain database file \"%s\"."
-#~ msgstr "Не удалось удалить файл незашифрованной базы данных «%s»."
 
-#~ msgid "Unknown input device"
-#~ msgstr "Неизвестное устройство ввода"
 
-#~ msgid "_File"
-#~ msgstr "_Файл"
 
-#~ msgid "_Import…"
-#~ msgstr "_Импортировать..."
 
-#~ msgid "_Export…"
-#~ msgstr "_Экспортировать..."
 
-#~ msgid "_Print…"
-#~ msgstr "_Печать..."
 
-#~ msgid "_Search…"
-#~ msgstr "_Поиск..."
 
-#~ msgid "Font Style"
-#~ msgstr "Стиль шрифта"
 
-#~ msgid "Change font style for selected text."
-#~ msgstr "Изменить стиль шрифта для выделенного текста."
 
-#~ msgid "_Font Style"
-#~ msgstr "Стиль _шрифта"
 
-#~ msgid "View"
-#~ msgstr "Просмотр"
 
-#~ msgid "View Event"
-#~ msgstr "Просмотр события"

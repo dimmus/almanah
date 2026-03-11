@@ -417,391 +417,130 @@ msgstr "aggiungi tag"
 msgid "Write the tag and press enter to save it"
 msgstr "Scrivere il tag e premere Invio per salvarlo"
 
-#~ msgid "Entry editing area"
-#~ msgstr "Area di modifica della voce"
 
-#~ msgid "Past Event List"
-#~ msgstr "Lista eventi passati"
 
-#~ msgid "Result List"
-#~ msgstr "Lista risultati"
 
-#~ msgid "Successful Entries"
-#~ msgstr "Voci con successo"
 
-#~ msgid "Merged Entries"
-#~ msgstr "Voci unite"
 
-#~ msgid "Failed Entries"
-#~ msgstr "Voci fallite"
 
-#~ msgid "Import Results List"
-#~ msgstr "Importa lista risultati"
 
-#~ msgid "Error opening database"
-#~ msgstr "Errore durante l'apertura del database"
 
-#~ msgid "Enable debug mode"
-#~ msgstr "Abilita modalità debug"
 
-#~ msgid ""
-#~ "Manage your diary. Only one instance of the program may be open at any "
-#~ "time."
-#~ msgstr ""
-#~ "Gestione dell'agenda. Una sola istanza del programma può essere aperta "
-#~ "alla volta."
 
 #, c-format, python-format
-#~ msgid "Command line options could not be parsed: %s\n"
-#~ msgstr ""
-#~ "Le opzioni della linea di comando non possono essere analizzate: %s\n"
 
-#~ msgid "Error encrypting database"
-#~ msgstr "Errore nella cifratura del database"
 
-#~ msgid ""
-#~ "Almanah is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "Almanah è software libero: è possibile ridistribuirlo e/o modificarlo "
-#~ "secondo i termini della GNU General Public License, come pubblicata dalla "
-#~ "Free Software Foundation. Sia con la versione 3 della licenza o (a "
-#~ "propria scelta) con una versione successiva."
 
-#~ msgid ""
-#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
-#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-#~ "more details."
-#~ msgstr ""
-#~ "Almanah è distribuito nella speranza che possa essere utile, ma SENZA "
-#~ "ALCUNA GARANZIA, senza neppure la garanzia implicita di COMMERCIABILITÀ o "
-#~ "IDONEITÀ PER UN PARTICOLARE SCOPO. Vedere la GNU General Public License "
-#~ "per ulteriori dettagli."
 
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "Dovresti avere ricevuto una copia della GNU General Public License "
-#~ "insieme ad Almanah. In caso contrario, vedere <http://www.gnu.org/"
-#~ "licenses/>."
 
-#~ msgid "Copyright © 2008-2009 Philip Withnall"
-#~ msgstr "Copyright © 2008-2009 Philip Withnall"
 
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Dimitrios Vrettos <d.vrettos@gmail.com>\n"
-#~ "Matteo Cappannelli <cappamatti80@gmail.com>"
 
-#~ msgid "Almanah Website"
-#~ msgstr "Sito web di Almanah"
 
 #, c-format, python-format
-#~ msgid ""
-#~ "Couldn't load the CSS resources. The interface might not be styled "
-#~ "correctly: %s"
-#~ msgstr ""
-#~ "Impossibile caricare le risorse CSS. L'interfaccia potrebbe non avere "
-#~ "l'aspetto corretto: %s"
 
-#~ msgid "UI data could not be loaded"
-#~ msgstr "Non si sono potuti caricare i dati dell'interfaccia"
 
 #, c-format, python-format
-#~ msgid "Invalid data version number %u."
-#~ msgstr "Numero della versione %u dei dati non valido."
 
-#~ msgid "Calendar Appointment"
-#~ msgstr "Appuntamento del calendario"
 
-#~ msgid "An appointment on an Evolution calendar."
-#~ msgstr "Un appuntamento su un calendario di Evolution."
 
 #, c-format, python-format
-#~ msgid "%.2d:%.2d"
-#~ msgstr "%.2d:%.2d"
 
-#~ msgid "Error launching Evolution"
-#~ msgstr "Errore nell'avvio di Evolution"
 
-#~ msgid "Calendar Task"
-#~ msgstr "Calendario attività"
 
-#~ msgid "A task on an Evolution calendar."
-#~ msgstr "Un'attività nel calendario di Evolution."
 
-#~ msgid ""
-#~ "Select a _folder to export the entries to as text files, one per entry, "
-#~ "with names in the format 'yyyy-mm-dd', and no extension. All entries will "
-#~ "be exported, unencrypted in plain text format."
-#~ msgstr ""
-#~ "Selezionare una _cartella per esportare le voci come file di testo, uno "
-#~ "per ogni voce, con i nomi nel formato 'aaaa-mm-gg' e senza estensione. "
-#~ "Tutte le voci saranno esportate, non criptate, in file di testo semplice."
 
-#~ msgid "Import _mode: "
-#~ msgstr "_Modalità importazione: "
 
-#~ msgid "Export _mode: "
-#~ msgstr "_Modalità esportazione: "
 
-#~ msgid "Import Entries"
-#~ msgstr "Importa voci"
 
-#~ msgid "Export Entries"
-#~ msgstr "Esporta voci"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Import"
-#~ msgstr "_Importa"
 
-#~ msgctxt "Dialog button"
-#~ msgid "_Export"
-#~ msgstr "_Esporta"
 
-#~ msgid "Export successful"
-#~ msgstr "Esportato con successo"
 
-#~ msgid "The diary was successfully exported."
-#~ msgstr "Agenda esportata con successo."
 
 #, python-format
-#~ msgid "%A, %e %B %Y"
-#~ msgstr "%A, %e %B %Y"
 
 #, c-format, python-format
-#~ msgid "Error deserializing imported entry into buffer: %s"
-#~ msgstr "Errore deserializzazione di voce importata nel buffer: %s"
 
 #, c-format, python-format
-#~ msgid ""
-#~ "Error deserializing existing entry into buffer; overwriting with imported "
-#~ "entry: %s"
-#~ msgstr ""
-#~ "Errore deserializzazione di voce esistente nel buffer; sovrascrittura con "
-#~ "voce importata: %s"
 
 #, c-format, python-format
-#~ msgid "Are you sure you want to edit this diary entry for %s?"
-#~ msgstr "Modificare la voce %s dell'agenda?"
 
-#~ msgid "_Edit"
-#~ msgstr "_Modifica"
 
 #, c-format, python-format
-#~ msgid "Are you sure you want to delete this diary entry for %s?"
-#~ msgstr "Eliminare la voce %s dell'agenda?"
 
 #, c-format, python-format
-#~ msgid "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
-#~ msgstr "Etichetta «%s» sconosciuta o duplicata. Verrà ignorata."
 
-#~ msgid "Error opening URI"
-#~ msgstr "Errore nell'apertura dell'URI"
 
 #, c-format, python-format
-#~ msgid "%s @ %s"
-#~ msgstr "%s @ %s"
 
-#~ msgid "Entry content could not be loaded"
-#~ msgstr "Il contenuto della voce non può essere caricato"
 
-#~ msgid ""
-#~ "This is just a fifteen words sentence to calculate the diary entry text "
-#~ "view size"
-#~ msgstr ""
-#~ "Questo testo contiene quindici parole per calcolare la dimensione di "
-#~ "visualizzazione del testo delle voci"
 
-#~ msgid "Spelling checker could not be initialized"
-#~ msgstr "La correzione ortografica non può essere inizializzata"
 
-#~ msgid "None (don't encrypt)"
-#~ msgstr "Nessuna (non cifrare)"
 
-#~ msgid "Error saving the encryption key"
-#~ msgstr "Errore nel salvataggio della chiave di cifratura"
 
-#~ msgid "This entry is marked as important."
-#~ msgstr "Questa è voce è contrassegnata come importante."
 
-#~ msgid "No entry for this date."
-#~ msgstr "Nessuna voce per questa data."
 
-#~ msgid "Start date:"
-#~ msgstr "Data inizio:"
 
-#~ msgid "End date:"
-#~ msgstr "Data fine:"
 
-#~ msgid "Line spacing:"
-#~ msgstr "Interlinea:"
 
-#~ msgid "Search canceled."
-#~ msgstr "Ricerca annullata."
 
 #, c-format, python-format
-#~ msgid ""
-#~ "Could not open database \"%s\". SQLite provided the following error "
-#~ "message: %s"
-#~ msgstr ""
-#~ "Impossibile aprire il database: «%s». SQLite fornisce il seguente avviso: "
-#~ "%s"
 
 #, c-format, python-format
-#~ msgid ""
-#~ "Could not run query \"%s\". SQLite provided the following error message: "
-#~ "%s"
-#~ msgstr ""
-#~ "Non si può eseguire la query: «%s». SQLite fornisce il seguente avviso: %s"
 
-#~ msgid "Error deserializing entry into buffer while searching."
-#~ msgstr "Errore deserializzazione nel buffer durante la ricerca."
 
 #, c-format, python-format
-#~ msgid "GPGME is not at least version %s"
-#~ msgstr "GPGME non è almeno alla versione %s"
 
 #, c-format, python-format
-#~ msgid "GPGME doesn't support OpenPGP: %s"
-#~ msgstr "GPGME non supporta OpenPGP: %s"
 
 #, c-format, python-format
-#~ msgid "Error creating cipher context: %s"
-#~ msgstr "Errore nella creazione del contesto di cifratura: %s"
 
 #, c-format, python-format
-#~ msgid "Can't create a new GIOChannel for the encrypted database: %s"
-#~ msgstr "Impossibile creare un nuovo GIOChannel per il database cifrato: %s"
 
 #, c-format, python-format
-#~ msgid "Error opening encrypted database file \"%s\": %s"
-#~ msgstr ""
-#~ "Errore durante l'apertura del file di database crittografato «%s»: %s"
 
 #, c-format, python-format
-#~ msgid "Error creating Callback base data buffer: %s"
-#~ msgstr "Errore nella creazione del buffer di dati di base di Callback: %s"
 
 #, c-format, python-format
-#~ msgid "Can't create a new GIOChannel for the plain database: %s"
-#~ msgstr "Impossibile creare un nuovo GIOChannel per il database semplice: %s"
 
 #, c-format, python-format
-#~ msgid "Error opening plain database file \"%s\": %s"
-#~ msgstr "Errore durante l'apertura del file di testo del database «%s»: %s"
 
 #, c-format, python-format
-#~ msgid "Error getting encryption key: %s"
-#~ msgstr "Errore nel recupero della chiave di crittografia: %s"
 
 #, c-format, python-format
-#~ msgid "Error encrypting database: %s"
-#~ msgstr "Errore di crittografia del database: %s"
 
 #, c-format, python-format
-#~ msgid "Error copying the file from %s to %s: %s"
-#~ msgstr "Errore nella copia del file da %s a %s: %s"
 
 #, c-format, python-format
-#~ msgid "Error changing database backup file permissions: %s"
-#~ msgstr "Errore nel cambiare i permessi del file di backup del database: %s"
 
 #, c-format, python-format
-#~ msgid "Error closing file: %s"
-#~ msgstr "Errore nella chiusura del file: %s"
 
 #, c-format, python-format
-#~ msgid "Error backing up file ‘%s’"
-#~ msgstr "Errore nel backup del file «%s»"
 
 #, c-format, python-format
-#~ msgid "Error decrypting database: %s"
-#~ msgstr "Errore nel decifrare il database: %s"
 
 #, c-format, python-format
-#~ msgid "Error changing database file permissions: %s"
-#~ msgstr "Errore nel cambiare i permessi del file del database: %s"
 
 #, c-format, python-format
-#~ msgid "UI data could not be loaded: %s"
-#~ msgstr "Non è stato possibile caricare i dati dell'interfaccia: %s"
 
-#~ msgid "Can't load calendar window object from UI file"
-#~ msgstr "Impossibile caricare l'oggetto finestra del calendario da file UI"
 
-#~ msgid "Important!"
-#~ msgstr "Importante!"
 
-#~ msgid "Remove the tag from the entry"
-#~ msgstr "Rimuovi tag dalla voce"
 
-#~ msgid "Tag entry"
-#~ msgstr "Aggiungi tag alla voce"
 
-#~ msgid ""
-#~ "Add or remove a hyperlink from the currently selected text to a specified "
-#~ "URI."
-#~ msgstr ""
-#~ "Aggiungere o rimuovere un collegamento ipertestuale dal testo attualmente "
-#~ "selezionato a un URI specifico."
 
-#~ msgid "I_mportant"
-#~ msgstr "I_mportante"
 
-#~ msgid "Jump to the current date in the diary."
-#~ msgstr "Vai alla data odierna nell'agenda."
 
-#~ msgid "Toggle whether the current entry is marked as important."
-#~ msgstr ""
-#~ "Attiva/disattiva se la voce selezionata è contrasseganata come importante."
 
-#~ msgid "Toggle whether the currently selected text is bold."
-#~ msgstr "Attiva/disattiva se il testo selezionato è in grassetto."
 
-#~ msgid "Toggle whether the currently selected text is italic."
-#~ msgstr "Attiva/disattiva se il testo selezionato è in corsivo."
 
-#~ msgid "Toggle whether the currently selected text is underlined."
-#~ msgstr "Attiva/disattiva se il testo selezionato è sottolineato."
 
-#~ msgid "View"
-#~ msgstr "Visualizza"
 
-#~ msgid "View Event"
-#~ msgstr "Visualizza evento"
 
-#~ msgid "_Export…"
-#~ msgstr "_Esporta..."
 
-#~ msgid "_File"
-#~ msgstr "_File"
 
-#~ msgid "_Help"
-#~ msgstr "_Aiuto"
 
-#~ msgid "_Import…"
-#~ msgstr "_Importa..."
 
-#~ msgid "_Print…"
-#~ msgstr "_Stampa..."
 
-#~ msgid "_Search…"
-#~ msgstr "_Cerca..."
 
-#~ msgid "Almanah Preferences"
-#~ msgstr "Preferenze Almanah"
 
-#~ msgid ""
-#~ "The encrypted database is empty. The plain database file has been left "
-#~ "undeleted as backup."
-#~ msgstr ""
-#~ "Il database crittografato è vuoto. Il file di solo testo del database è "
-#~ "stato lasciato invariato come backup."
 
-#~ msgid "Could not delete plain database file \"%s\"."
-#~ msgstr "Non si può eliminare il file di testo «%s» del database."
