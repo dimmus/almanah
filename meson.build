@@ -35,7 +35,7 @@ appstreamcli = find_program('appstreamcli', required: false)
 desktop_file_validate = find_program('desktop-file-validate', required: false)
 
 vala_deps = [
-	dependency('glib-2.0', version: '>= 2.87'),
+	dependency('glib-2.0', version: '>= 2.80'),
 	dependency('gtk4', version: '>= 4.21'),
 	dependency('libadwaita-1', version: '>= 1.4'),
 	dependency('gio-2.0'),
