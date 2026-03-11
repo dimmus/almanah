@@ -30,7 +30,7 @@ jobs:
             libsqlite3-dev \
             libgee-0.8-dev \
             libgtksourceview-5-dev \
-            libecal-2.0-dev \
+            libecal2.0-dev \
             libedataserver1.2-dev \
             libspelling-1-dev \
             gi-docgen
