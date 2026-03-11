@@ -2,7 +2,7 @@
 
 - **Launch**:
 
-  - From the build tree: `make run`
+  - From the build tree: `meson devenv -C build -- almanah`
   - From the desktop: run the `Almanah Diary` application.
 
 - **Basic workflow**:

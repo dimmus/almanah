@@ -3,25 +3,26 @@
 - **Run with extra GLib checks**:
 
 ```bash
-G_DEBUG=fatal-warnings G_MESSAGES_DEBUG=all make run
+G_DEBUG=fatal-warnings G_MESSAGES_DEBUG=all meson devenv -C build -- almanah
 ```
 
 - **Address/undefined behavior sanitizers**:
 
 ```bash
-make asan   # AddressSanitizer build and run
-make ubsan  # UBSan build and run
+meson setup build-asan --wipe -Dbuildtype=debug -Db_sanitize=address,undefined -Db_lundef=false
+ninja -C build-asan
+meson devenv -C build-asan -- almanah   # run ASan/UBSan build
 ```
 
 - **Valgrind leak check**:
 
 ```bash
-make valgrind-mem
+meson devenv -C build -- valgrind --leak-check=full --show-leak-kinds=all almanah
 ```
 
 - **Valgrind heap profiling (Massif)**:
 
 ```bash
-make valgrind-massif
+meson devenv -C build -- valgrind --tool=massif almanah
 ```
 
