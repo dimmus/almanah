@@ -6,9 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: almanah master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=almanah&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-10-14 17:59+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-10 19:12+0500\n"
 "PO-Revision-Date: 2015-10-15 12:04+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -19,17 +18,22 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/almanah.appdata.xml.in.h:1
+#: data/org.gnome.Almanah.metainfo.xml.in:7 data/org.gnome.Almanah.desktop.in:2
+#: src/ui/main-window.blp:47 src/vala/app/application.vala:128
+msgid "Almanah Diary"
+msgstr "Diář Almanah"
+
+#: data/org.gnome.Almanah.metainfo.xml.in:8
 msgid "Keep a diary of your life"
 msgstr "Uchovávejte si diář svého života"
 
-#: ../data/almanah.appdata.xml.in.h:2
+#: data/org.gnome.Almanah.metainfo.xml.in:10
 msgid ""
 "Almanah Diary is an application to allow you to keep a diary of your life."
 msgstr ""
 "Diář Almanah je aplikace, ve které si můžete vést poznámky ze svého života."
 
-#: ../data/almanah.appdata.xml.in.h:3
+#: data/org.gnome.Almanah.metainfo.xml.in:13
 msgid ""
 "You can encrypt the diary to preserve your privacy. It has editing "
 "abilities, including text formatting and printing and shows you a lists of "
@@ -41,94 +45,24 @@ msgstr ""
 "událostí, které se staly, den po dni (podobně jako se zobrazují úkoly a "
 "schůzky v aplikaci Evolution)."
 
-#: ../data/almanah.desktop.in.h:1 ../src/application.c:133
-#: ../src/main-window.c:155
-msgid "Almanah Diary"
-msgstr "Diář Almanah"
-
-#: ../data/almanah.desktop.in.h:2
+#: data/org.gnome.Almanah.desktop.in:3
 msgid "Keep a personal diary"
 msgstr "Vést si osobní diář"
 
-#. Translators: This is the default name of the PDF/PS/SVG file the diary is printed to if "Print to File" is chosen.
-#: ../data/almanah.desktop.in.h:3 ../src/application.c:272
+#: data/org.gnome.Almanah.desktop.in:4
 msgid "Diary"
 msgstr "Diář"
 
 #. TRANSLATORS: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: ../data/almanah.desktop.in.h:5
+#: data/org.gnome.Almanah.desktop.in:6
 msgid "diary;journal;"
 msgstr "diář;plánovač;záznamník;"
 
-#: ../src/ui/almanah.ui.h:1
-msgid "Calendar"
-msgstr "Kalendář"
-
-#: ../src/ui/almanah.ui.h:2
-msgid "Go to Today"
-msgstr "Přejít na dnešek"
-
-#: ../src/ui/almanah.ui.h:3
-msgid "Select Date…"
-msgstr "Vybrat datum…"
-
-#: ../src/ui/almanah.ui.h:4
-msgid "Entry editing area"
-msgstr "Oblast pro úpravu záznamů"
-
-#: ../src/ui/almanah.ui.h:5
-msgid "Past events"
-msgstr "Poslední události"
-
-#: ../src/ui/almanah.ui.h:6
-msgid "Past Event List"
-msgstr "Seznam posledních událostí"
-
-#: ../src/ui/almanah.ui.h:7
-msgid "Search entry"
-msgstr "Hledat záznam"
-
-#: ../src/ui/almanah.ui.h:8 ../src/search-dialog.c:69
-msgid "Search"
-msgstr "Hledat"
-
-#: ../src/ui/almanah.ui.h:9
-msgid "Result List"
-msgstr "Seznam výsledků"
-
-#: ../src/ui/almanah.ui.h:10
-msgid "View Entry"
-msgstr "Zobrazit záznam"
-
-#: ../src/ui/almanah.ui.h:11
-msgid "e.g. \"14/03/2009\" or \"14th March 2009\"."
-msgstr "např. „14/03/2009“ nebo „14th March 2009“."
-
-#: ../src/ui/almanah.ui.h:12
-msgid "e.g. “http://google.com/” or “file:///home/me/Photos/photo.jpg”."
-msgstr "např. “http://google.cz/” nebo “file:///home/ja/Obrázky/fotka.jpg”."
-
-#: ../src/ui/almanah.ui.h:13
-msgid "Successful Entries"
-msgstr "Úspěšné záznamy"
-
-#: ../src/ui/almanah.ui.h:14
-msgid "Merged Entries"
-msgstr "Sloučené záznamy"
-
-#: ../src/ui/almanah.ui.h:15
-msgid "Failed Entries"
-msgstr "Neúspěšné zázmamy"
-
-#: ../src/ui/almanah.ui.h:16
-msgid "Import Results List"
-msgstr "Seznam výsledků importu"
-
-#: ../data/org.gnome.almanah.gschema.xml.in.h:1
+#: data/org.gnome.almanah.gschema.xml:6
 msgid "Database encryption key ID"
 msgstr "ID šifrovacího klíče databáze"
 
-#: ../data/org.gnome.almanah.gschema.xml.in.h:2
+#: data/org.gnome.almanah.gschema.xml:7
 msgid ""
 "The ID of the key to use to encrypt and decrypt the database, if Almanah has "
 "been built with encryption support. Leave blank to disable database "
@@ -138,629 +72,678 @@ msgstr ""
 "aplikace Almanah sestavená s podporou šifrování. Pokud chcete šifrování "
 "databáze zakázat, ponechte pole prázdné."
 
-#: ../data/org.gnome.almanah.gschema.xml.in.h:3
+#: data/org.gnome.almanah.gschema.xml:11
 msgid "Spell checking language"
 msgstr "Jazyk kontroly pravopisu"
 
-#: ../data/org.gnome.almanah.gschema.xml.in.h:4
+#: data/org.gnome.almanah.gschema.xml:12
 msgid "The locale specifier of the language in which to check entry spellings."
 msgstr ""
 "Národní identifikátor jazyka, pro který se má provádět kontrola pravopisu."
 
-#: ../data/org.gnome.almanah.gschema.xml.in.h:5
+#: data/org.gnome.almanah.gschema.xml:16
 msgid "Spell checking enabled?"
 msgstr "Povolená kontrola pravopisu?"
 
-#: ../data/org.gnome.almanah.gschema.xml.in.h:6
+#: data/org.gnome.almanah.gschema.xml:17
 msgid "Whether spell checking of entries is enabled."
 msgstr "Zda je zapnutá kontrola pravopisu záznamů."
 
-#: ../src/application.c:255
-msgid "Error opening database"
-msgstr "Chyba při otevírání databáze"
+#: src/ui/calendar-button.ui:23
+msgid "Calendar"
+msgstr "Kalendář"
 
-#: ../src/application.c:332
-msgid "Enable debug mode"
-msgstr "Zapnout režim ladění"
+#: src/ui/calendar-button.ui:37
+msgid "Go to Today"
+msgstr "Přejít na dnešek"
 
-#: ../src/application.c:349
-msgid ""
-"Manage your diary. Only one instance of the program may be open at any time."
+#: src/ui/calendar-button.ui:44
+msgid "Select Date…"
+msgstr "Vybrat datum…"
+
+#: src/ui/main-window.blp:9
+msgid "_Bold"
+msgstr "_Tučné"
+
+#: src/ui/main-window.blp:10
+msgid "_Italic"
+msgstr "Ku_rzíva"
+
+#: src/ui/main-window.blp:11
+msgid "_Underline"
+msgstr "Po_dtržené"
+
+#: src/ui/main-window.blp:15
+msgid "_Cut"
+msgstr "_Vyjmout"
+
+#: src/ui/main-window.blp:16
+msgid "_Copy"
+msgstr "_Kopírovat"
+
+#: src/ui/main-window.blp:17
+msgid "_Paste"
+msgstr "V_ložit"
+
+#: src/ui/main-window.blp:18
+msgid "_Delete"
+msgstr "_Smazat"
+
+#: src/ui/main-window.blp:22
+msgid "Insert _Time"
+msgstr "Vloži_t čas"
+
+#: src/ui/main-window.blp:23
+msgid "Add/Remove _Hyperlink"
+msgstr "Přidat/odebrat _hypertextový odkaz"
+
+#: src/ui/main-window.blp:29
+msgid "_Search"
+msgstr "_Hledat"
+
+#: src/ui/main-window.blp:30
+#, fuzzy
+msgid "Select _Date"
+msgstr "Výběr data"
+
+#: src/ui/main-window.blp:34
+msgid "Pr_eferences"
+msgstr "Př_edvolby"
+
+#: src/ui/main-window.blp:35 src/vala/ui/import-export-dialog.vala:93
+#, fuzzy
+msgid "_Import"
+msgstr "_Importovat"
+
+#: src/ui/main-window.blp:36 src/vala/ui/import-export-dialog.vala:93
+#, fuzzy
+msgid "_Export"
+msgstr "_Exportovat"
+
+#: src/ui/main-window.blp:37
+msgid "_Print diary"
+msgstr "Vy_tisknout diář"
+
+#: src/ui/main-window.blp:41
+msgid "_About Almanah Diary"
+msgstr "O diáři _Almanah"
+
+#: src/ui/main-window.blp:42
+msgid "_Quit"
+msgstr "U_končit"
+
+#: src/ui/main-window.blp:144
+msgid "Past events"
+msgstr "Poslední události"
+
+#: src/ui/date-entry-dialog.blp:25 src/vala/ui/date-entry-dialog.vala:48
+msgid "e.g. \"14/03/2009\" or \"14th March 2009\"."
+msgstr "např. „14/03/2009“ nebo „14th March 2009“."
+
+#: src/ui/import-export-dialog.blp:12 src/vala/ui/import-export-dialog.vala:44
+msgid "Format"
 msgstr ""
-"Spravujte svůj diář. V každý okamžik může být spuštěna jen jedna instance "
-"programu."
 
-#. Print an error
-#: ../src/application.c:360
-#, c-format
-msgid "Command line options could not be parsed: %s\n"
-msgstr "Nelze zpracovat přepínače příkazového řádku: %s\n"
-
-#: ../src/application.c:379
-msgid "Error encrypting database"
-msgstr "Chyba při šifrování databáze"
-
-#: ../src/application.c:522
-msgid ""
-"Almanah is free software: you can redistribute it and/or modify it under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation, either version 3 of the License, or (at your option) any later "
-"version."
+#: src/ui/import-export-dialog.blp:19 src/vala/ui/import-export-dialog.vala:53
+msgid "Location"
 msgstr ""
-"Aplikace Almanah je svobodný software: Můžete ji dále šířit a/nebo upravovat "
-"za podmínek licence GNU General Public License v podobě, v jaké ji vydala "
-"Free Software Foundation, a to buď ve verzi 3 této licence nebo (dle vaší "
-"volby) v libovolné novější verzi."
 
-#: ../src/application.c:526
-msgid ""
-"Almanah is distributed in the hope that it will be useful, but WITHOUT ANY "
-"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-"details."
+#: src/ui/import-export-dialog.blp:23 src/vala/ui/import-export-dialog.vala:55
+#: src/vala/ui/import-export-dialog.vala:111
+#, fuzzy
+msgid "Select…"
+msgstr "Vybrat datum…"
+
+#: src/ui/import-export-dialog.blp:28 src/vala/ui/import-export-dialog.vala:60
+msgid "Details"
 msgstr ""
-"Aplikace Almanah je šířena ve víře, že bude užitečná, ale BEZ JAKÝCHKOLIV "
-"ZÁRUK, a to i bez předpokládané záruky na PRODEJNOST nebo VHODNOST PRO "
-"KONKRÉTNÍ ÚČEL. Více podrobností najdete přímo v licenci GNU General Public "
-"License."
 
-#: ../src/application.c:530
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"Almanah.  If not, see <http://www.gnu.org/licenses/>."
+#: src/ui/import-results-dialog.blp:9
+#, fuzzy
+msgid "Import results"
+msgstr "Výsledky importu"
+
+#: src/ui/import-results-dialog.blp:24
+msgid "Show"
 msgstr ""
-"Spolu s aplikací Almanah byste měli obdržet kopii licence GNU General Public "
-"License. Pokud se tak nestalo, podívejte se na <http://www.gnu.org/licenses/"
-">."
 
-#: ../src/application.c:545
+#: src/ui/import-results-dialog.blp:32
+#, fuzzy
+msgid "View entry"
+msgstr "Zobrazit záznam"
+
+#: src/ui/preferences-dialog.blp:12
+#, fuzzy
+msgid "Encryption"
+msgstr "Šifrovací klíč:"
+
+#: src/ui/preferences-dialog.blp:15
+#, fuzzy
+msgid "Encryption key"
+msgstr "Šifrovací klíč:"
+
+#: src/ui/preferences-dialog.blp:18
+msgid "New _Key"
+msgstr "Nový _klíč"
+
+#: src/ui/preferences-dialog.blp:27
+#, fuzzy
+msgid "Spell checking"
+msgstr "Jazyk kontroly pravopisu"
+
+#: src/ui/preferences-dialog.blp:30
+msgid "Enable _spell checking"
+msgstr "Zapnout kontrolu pravopi_su"
+
+#: src/ui/search-dialog.blp:24
+msgid "Search entry"
+msgstr "Hledat záznam"
+
+#: src/ui/search-dialog.blp:28
+msgid "Search"
+msgstr "Hledat"
+
+#: src/ui/search-dialog.blp:33 src/vala/ui/uri-entry-dialog.vala:60
+#: src/vala/ui/date-entry-dialog.vala:61
+#: src/vala/ui/import-export-dialog.vala:91
+msgid "_Cancel"
+msgstr "_Zrušit"
+
+#: src/ui/search-dialog.blp:76
+msgid "View Entry"
+msgstr "Zobrazit záznam"
+
+#: src/ui/uri-entry-dialog.blp:25 src/vala/ui/uri-entry-dialog.vala:47
+#, fuzzy
+msgid "e.g. \"http://google.com/\" or \"file:///home/me/Photos/photo.jpg\"."
+msgstr "např. “http://google.cz/” nebo “file:///home/ja/Obrázky/fotka.jpg”."
+
+#: src/vala/app/application.vala:37
+msgid "Unknown error"
+msgstr ""
+
+#: src/vala/app/application.vala:138
 #, c-format
 msgid "A helpful diary keeper, storing %u entries."
 msgstr "Užitečný diář na hlídání termínů, uloženo %u záznamů."
 
-#: ../src/application.c:549
-msgid "Copyright © 2008-2009 Philip Withnall"
-msgstr "Copyright © 2008-2009 Philip Withnall"
+#: src/vala/app/application.vala:140
+#, fuzzy
+msgid "A helpful diary keeper."
+msgstr "Užitečný diář na hlídání termínů, uloženo %u záznamů."
 
-#. Translators: please include your names here to be credited for your hard work!
-#. * Format:
-#. * "Translator name 1 <translator@email.address>\n"
-#. * "Translator name 2 <translator2@email.address>"
-#.
-#: ../src/application.c:557
-msgid "translator-credits"
-msgstr "Marek Černocký <marek@manet.cz>"
+#: src/vala/app/main-window.vala:250
+#, fuzzy, c-format
+msgid "Almanah Diary – %s"
+msgstr "Diář Almanah"
 
-#: ../src/application.c:561
-msgid "Almanah Website"
-msgstr "Webové stránky Almanah"
-
-#: ../src/application.c:589
-#, c-format
-msgid ""
-"Couldn't load the CSS resources. The interface might not be styled "
-"correctly: %s"
-msgstr ""
-"Nelze načíst prostředky CSS. Rozhraní nemusí být správně ostylováno: %s"
-
-#: ../src/date-entry-dialog.c:72
-msgid "Select Date"
-msgstr "Výběr data"
-
-#: ../src/date-entry-dialog.c:127 ../src/import-export-dialog.c:169
-#: ../src/import-export-dialog.c:475 ../src/main-window.c:225
-#: ../src/preferences-dialog.c:177 ../src/search-dialog.c:95
-#: ../src/uri-entry-dialog.c:126
-msgid "UI data could not be loaded"
-msgstr "Nelze načíst data uživatelského rozhraní"
-
-#: ../src/entry.c:303
-#, c-format
-msgid "Invalid data version number %u."
-msgstr "Neplatné číslo verze dat %u."
-
-#: ../src/events/calendar-appointment.c:51
-msgid "Calendar Appointment"
-msgstr "Schůzka v kalendáři"
-
-#: ../src/events/calendar-appointment.c:52
-msgid "An appointment on an Evolution calendar."
-msgstr "Schůzka v kalendáři Evolution."
-
-#. Translators: This is a time string with the format hh:mm
-#: ../src/events/calendar-appointment.c:89 ../src/events/calendar-task.c:90
-#, c-format
-msgid "%.2d:%.2d"
-msgstr "%.2d:%.2d"
-
-#: ../src/events/calendar-appointment.c:135 ../src/events/calendar-task.c:125
-msgid "Error launching Evolution"
-msgstr "Chyba při spouštění aplikace Evolution"
-
-#: ../src/events/calendar-task.c:51
-msgid "Calendar Task"
-msgstr "Úkol v kalendáři"
-
-#: ../src/events/calendar-task.c:52
-msgid "A task on an Evolution calendar."
-msgstr "Úkol v kalendáři Evolution"
-
-#: ../src/export-operation.c:47 ../src/import-operation.c:45
-msgid "Text Files"
-msgstr "Textové soubory"
-
-#: ../src/export-operation.c:48
-msgid ""
-"Select a _folder to export the entries to as text files, one per entry, with "
-"names in the format 'yyyy-mm-dd', and no extension. All entries will be "
-"exported, unencrypted in plain text format."
-msgstr ""
-"Vyberte _složku, do které se mají exportovat záznamy jako textové soubory, "
-"pro každý záznam jeden, s názvy ve formátu „rrrr-mm-dd“ a bez přípony. "
-"Exportovány budou všechny záznamy a to nezašifrovaném, v čistě textovém "
-"formátu."
-
-#: ../src/export-operation.c:52 ../src/import-operation.c:50
-msgid "Database"
-msgstr "Databáze"
-
-#: ../src/export-operation.c:53
-msgid ""
-"Select a _filename for a complete copy of the unencrypted Almanah Diary "
-"database to be given."
-msgstr ""
-"Vyberte název _souboru, do kterého se má dát úplná kopie nezašifrované "
-"databáze Diáře Almanah"
-
-#: ../src/export-operation.c:256 ../src/export-operation.c:313
-#, c-format
-msgid "Error changing exported file permissions: %s"
-msgstr "Chyba při změně oprávnění exportovaného souboru: %s"
-
-#: ../src/gtk/menus.ui.h:1
-msgid "_Search"
-msgstr "_Hledat"
-
-#: ../src/gtk/menus.ui.h:2
-msgid "Pr_eferences"
-msgstr "Př_edvolby"
-
-#: ../src/gtk/menus.ui.h:3
-msgctxt "Main menu"
-msgid "_Import"
-msgstr "_Importovat"
-
-#: ../src/gtk/menus.ui.h:4
-msgctxt "Main menu"
-msgid "_Export"
-msgstr "_Exportovat"
-
-#: ../src/gtk/menus.ui.h:5
-msgid "_Print diary"
-msgstr "Vy_tisknout diář"
-
-#: ../src/gtk/menus.ui.h:6
-msgid "_About Almanah Diary"
-msgstr "O diáři _Almanah"
-
-#: ../src/gtk/menus.ui.h:7
-msgid "_Quit"
-msgstr "U_končit"
-
-#: ../src/gtk/menus.ui.h:8
-msgid "_Bold"
-msgstr "_Tučné"
-
-#: ../src/gtk/menus.ui.h:9
-msgid "_Italic"
-msgstr "Ku_rzíva"
-
-#: ../src/gtk/menus.ui.h:10
-msgid "_Underline"
-msgstr "Po_dtržené"
-
-#: ../src/gtk/menus.ui.h:11
-msgid "_Cut"
-msgstr "_Vyjmout"
-
-#: ../src/gtk/menus.ui.h:12
-msgid "_Copy"
-msgstr "_Kopírovat"
-
-#: ../src/gtk/menus.ui.h:13
-msgid "_Paste"
-msgstr "V_ložit"
-
-#: ../src/gtk/menus.ui.h:14 ../src/main-window.c:626
-msgid "_Delete"
-msgstr "_Smazat"
-
-#: ../src/gtk/menus.ui.h:15
-msgid "Insert _Time"
-msgstr "Vloži_t čas"
-
-#: ../src/gtk/menus.ui.h:16
-msgid "Add/Remove _Hyperlink"
-msgstr "Přidat/odebrat _hypertextový odkaz"
-
-#: ../src/import-export-dialog.c:203
-msgid "Import _mode: "
-msgstr "Reži_m importu: "
-
-#: ../src/import-export-dialog.c:203
-msgid "Export _mode: "
-msgstr "Reži_m exportu: "
-
-#. Set the window title
-#: ../src/import-export-dialog.c:206
-msgid "Import Entries"
-msgstr "Import záznamů"
-
-#: ../src/import-export-dialog.c:206
-msgid "Export Entries"
-msgstr "Export záznamů"
-
-#: ../src/import-export-dialog.c:210
-msgctxt "Dialog button"
-msgid "_Import"
-msgstr "_Importovat"
-
-#: ../src/import-export-dialog.c:210
-msgctxt "Dialog button"
-msgid "_Export"
-msgstr "_Exportovat"
-
-#: ../src/import-export-dialog.c:247
-msgid "Import failed"
-msgstr "Import selhal"
-
-#: ../src/import-export-dialog.c:285
-msgid "Export failed"
-msgstr "Export selhal"
-
-#: ../src/import-export-dialog.c:298
-msgid "Export successful"
-msgstr "Export úspěšný"
-
-#: ../src/import-export-dialog.c:299
-msgid "The diary was successfully exported."
-msgstr "Diář byl úspěšně vyexportován."
-
-#: ../src/import-export-dialog.c:447
-msgid "Import Results"
-msgstr "Výsledky importu"
-
-#. Translators: This is a strftime()-format string for the dates displayed in import results.
-#. Translators: This is a strftime()-format string for the date to display when asking about editing a diary entry.
-#. Translators: This is a strftime()-format string for the date to display when asking about deleting a diary entry.
-#. Translators: This is a strftime()-format string for the date displayed at the top of the main window.
-#. Translators: This is a strftime()-format string for the date displayed above each printed entry.
-#. Translators: This is a strftime()-format string for the dates displayed in search results.
-#: ../src/import-export-dialog.c:542 ../src/main-window.c:587
-#: ../src/main-window.c:618 ../src/main-window.c:1225 ../src/printing.c:263
-#: ../src/search-dialog.c:180
-msgid "%A, %e %B %Y"
-msgstr "%A, %e. %B %Y"
-
-#: ../src/import-operation.c:46
-msgid ""
-"Select a _folder containing text files, one per entry, with names in the "
-"format 'yyyy-mm-dd', and no extension. Any and all such files will be "
-"imported."
-msgstr ""
-"Vyberte _složku obsahující textové soubory, pro každý záznam jeden, s názvy "
-"ve formátu „rrrr-mm-dd“ a bez přípony. Všechny takovéto soubory budou "
-"naimportovány."
-
-#: ../src/import-operation.c:51
-msgid "Select a database _file created by Almanah Diary to import."
-msgstr ""
-"Vyberte databázový _soubor vytvořený aplikací Diář Almanah, který se má "
-"importovat."
-
-#: ../src/import-operation.c:248
-#, c-format
-msgid "Error deserializing imported entry into buffer: %s"
-msgstr ""
-"Chyba při deserializaci importovaného záznamu do vyrovnávací paměti: %s"
-
-#: ../src/import-operation.c:264
-#, c-format
-msgid ""
-"Error deserializing existing entry into buffer; overwriting with imported "
-"entry: %s"
-msgstr ""
-"Chyba při deserializaci existujícího záznamu do vyrovnávací paměti; přepíše "
-"se importovaným záznamem: %s"
-
-#. Append some header text for the imported entry
-#. Translators: This text is appended to an existing entry when an entry is being imported to the same date.
-#. * The imported entry is appended to this text.
-#: ../src/import-operation.c:305
-#, c-format
-msgid ""
-"\n"
-"\n"
-"Entry imported from \"%s\":\n"
-"\n"
+#. Translators: appended when importing an entry for a date that already has one
+#: src/vala/model/import-export-operations.vala:152
+#, fuzzy, c-format
+msgid "Entry imported from \"%s\":"
 msgstr ""
 "\n"
 "\n"
 "Záznam importován z „%s“:\n"
 "\n"
 
-#: ../src/main-window.c:591
-#, c-format
-msgid "Are you sure you want to edit this diary entry for %s?"
-msgstr "Opravdu chcete upravit tento záznam v diáři na %s?"
+#: src/vala/model/import-export-operations.vala:242
+#, fuzzy
+msgid "Error changing exported file permissions."
+msgstr "Chyba při změně oprávnění exportovaného souboru: %s"
 
-#: ../src/main-window.c:594 ../src/main-window.c:625
-msgid "_Cancel"
-msgstr "_Zrušit"
-
-#: ../src/main-window.c:595
-msgid "_Edit"
-msgstr "_Upravit"
-
-#: ../src/main-window.c:622
-#, c-format
-msgid "Are you sure you want to delete this diary entry for %s?"
-msgstr "Opravdu chcete smazat tento záznam v diáři na %s?"
-
-#. Print a warning about the unknown tag
-#: ../src/main-window.c:732
-#, c-format
-msgid "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
-msgstr ""
-"Neznámá nebo duplicitní textová značka „%s“ v záznamu. Bude se ignorovat."
-
-#: ../src/main-window.c:973
-msgid "Error opening URI"
-msgstr "Chyba při otevírání URI"
-
-#. Translators: this is an event source name (like Calendar appointment) and the time when the event takes place
-#: ../src/main-window.c:1152
-#, c-format
-msgid "%s @ %s"
-msgstr "%s v %s"
-
-#: ../src/main-window.c:1258
-msgid "Entry content could not be loaded"
-msgstr "Obsah záznamu nelze načíst"
-
-#. Translators: this sentence is just used in startup to estimate the width
-#. of a 15 words sentence. Translate with some randome sentences with just 15 words.
-#. See: https://bugzilla.gnome.org/show_bug.cgi?id=754841
-#: ../src/main-window.c:1414
-msgid ""
-"This is just a fifteen words sentence to calculate the diary entry text view "
-"size"
-msgstr ""
-"Toto je prostě jen věta dlouhá patnáct slov pro výpočet délky textového "
-"vstupu v diáři"
-
-#: ../src/main-window.c:1450
-msgid "Spelling checker could not be initialized"
-msgstr "Nelze inicializovat kontrolu pravopisu"
-
-#: ../src/preferences-dialog.c:83
-msgid "Preferences"
-msgstr "Předvolby"
-
-#. Grab our child widgets
-#: ../src/preferences-dialog.c:204
-msgid "Encryption key: "
-msgstr "Šifrovací klíč:"
-
-#: ../src/preferences-dialog.c:208
-msgid "None (don't encrypt)"
-msgstr "Žádný (nešifrovat)"
-
-#: ../src/preferences-dialog.c:213
-msgid "New _Key"
-msgstr "Nový _klíč"
-
-#. Set up the "Enable spell checking" check button
-#: ../src/preferences-dialog.c:237
-msgid "Enable _spell checking"
-msgstr "Zapnout kontrolu pravopi_su"
-
-#: ../src/preferences-dialog.c:262
-msgid "Error saving the encryption key"
-msgstr "Chyba při ukládání šifrovacího klíče"
-
-#: ../src/preferences-dialog.c:281
-msgid "Error opening Seahorse"
-msgstr "Chyba při otevírání aplikace Seahorse"
-
-#: ../src/printing.c:277
-msgid "This entry is marked as important."
-msgstr "Tento záznam je označený jako důležitý."
-
-#: ../src/printing.c:298
-msgid "No entry for this date."
-msgstr "Pro tento den není žádný záznam."
-
-#: ../src/printing.c:453
-msgid "Start date:"
-msgstr "Počáteční datum:"
-
-#: ../src/printing.c:455
-msgid "End date:"
-msgstr "Konečné datum:"
-
-#. Line spacing
-#: ../src/printing.c:471
-msgid "Line spacing:"
-msgstr "Řádkování:"
-
-#: ../src/search-dialog.c:221
-msgid "Search canceled."
-msgstr "Hledání zrušeno."
-
-#. Translators: This is an error message wrapper for when searches encounter an error. The placeholder is for an error message.
-#: ../src/search-dialog.c:224
-#, c-format
-msgid "Error: %s"
-msgstr "Chyba: %s"
-
-#. Success!
-#: ../src/search-dialog.c:229
-#, c-format
-msgid "Found %d entry:"
-msgid_plural "Found %d entries:"
-msgstr[0] "Nalezen %d záznam:"
-msgstr[1] "Nalezeny %d záznamy:"
-msgstr[2] "Nalezeno %d záznamů:"
-
-#: ../src/search-dialog.c:278
+#: src/vala/ui/search-dialog.vala:108 src/vala/ui/search-dialog.vala:113
 msgid "Searching…"
 msgstr "Hledá se…"
 
-#: ../src/storage-manager.c:248
-#, c-format
-msgid ""
-"Could not open database \"%s\". SQLite provided the following error message: "
-"%s"
-msgstr ""
-"Nelze otevřít databázi „%s“. Aplikace SQLite poskytla následující chybovou "
-"zprávu: %s"
+#: src/vala/ui/search-dialog.vala:142
+#, fuzzy, c-format
+msgid "Found %d entry:"
+msgstr "Nalezen %d záznam:"
 
-#: ../src/storage-manager.c:291
-#, c-format
-msgid ""
-"Could not run query \"%s\". SQLite provided the following error message: %s"
-msgstr ""
-"Nelze spustit dotaz „%s“. Aplikace SQLite poskytla následující chybovou "
-"zprávu: %s"
+#: src/vala/ui/search-dialog.vala:144
+#, fuzzy, c-format
+msgid "Found %d entries:"
+msgstr "Nalezen %d záznam:"
 
-#: ../src/storage-manager.c:597
-msgid "Error deserializing entry into buffer while searching."
-msgstr "Chyba při deserializaci záznamu do vyrovnávací paměti během hledání."
+#: src/vala/ui/preferences-dialog.vala:19
+msgid "Preferences"
+msgstr "Předvolby"
 
-#: ../src/uri-entry-dialog.c:71
+#: src/vala/ui/preferences-dialog.vala:40
+msgid "Error opening Seahorse"
+msgstr "Chyba při otevírání aplikace Seahorse"
+
+#: src/vala/ui/uri-entry-dialog.vala:29
 msgid "Enter URI"
 msgstr "Zadání adresy URI"
 
-#: ../src/vfs.c:239
-#, c-format
-msgid "GPGME is not at least version %s"
-msgstr "GPGME není v minimální potřebné verzi %s"
-
-#: ../src/vfs.c:246
-#, c-format
-msgid "GPGME doesn't support OpenPGP: %s"
-msgstr "GPGME nepodporuje OpenPGP: %s"
-
-#: ../src/vfs.c:253
-#, c-format
-msgid "Error creating cipher context: %s"
-msgstr "Chyba při vytváření kontextu šifry: %s"
-
-#: ../src/vfs.c:273
-#, c-format
-msgid "Can't create a new GIOChannel for the encrypted database: %s"
-msgstr "Nelze vytvořit nový GIOChannel pro šifrovanou databázi: %s"
-
-#: ../src/vfs.c:281
-#, c-format
-msgid "Error opening encrypted database file \"%s\": %s"
-msgstr "Chyba při otevírání šifrovaného databázového souboru „%s“: %s"
-
-#: ../src/vfs.c:297
-#, c-format
-msgid "Error creating Callback base data buffer: %s"
+#: src/vala/ui/uri-entry-dialog.vala:66 src/vala/ui/date-entry-dialog.vala:67
+msgid "_OK"
 msgstr ""
-"Chyba při vytváření vyrovnávací paměti pro základní data zpětných volání: %s"
 
-#: ../src/vfs.c:305
-#, c-format
-msgid "Can't create a new GIOChannel for the plain database: %s"
-msgstr "Nelze vytvořit nový GIOChannel pro prostou databázi: %s"
+#: src/vala/ui/date-entry-dialog.vala:30
+msgid "Select Date"
+msgstr "Výběr data"
 
-#: ../src/vfs.c:313
-#, c-format
-msgid "Error opening plain database file \"%s\": %s"
-msgstr "Chyba při otevírání prostého databázového souboru „%s“: %s"
+#: src/vala/ui/import-export-dialog.vala:37
+#, fuzzy
+msgid "Import"
+msgstr "_Importovat"
 
-#: ../src/vfs.c:409
-#, c-format
-msgid "Error getting encryption key: %s"
-msgstr "Chyba při získávání šifrovacího klíče: %s"
+#: src/vala/ui/import-export-dialog.vala:37
+#, fuzzy
+msgid "Export"
+msgstr "_Exportovat"
 
-#: ../src/vfs.c:433 ../src/vfs.c:439
-#, c-format
-msgid "Error encrypting database: %s"
-msgstr "Chyba při šifrování databáze: %s"
+#: src/vala/ui/import-export-dialog.vala:46
+#, fuzzy
+msgid "Text files"
+msgstr "Textové soubory"
 
-#. Translators: The first and second params are file paths, the last param is an error message.
-#: ../src/vfs.c:489
-#, c-format
-msgid "Error copying the file from %s to %s: %s"
-msgstr "Chyba při kopírování souboru z %s do %s: %s"
+#: src/vala/ui/import-export-dialog.vala:46
+msgid "Database"
+msgstr "Databáze"
 
-#: ../src/vfs.c:495
-#, c-format
-msgid "Error changing database backup file permissions: %s"
-msgstr "Chyba při změně oprávnění souboru se zálohou databáze: %s"
-
-#: ../src/vfs.c:595
-#, c-format
-msgid "Error closing file: %s"
-msgstr "Chyba při zavírání souboru: %s"
-
-#. Translators: the first parameter is a filename, the second is an error message.
-#. Translators: the first parameter is a filename.
-#: ../src/vfs.c:994 ../src/vfs.c:1021
-#, c-format
-msgid "Error backing up file ‘%s’"
-msgstr "Chyba při zálohování souboru „%s“"
-
-#: ../src/vfs.c:1007
-#, c-format
-msgid "Error decrypting database: %s"
-msgstr "Chyba při dešifrování databáze: %s"
-
-#: ../src/vfs.c:1047
-#, c-format
-msgid "Error changing database file permissions: %s"
-msgstr "Chyba při změně oprávnění databázového souboru: %s"
-
-#: ../src/widgets/calendar-button.c:142
-#, c-format
-msgid "UI data could not be loaded: %s"
-msgstr "Nelze načíst data uživatelského rozhraní: %s"
-
-#: ../src/widgets/calendar-button.c:152
-msgid "Can't load calendar window object from UI file"
+#: src/vala/ui/import-export-dialog.vala:118
+#, fuzzy
+msgid ""
+"Select a folder containing text files, one per entry, with names in the "
+"format \"yyyy-mm-dd\", and no extension. Any and all such files will be "
+"imported."
 msgstr ""
-"Ze souboru s uživatelským rozhraním nelze načíst objekt okna s kalendářem"
+"Vyberte _složku obsahující textové soubory, pro každý záznam jeden, s názvy "
+"ve formátu „rrrr-mm-dd“ a bez přípony. Všechny takovéto soubory budou "
+"naimportovány."
 
-#. Translators: This is the detail string for important days as displayed in the calendar.
-#: ../src/widgets/calendar.c:176
-msgid "Important!"
-msgstr "Důležité!"
+#: src/vala/ui/import-export-dialog.vala:120
+#, fuzzy
+msgid "Select a database file created by Almanah Diary to import."
+msgstr ""
+"Vyberte databázový _soubor vytvořený aplikací Diář Almanah, který se má "
+"importovat."
 
-#: ../src/widgets/entry-tags-area.c:100 ../src/widgets/tag-entry.c:166
-msgid "add tag"
-msgstr "přidat štítek"
+#: src/vala/ui/import-export-dialog.vala:124
+msgid "Select a folder to export all entries as plain text files."
+msgstr ""
 
-#: ../src/widgets/entry-tags-area.c:101
-msgid "Write the tag and press enter to save it"
-msgstr "Napište štítek a zmáčknutím Enter jej uložte"
+#: src/vala/ui/import-export-dialog.vala:126
+#, fuzzy
+msgid "Select a filename for an unencrypted copy of the diary database."
+msgstr ""
+"Vyberte název _souboru, do kterého se má dát úplná kopie nezašifrované "
+"databáze Diáře Almanah"
 
-#: ../src/widgets/tag-accessible.c:165
-msgid "Remove the tag from the entry"
-msgstr "Odebrat štítek ze záznamu"
+#: src/vala/ui/import-export-dialog.vala:238
+#, fuzzy
+msgid "Import complete"
+msgstr "Import selhal"
 
-#. Looks like gtk_widget_set_tooltip_text don't works here, even in the init... ?
-#: ../src/widgets/tag.c:416
+#: src/vala/ui/import-export-dialog.vala:238
+#, fuzzy
+msgid "Export complete"
+msgstr "Export selhal"
+
+#: src/vala/ui/import-export-dialog.vala:238
+#, fuzzy
+msgid "Error"
+msgstr "Chyba: %s"
+
+#: src/vala/ui/import-export-dialog.vala:240
+msgid "Entries have been imported."
+msgstr ""
+
+#: src/vala/ui/import-export-dialog.vala:240
+msgid "Entries have been exported."
+msgstr ""
+
+#: src/vala/ui/import-export-dialog.vala:241
+msgid "An unknown error occurred"
+msgstr ""
+
+#: src/vala/ui/import-export-dialog.vala:243
+msgid "OK"
+msgstr ""
+
+#: src/vala/widgets/tag.vala:31
 msgid "Remove tag"
 msgstr "Odebrat štítek"
 
-#: ../src/widgets/tag-entry.c:85
-msgid "Tag entry"
-msgstr "Záznam štítku"
+#: src/vala/widgets/tag-entry.vala:49 src/vala/widgets/entry-tags-area.vala:31
+msgid "add tag"
+msgstr "přidat štítek"
+
+#: src/vala/widgets/tag-entry.vala:50
+msgid "Write the tag and press enter to save it"
+msgstr "Napište štítek a zmáčknutím Enter jej uložte"
+
+#~ msgid "Entry editing area"
+#~ msgstr "Oblast pro úpravu záznamů"
+
+#~ msgid "Past Event List"
+#~ msgstr "Seznam posledních událostí"
+
+#~ msgid "Result List"
+#~ msgstr "Seznam výsledků"
+
+#~ msgid "Successful Entries"
+#~ msgstr "Úspěšné záznamy"
+
+#~ msgid "Merged Entries"
+#~ msgstr "Sloučené záznamy"
+
+#~ msgid "Failed Entries"
+#~ msgstr "Neúspěšné zázmamy"
+
+#~ msgid "Import Results List"
+#~ msgstr "Seznam výsledků importu"
+
+#~ msgid "Error opening database"
+#~ msgstr "Chyba při otevírání databáze"
+
+#~ msgid "Enable debug mode"
+#~ msgstr "Zapnout režim ladění"
+
+#~ msgid ""
+#~ "Manage your diary. Only one instance of the program may be open at any "
+#~ "time."
+#~ msgstr ""
+#~ "Spravujte svůj diář. V každý okamžik může být spuštěna jen jedna instance "
+#~ "programu."
+
+#, c-format
+#~ msgid "Command line options could not be parsed: %s\n"
+#~ msgstr "Nelze zpracovat přepínače příkazového řádku: %s\n"
+
+#~ msgid "Error encrypting database"
+#~ msgstr "Chyba při šifrování databáze"
+
+#~ msgid ""
+#~ "Almanah is free software: you can redistribute it and/or modify it under "
+#~ "the terms of the GNU General Public License as published by the Free "
+#~ "Software Foundation, either version 3 of the License, or (at your option) "
+#~ "any later version."
+#~ msgstr ""
+#~ "Aplikace Almanah je svobodný software: Můžete ji dále šířit a/nebo "
+#~ "upravovat za podmínek licence GNU General Public License v podobě, v jaké "
+#~ "ji vydala Free Software Foundation, a to buď ve verzi 3 této licence nebo "
+#~ "(dle vaší volby) v libovolné novější verzi."
+
+#~ msgid ""
+#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
+#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+#~ "more details."
+#~ msgstr ""
+#~ "Aplikace Almanah je šířena ve víře, že bude užitečná, ale BEZ JAKÝCHKOLIV "
+#~ "ZÁRUK, a to i bez předpokládané záruky na PRODEJNOST nebo VHODNOST PRO "
+#~ "KONKRÉTNÍ ÚČEL. Více podrobností najdete přímo v licenci GNU General "
+#~ "Public License."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
+#~ msgstr ""
+#~ "Spolu s aplikací Almanah byste měli obdržet kopii licence GNU General "
+#~ "Public License. Pokud se tak nestalo, podívejte se na <http://www.gnu.org/"
+#~ "licenses/>."
+
+#~ msgid "Copyright © 2008-2009 Philip Withnall"
+#~ msgstr "Copyright © 2008-2009 Philip Withnall"
+
+#~ msgid "translator-credits"
+#~ msgstr "Marek Černocký <marek@manet.cz>"
+
+#~ msgid "Almanah Website"
+#~ msgstr "Webové stránky Almanah"
+
+#, c-format
+#~ msgid ""
+#~ "Couldn't load the CSS resources. The interface might not be styled "
+#~ "correctly: %s"
+#~ msgstr ""
+#~ "Nelze načíst prostředky CSS. Rozhraní nemusí být správně ostylováno: %s"
+
+#~ msgid "UI data could not be loaded"
+#~ msgstr "Nelze načíst data uživatelského rozhraní"
+
+#, c-format
+#~ msgid "Invalid data version number %u."
+#~ msgstr "Neplatné číslo verze dat %u."
+
+#~ msgid "Calendar Appointment"
+#~ msgstr "Schůzka v kalendáři"
+
+#~ msgid "An appointment on an Evolution calendar."
+#~ msgstr "Schůzka v kalendáři Evolution."
+
+#, c-format
+#~ msgid "%.2d:%.2d"
+#~ msgstr "%.2d:%.2d"
+
+#~ msgid "Error launching Evolution"
+#~ msgstr "Chyba při spouštění aplikace Evolution"
+
+#~ msgid "Calendar Task"
+#~ msgstr "Úkol v kalendáři"
+
+#~ msgid "A task on an Evolution calendar."
+#~ msgstr "Úkol v kalendáři Evolution"
+
+#~ msgid ""
+#~ "Select a _folder to export the entries to as text files, one per entry, "
+#~ "with names in the format 'yyyy-mm-dd', and no extension. All entries will "
+#~ "be exported, unencrypted in plain text format."
+#~ msgstr ""
+#~ "Vyberte _složku, do které se mají exportovat záznamy jako textové "
+#~ "soubory, pro každý záznam jeden, s názvy ve formátu „rrrr-mm-dd“ a bez "
+#~ "přípony. Exportovány budou všechny záznamy a to nezašifrovaném, v čistě "
+#~ "textovém formátu."
+
+#~ msgid "Import _mode: "
+#~ msgstr "Reži_m importu: "
+
+#~ msgid "Export _mode: "
+#~ msgstr "Reži_m exportu: "
+
+#~ msgid "Import Entries"
+#~ msgstr "Import záznamů"
+
+#~ msgid "Export Entries"
+#~ msgstr "Export záznamů"
+
+#~ msgctxt "Dialog button"
+#~ msgid "_Import"
+#~ msgstr "_Importovat"
+
+#~ msgctxt "Dialog button"
+#~ msgid "_Export"
+#~ msgstr "_Exportovat"
+
+#~ msgid "Export successful"
+#~ msgstr "Export úspěšný"
+
+#~ msgid "The diary was successfully exported."
+#~ msgstr "Diář byl úspěšně vyexportován."
+
+#~ msgid "%A, %e %B %Y"
+#~ msgstr "%A, %e. %B %Y"
+
+#, c-format
+#~ msgid "Error deserializing imported entry into buffer: %s"
+#~ msgstr ""
+#~ "Chyba při deserializaci importovaného záznamu do vyrovnávací paměti: %s"
+
+#, c-format
+#~ msgid ""
+#~ "Error deserializing existing entry into buffer; overwriting with imported "
+#~ "entry: %s"
+#~ msgstr ""
+#~ "Chyba při deserializaci existujícího záznamu do vyrovnávací paměti; "
+#~ "přepíše se importovaným záznamem: %s"
+
+#, c-format
+#~ msgid "Are you sure you want to edit this diary entry for %s?"
+#~ msgstr "Opravdu chcete upravit tento záznam v diáři na %s?"
+
+#~ msgid "_Edit"
+#~ msgstr "_Upravit"
+
+#, c-format
+#~ msgid "Are you sure you want to delete this diary entry for %s?"
+#~ msgstr "Opravdu chcete smazat tento záznam v diáři na %s?"
+
+#, c-format
+#~ msgid "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
+#~ msgstr ""
+#~ "Neznámá nebo duplicitní textová značka „%s“ v záznamu. Bude se ignorovat."
+
+#~ msgid "Error opening URI"
+#~ msgstr "Chyba při otevírání URI"
+
+#, c-format
+#~ msgid "%s @ %s"
+#~ msgstr "%s v %s"
+
+#~ msgid "Entry content could not be loaded"
+#~ msgstr "Obsah záznamu nelze načíst"
+
+#~ msgid ""
+#~ "This is just a fifteen words sentence to calculate the diary entry text "
+#~ "view size"
+#~ msgstr ""
+#~ "Toto je prostě jen věta dlouhá patnáct slov pro výpočet délky textového "
+#~ "vstupu v diáři"
+
+#~ msgid "Spelling checker could not be initialized"
+#~ msgstr "Nelze inicializovat kontrolu pravopisu"
+
+#~ msgid "None (don't encrypt)"
+#~ msgstr "Žádný (nešifrovat)"
+
+#~ msgid "Error saving the encryption key"
+#~ msgstr "Chyba při ukládání šifrovacího klíče"
+
+#~ msgid "This entry is marked as important."
+#~ msgstr "Tento záznam je označený jako důležitý."
+
+#~ msgid "No entry for this date."
+#~ msgstr "Pro tento den není žádný záznam."
+
+#~ msgid "Start date:"
+#~ msgstr "Počáteční datum:"
+
+#~ msgid "End date:"
+#~ msgstr "Konečné datum:"
+
+#~ msgid "Line spacing:"
+#~ msgstr "Řádkování:"
+
+#~ msgid "Search canceled."
+#~ msgstr "Hledání zrušeno."
+
+#, c-format
+#~ msgid ""
+#~ "Could not open database \"%s\". SQLite provided the following error "
+#~ "message: %s"
+#~ msgstr ""
+#~ "Nelze otevřít databázi „%s“. Aplikace SQLite poskytla následující "
+#~ "chybovou zprávu: %s"
+
+#, c-format
+#~ msgid ""
+#~ "Could not run query \"%s\". SQLite provided the following error message: "
+#~ "%s"
+#~ msgstr ""
+#~ "Nelze spustit dotaz „%s“. Aplikace SQLite poskytla následující chybovou "
+#~ "zprávu: %s"
+
+#~ msgid "Error deserializing entry into buffer while searching."
+#~ msgstr ""
+#~ "Chyba při deserializaci záznamu do vyrovnávací paměti během hledání."
+
+#, c-format
+#~ msgid "GPGME is not at least version %s"
+#~ msgstr "GPGME není v minimální potřebné verzi %s"
+
+#, c-format
+#~ msgid "GPGME doesn't support OpenPGP: %s"
+#~ msgstr "GPGME nepodporuje OpenPGP: %s"
+
+#, c-format
+#~ msgid "Error creating cipher context: %s"
+#~ msgstr "Chyba při vytváření kontextu šifry: %s"
+
+#, c-format
+#~ msgid "Can't create a new GIOChannel for the encrypted database: %s"
+#~ msgstr "Nelze vytvořit nový GIOChannel pro šifrovanou databázi: %s"
+
+#, c-format
+#~ msgid "Error opening encrypted database file \"%s\": %s"
+#~ msgstr "Chyba při otevírání šifrovaného databázového souboru „%s“: %s"
+
+#, c-format
+#~ msgid "Error creating Callback base data buffer: %s"
+#~ msgstr ""
+#~ "Chyba při vytváření vyrovnávací paměti pro základní data zpětných volání: "
+#~ "%s"
+
+#, c-format
+#~ msgid "Can't create a new GIOChannel for the plain database: %s"
+#~ msgstr "Nelze vytvořit nový GIOChannel pro prostou databázi: %s"
+
+#, c-format
+#~ msgid "Error opening plain database file \"%s\": %s"
+#~ msgstr "Chyba při otevírání prostého databázového souboru „%s“: %s"
+
+#, c-format
+#~ msgid "Error getting encryption key: %s"
+#~ msgstr "Chyba při získávání šifrovacího klíče: %s"
+
+#, c-format
+#~ msgid "Error encrypting database: %s"
+#~ msgstr "Chyba při šifrování databáze: %s"
+
+#, c-format
+#~ msgid "Error copying the file from %s to %s: %s"
+#~ msgstr "Chyba při kopírování souboru z %s do %s: %s"
+
+#, c-format
+#~ msgid "Error changing database backup file permissions: %s"
+#~ msgstr "Chyba při změně oprávnění souboru se zálohou databáze: %s"
+
+#, c-format
+#~ msgid "Error closing file: %s"
+#~ msgstr "Chyba při zavírání souboru: %s"
+
+#, c-format
+#~ msgid "Error backing up file ‘%s’"
+#~ msgstr "Chyba při zálohování souboru „%s“"
+
+#, c-format
+#~ msgid "Error decrypting database: %s"
+#~ msgstr "Chyba při dešifrování databáze: %s"
+
+#, c-format
+#~ msgid "Error changing database file permissions: %s"
+#~ msgstr "Chyba při změně oprávnění databázového souboru: %s"
+
+#, c-format
+#~ msgid "UI data could not be loaded: %s"
+#~ msgstr "Nelze načíst data uživatelského rozhraní: %s"
+
+#~ msgid "Can't load calendar window object from UI file"
+#~ msgstr ""
+#~ "Ze souboru s uživatelským rozhraním nelze načíst objekt okna s kalendářem"
+
+#~ msgid "Important!"
+#~ msgstr "Důležité!"
+
+#~ msgid "Remove the tag from the entry"
+#~ msgstr "Odebrat štítek ze záznamu"
+
+#~ msgid "Tag entry"
+#~ msgstr "Záznam štítku"
 
 #~ msgid "Almanah Preferences"
 #~ msgstr "Předvolby Almanah"

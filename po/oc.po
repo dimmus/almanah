@@ -5,9 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: almanah HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=almanah"
-"&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-05-14 08:57+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-10 19:12+0500\n"
 "PO-Revision-Date: 2015-05-16 11:24+0200\n"
 "Last-Translator: Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>\n"
 "Language-Team: Tot en òc (totenoc.eu)\n"
@@ -19,171 +18,52 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/almanah-app-menu.ui.h:1
-msgid "_Search"
-msgstr "_Recercar"
-
-#: ../data/almanah-app-menu.ui.h:2
-msgid "Pr_eferences"
-msgstr "Pref_eréncias"
-
-#. Set the button label
-#: ../data/almanah-app-menu.ui.h:3 ../src/import-export-dialog.c:208
-msgid "_Import"
-msgstr "_Importar"
-
-#: ../data/almanah-app-menu.ui.h:4 ../src/import-export-dialog.c:208
-msgid "_Export"
-msgstr "_Exportar"
-
-#: ../data/almanah-app-menu.ui.h:5
-msgid "_Print diary"
-msgstr "_Imprimir lo jornal"
-
-#: ../data/almanah-app-menu.ui.h:6
-msgid "_About Almanah Diary"
-msgstr "A _prepaus de Jornal Almanah"
-
-#: ../data/almanah-app-menu.ui.h:7
-msgid "_Quit"
-msgstr "_Quitar"
-
-#: ../data/almanah.desktop.in.h:1 ../src/application.c:132
-#: ../src/main-window.c:135
+#: data/org.gnome.Almanah.metainfo.xml.in:7 data/org.gnome.Almanah.desktop.in:2
+#: src/ui/main-window.blp:47 src/vala/app/application.vala:128
 msgid "Almanah Diary"
 msgstr "Jornal Almanah"
 
-#: ../data/almanah.desktop.in.h:2
+#: data/org.gnome.Almanah.metainfo.xml.in:8
+msgid "Keep a diary of your life"
+msgstr ""
+
+#: data/org.gnome.Almanah.metainfo.xml.in:10
+msgid ""
+"Almanah Diary is an application to allow you to keep a diary of your life."
+msgstr ""
+"Almanah Diary est une application qui vous permet de garder un journal de "
+"votre vie."
+
+#: data/org.gnome.Almanah.metainfo.xml.in:13
+msgid ""
+"You can encrypt the diary to preserve your privacy. It has editing "
+"abilities, including text formatting and printing and shows you a lists of "
+"events which happened (on your computer) for each day (such as tasks and "
+"appointments from Evolution)."
+msgstr ""
+"Vous pouvez chiffrer le journal pour protéger votre vie privée. Il est "
+"possible d'éditer et de formater le texte, de l'imprimer et d'afficher une "
+"liste d'événements sur votre ordinateur pour chaque jour (tel que les taches "
+"et les rendez vous d'Evolution)."
+
+#: data/org.gnome.Almanah.desktop.in:3
 msgid "Keep a personal diary"
 msgstr "Tenir un jornal personal"
 
-#. Translators: This is the default name of the PDF/PS/SVG file the diary is printed to if "Print to File" is chosen.
-#: ../data/almanah.desktop.in.h:3 ../src/application.c:263
+#: data/org.gnome.Almanah.desktop.in:4
 msgid "Diary"
 msgstr "Jornal"
 
 #. TRANSLATORS: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: ../data/almanah.desktop.in.h:5
+#: data/org.gnome.Almanah.desktop.in:6
 msgid "diary;journal;"
 msgstr "jornal;"
 
-#: ../data/almanah.ui.h:1
-msgid "Select Date…"
-msgstr "Seleccionar la data…"
-
-#: ../data/almanah.ui.h:2
-msgid "F_ormat"
-msgstr "F_ormat"
-
-#: ../data/almanah.ui.h:3
-msgid "Toggle whether the currently selected text is bold."
-msgstr "Indica se le tèxte actualament seleccionat es en gras."
-
-#: ../data/almanah.ui.h:4
-msgid "Toggle whether the currently selected text is italic."
-msgstr "Indica se le tèxte actualament seleccionat es en italica."
-
-#: ../data/almanah.ui.h:5
-msgid "Toggle whether the currently selected text is underlined."
-msgstr "Indica se le tèxte actualament seleccionat es solinhat."
-
-#: ../data/almanah.ui.h:6
-msgid "Add/Remove _Hyperlink"
-msgstr "Apondre/levar un _iperligam"
-
-#: ../data/almanah.ui.h:7
-msgid ""
-"Add or remove a hyperlink from the currently selected text to a specified "
-"URI."
-msgstr ""
-"Apond o lèva un iperligam del tèxte actualament seleccionat cap a un URI "
-"donat."
-
-#: ../data/almanah.ui.h:8
-msgid "Insert _Time"
-msgstr "Inserir l'_ora"
-
-#: ../data/almanah.ui.h:9
-msgid "I_mportant"
-msgstr "I_mportant"
-
-#: ../data/almanah.ui.h:10
-msgid "Toggle whether the current entry is marked as important."
-msgstr "Indica se l'element actual es marcat coma important."
-
-#: ../data/almanah.ui.h:11
-msgid "_Help"
-msgstr "Ajud_a"
-
-#: ../data/almanah.ui.h:12
-msgid "Go to _Today"
-msgstr "Anar a _uèi"
-
-#: ../data/almanah.ui.h:13
-msgid "Jump to the current date in the diary."
-msgstr "Sauta a la data actuala del jornal."
-
-#: ../data/almanah.ui.h:14
-msgid "Calendar"
-msgstr "Calendièr"
-
-#: ../data/almanah.ui.h:15
-msgid "Entry editing area"
-msgstr "Zòna de picada de las entradas"
-
-#: ../data/almanah.ui.h:16
-msgid "Past events"
-msgstr "Eveniments passats"
-
-#: ../data/almanah.ui.h:17
-msgid "Past Event List"
-msgstr "Lista dels eveniments passats"
-
-#: ../data/almanah.ui.h:18
-msgid "Search entry"
-msgstr "Zòna de picada de la recèrca"
-
-#: ../data/almanah.ui.h:19 ../src/search-dialog.c:69
-msgid "Search"
-msgstr "Recercar"
-
-#: ../data/almanah.ui.h:20
-msgid "Result List"
-msgstr "Lista dels resultats"
-
-#: ../data/almanah.ui.h:21
-msgid "View Entry"
-msgstr "Afichar l'element"
-
-#: ../data/almanah.ui.h:22
-msgid "e.g. \"14/03/2009\" or \"14th March 2009\"."
-msgstr "per ex. « 14/03/2009 » o « 14 de març de 2009 »."
-
-#: ../data/almanah.ui.h:23
-msgid "e.g. “http://google.com/” or “file:///home/me/Photos/photo.jpg”."
-msgstr "per ex. « http://google.com/ » o « file:///home/ieu/Fotos/foto.jpg »."
-
-#: ../data/almanah.ui.h:24
-msgid "Successful Entries"
-msgstr "Elements corrèctes"
-
-#: ../data/almanah.ui.h:25
-msgid "Merged Entries"
-msgstr "Elements fusionats"
-
-#: ../data/almanah.ui.h:26
-msgid "Failed Entries"
-msgstr "Elements pas importats"
-
-#: ../data/almanah.ui.h:27
-msgid "Import Results List"
-msgstr "Lista dels resultats de l'importacion"
-
-#: ../data/org.gnome.almanah.gschema.xml.in.in.h:1
+#: data/org.gnome.almanah.gschema.xml:6
 msgid "Database encryption key ID"
 msgstr "Identificant de la clau de chiframent de la banca de donadas"
 
-#: ../data/org.gnome.almanah.gschema.xml.in.in.h:2
+#: data/org.gnome.almanah.gschema.xml:7
 msgid ""
 "The ID of the key to use to encrypt and decrypt the database, if Almanah has "
 "been built with encryption support. Leave blank to disable database "
@@ -194,520 +74,684 @@ msgstr ""
 "chiframent. Lo daissar void per desactivar lo chiframent de la banca de "
 "donadas."
 
-#: ../data/org.gnome.almanah.gschema.xml.in.in.h:3
+#: data/org.gnome.almanah.gschema.xml:11
 msgid "Spell checking language"
 msgstr "Lenga per la verificacion ortografica"
 
-#: ../data/org.gnome.almanah.gschema.xml.in.in.h:4
+#: data/org.gnome.almanah.gschema.xml:12
 msgid "The locale specifier of the language in which to check entry spellings."
 msgstr ""
 "Indicacion de la lenga d'utilizar per la verificacion ortografica de las "
 "entradas."
 
-#: ../data/org.gnome.almanah.gschema.xml.in.in.h:5
+#: data/org.gnome.almanah.gschema.xml:16
 msgid "Spell checking enabled?"
 msgstr "Verificacion ortografica activada ?"
 
-#: ../data/org.gnome.almanah.gschema.xml.in.in.h:6
+#: data/org.gnome.almanah.gschema.xml:17
 msgid "Whether spell checking of entries is enabled."
 msgstr ""
 "Indica se la correccion ortografica es activada dins las zònas de picada."
 
-#: ../src/application.c:246
-msgid "Error opening database"
-msgstr "Error al moment de la dobertura de la banca de donadas"
+#: src/ui/calendar-button.ui:23
+msgid "Calendar"
+msgstr "Calendièr"
 
-#. Error loading the CSS
-#: ../src/application.c:275
-#, c-format
-msgid ""
-"Couldn't load the CSS file '%s'. The interface might not be styled correctly"
+#: src/ui/calendar-button.ui:37
+#, fuzzy
+msgid "Go to Today"
+msgstr "Aller à _aujourd'hui"
+
+#: src/ui/calendar-button.ui:44
+msgid "Select Date…"
+msgstr "Seleccionar la data…"
+
+#: src/ui/main-window.blp:9
+msgid "_Bold"
 msgstr ""
-"Impossible de cargar lo fichièr CSS « %s ». Es possible que l'interfàcia siá "
-"pas corrèctament agençada"
 
-#: ../src/application.c:319
-msgid "Enable debug mode"
-msgstr "Activar lo mòde de desbugatge"
-
-#: ../src/application.c:336
-msgid ""
-"Manage your diary. Only one instance of the program may be open at any time."
+#: src/ui/main-window.blp:10
+msgid "_Italic"
 msgstr ""
-"Gerir vòstre jornal. Una sola instància del programa pòt èsser aviada quora "
-"que siá."
 
-#. Print an error
-#: ../src/application.c:347
-#, c-format
-msgid "Command line options could not be parsed: %s\n"
-msgstr "Las opcions de la linha de comanda an pas pogut èsser analisadas : %s\n"
-
-#: ../src/application.c:366
-msgid "Error encrypting database"
-msgstr "Error al moment del chiframent de la banca de donadas"
-
-#: ../src/application.c:419 ../src/date-entry-dialog.c:129
-#: ../src/import-export-dialog.c:168 ../src/import-export-dialog.c:472
-#: ../src/main-window.c:194 ../src/preferences-dialog.c:191
-#: ../src/search-dialog.c:97 ../src/uri-entry-dialog.c:128
-#, c-format
-msgid "UI file \"%s\" could not be loaded"
-msgstr "Lo fichièr d'interfàcia « %s » a pas pogut èsser cargat"
-
-#: ../src/application.c:542
-msgid ""
-"Almanah is free software: you can redistribute it and/or modify it under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation, either version 3 of the License, or (at your option) any later "
-"version."
+#: src/ui/main-window.blp:11
+msgid "_Underline"
 msgstr ""
-"Almanah es un logicial liure ; lo podètz redistribuir e/o lo modificar al "
-"títol de las clausas de la Licéncia Publica Generala GNU, tala coma "
-"publicada per la Free Software Foundation ; siá la version 3 de la Licéncia, "
-"o (coma volètz) una version ulteriora quina que siá."
 
-#: ../src/application.c:546
-msgid ""
-"Almanah is distributed in the hope that it will be useful, but WITHOUT ANY "
-"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-"details."
+#: src/ui/main-window.blp:15
+msgid "_Cut"
 msgstr ""
-"Almanah es distribuit dins l'esper que serà utile, mas SENS CAP DE GARANTIDA "
-"; sens la quita garantida implicita de COMERCIABILITAT o DE CONFORMITAT A "
-"UNA UTILIZACION PARTICULARA. Veire la Licéncia Publica Generala GNU per mai "
-"de detalhs."
 
-#: ../src/application.c:550
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"Almanah.  If not, see <http://www.gnu.org/licenses/>."
+#: src/ui/main-window.blp:16
+msgid "_Copy"
 msgstr ""
-"Vos caldriá aver recebut un exemplar de la Licéncia Publica Generala GNU amb "
-"Almanah. S'es pas lo cas, consultatz <http://www.gnu.org/licences/>."
 
-#: ../src/application.c:565
+#: src/ui/main-window.blp:17
+msgid "_Paste"
+msgstr ""
+
+#: src/ui/main-window.blp:18
+msgid "_Delete"
+msgstr ""
+
+#: src/ui/main-window.blp:22
+msgid "Insert _Time"
+msgstr "Inserir l'_ora"
+
+#: src/ui/main-window.blp:23
+msgid "Add/Remove _Hyperlink"
+msgstr "Apondre/levar un _iperligam"
+
+#: src/ui/main-window.blp:29
+msgid "_Search"
+msgstr "_Recercar"
+
+#: src/ui/main-window.blp:30
+#, fuzzy
+msgid "Select _Date"
+msgstr "Seleccionar la data"
+
+#: src/ui/main-window.blp:34
+msgid "Pr_eferences"
+msgstr "Pref_eréncias"
+
+#: src/ui/main-window.blp:35 src/vala/ui/import-export-dialog.vala:93
+msgid "_Import"
+msgstr "_Importar"
+
+#: src/ui/main-window.blp:36 src/vala/ui/import-export-dialog.vala:93
+msgid "_Export"
+msgstr "_Exportar"
+
+#: src/ui/main-window.blp:37
+msgid "_Print diary"
+msgstr "_Imprimir lo jornal"
+
+#: src/ui/main-window.blp:41
+msgid "_About Almanah Diary"
+msgstr "A _prepaus de Jornal Almanah"
+
+#: src/ui/main-window.blp:42
+msgid "_Quit"
+msgstr "_Quitar"
+
+#: src/ui/main-window.blp:144
+msgid "Past events"
+msgstr "Eveniments passats"
+
+#: src/ui/date-entry-dialog.blp:25 src/vala/ui/date-entry-dialog.vala:48
+msgid "e.g. \"14/03/2009\" or \"14th March 2009\"."
+msgstr "per ex. « 14/03/2009 » o « 14 de març de 2009 »."
+
+#: src/ui/import-export-dialog.blp:12 src/vala/ui/import-export-dialog.vala:44
+#, fuzzy
+msgid "Format"
+msgstr "F_ormat"
+
+#: src/ui/import-export-dialog.blp:19 src/vala/ui/import-export-dialog.vala:53
+msgid "Location"
+msgstr ""
+
+#: src/ui/import-export-dialog.blp:23 src/vala/ui/import-export-dialog.vala:55
+#: src/vala/ui/import-export-dialog.vala:111
+#, fuzzy
+msgid "Select…"
+msgstr "Seleccionar la data…"
+
+#: src/ui/import-export-dialog.blp:28 src/vala/ui/import-export-dialog.vala:60
+msgid "Details"
+msgstr ""
+
+#: src/ui/import-results-dialog.blp:9
+#, fuzzy
+msgid "Import results"
+msgstr "Resultats d'importation"
+
+#: src/ui/import-results-dialog.blp:24
+#, fuzzy
+msgid "Show"
+msgstr "Afficher les étiquettes"
+
+#: src/ui/import-results-dialog.blp:32
+#, fuzzy
+msgid "View entry"
+msgstr "Afichar l'element"
+
+#: src/ui/preferences-dialog.blp:12
+#, fuzzy
+msgid "Encryption"
+msgstr "Clau de chiframent : "
+
+#: src/ui/preferences-dialog.blp:15
+#, fuzzy
+msgid "Encryption key"
+msgstr "Clau de chiframent : "
+
+#: src/ui/preferences-dialog.blp:18
+msgid "New _Key"
+msgstr "_Clau novèla"
+
+#: src/ui/preferences-dialog.blp:27
+#, fuzzy
+msgid "Spell checking"
+msgstr "Lenga per la verificacion ortografica"
+
+#: src/ui/preferences-dialog.blp:30
+msgid "Enable _spell checking"
+msgstr "Activar la _verificacion ortografica"
+
+#: src/ui/search-dialog.blp:24
+msgid "Search entry"
+msgstr "Zòna de picada de la recèrca"
+
+#: src/ui/search-dialog.blp:28
+msgid "Search"
+msgstr "Recercar"
+
+#: src/ui/search-dialog.blp:33 src/vala/ui/uri-entry-dialog.vala:60
+#: src/vala/ui/date-entry-dialog.vala:61
+#: src/vala/ui/import-export-dialog.vala:91
+msgid "_Cancel"
+msgstr ""
+
+#: src/ui/search-dialog.blp:76
+msgid "View Entry"
+msgstr "Afichar l'element"
+
+#: src/ui/uri-entry-dialog.blp:25 src/vala/ui/uri-entry-dialog.vala:47
+#, fuzzy
+msgid "e.g. \"http://google.com/\" or \"file:///home/me/Photos/photo.jpg\"."
+msgstr "per ex. « http://google.com/ » o « file:///home/ieu/Fotos/foto.jpg »."
+
+#: src/vala/app/application.vala:37
+msgid "Unknown error"
+msgstr ""
+
+#: src/vala/app/application.vala:138
 #, c-format
 msgid "A helpful diary keeper, storing %u entries."
 msgstr ""
 "Un organizador de jornal personal plan utile, qu'emmagazina %u entradas."
 
-#: ../src/application.c:569
-msgid "Copyright © 2008-2009 Philip Withnall"
-msgstr "Copyright © 2008-2009 Philip Withnall"
-
-#. Translators: please include your names here to be credited for your hard work!
-#. * Format:
-#. * "Translator name 1 <translator@email.address>\n"
-#. * "Translator name 2 <translator2@email.address>"
-#.
-#: ../src/application.c:577
-msgid "translator-credits"
-msgstr "Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>"
-
-#: ../src/application.c:581
-msgid "Almanah Website"
-msgstr "Site Web d'Almanah"
-
-#: ../src/date-entry-dialog.c:72
-msgid "Select Date"
-msgstr "Seleccionar la data"
-
-#: ../src/entry.c:303
-#, c-format
-msgid "Invalid data version number %u."
-msgstr "Numèro de version de las donadas %u invalid."
-
-#: ../src/events/calendar-appointment.c:51
-msgid "Calendar Appointment"
-msgstr "Rendètz-vos d'Agenda"
-
-#: ../src/events/calendar-appointment.c:52
-msgid "An appointment on an Evolution calendar."
-msgstr "Un rendètz-vos dins un calendièr Evolution."
-
-#. Translators: This is a time string with the format hh:mm
-#: ../src/events/calendar-appointment.c:89 ../src/events/calendar-task.c:90
-#, c-format
-msgid "%.2d:%.2d"
-msgstr "%.2d:%.2d"
-
-#: ../src/events/calendar-appointment.c:135 ../src/events/calendar-task.c:125
-msgid "Error launching Evolution"
-msgstr "Error al moment de l'aviada d'Evolution"
-
-#: ../src/events/calendar-task.c:51
-msgid "Calendar Task"
-msgstr "Prètzfach d'Agenda"
-
-#: ../src/events/calendar-task.c:52
-msgid "A task on an Evolution calendar."
-msgstr "Un prètzfach dins un calendièr Evolution."
-
-#: ../src/export-operation.c:45 ../src/import-operation.c:45
-msgid "Text Files"
-msgstr "Fichièrs tèxte"
-
-#: ../src/export-operation.c:46
-msgid ""
-"Select a _folder to export the entries to as text files, one per entry, with "
-"names in the format 'yyyy-mm-dd', and no extension. All entries will be "
-"exported, unencrypted in plain text format."
+#: src/vala/app/application.vala:140
+#, fuzzy
+msgid "A helpful diary keeper."
 msgstr ""
-"Causissètz un _dorsièr per i exportar los articles jos la forma de fichièrs "
-"tèxte, un per article. Los noms de fichièr son creats segon lo modèl « aaaa-"
-"mm-jj », sens extension. Totes los articles son exportats dins un format "
-"tèxte brut, pas chifrat."
+"Un organizador de jornal personal plan utile, qu'emmagazina %u entradas."
 
-#: ../src/export-operation.c:50 ../src/import-operation.c:50
-msgid "Database"
-msgstr "Banca de donadas"
+#: src/vala/app/main-window.vala:250
+#, fuzzy, c-format
+msgid "Almanah Diary – %s"
+msgstr "Jornal Almanah"
 
-#: ../src/export-operation.c:51
-msgid ""
-"Select a _filename for a complete copy of the unencrypted Almanah Diary "
-"database to be given."
-msgstr ""
-"Causissètz un nom de _fichièr per una còpia completa e non chifrada de la "
-"banca de donadas del jornal Almanah."
-
-#: ../src/import-export-dialog.c:202
-msgid "Import _mode: "
-msgstr "_Mòde d'importacion : "
-
-#: ../src/import-export-dialog.c:202
-msgid "Export _mode: "
-msgstr "Mòde d'e_xportacion : "
-
-#. Set the window title
-#: ../src/import-export-dialog.c:205
-msgid "Import Entries"
-msgstr "Importar los elements"
-
-#: ../src/import-export-dialog.c:205
-msgid "Export Entries"
-msgstr "Exportar los elements"
-
-#: ../src/import-export-dialog.c:245
-msgid "Import failed"
-msgstr "L'importation a fracassat"
-
-#: ../src/import-export-dialog.c:283
-msgid "Export failed"
-msgstr "L'exportacion a fracassat"
-
-#: ../src/import-export-dialog.c:296
-msgid "Export successful"
-msgstr "L'exportacion a capitat"
-
-#: ../src/import-export-dialog.c:297
-msgid "The diary was successfully exported."
-msgstr "Lo jornal es estat exportat amb succès."
-
-#: ../src/import-export-dialog.c:445
-msgid "Import Results"
-msgstr "Resultats d'importation"
-
-#. Translators: This is a strftime()-format string for the dates displayed in import results.
-#. Translators: This is a strftime()-format string for the date to display when asking about editing a diary entry.
-#. Translators: This is a strftime()-format string for the date to display when asking about deleting a diary entry.
-#. Translators: This is a strftime()-format string for the date displayed above each printed entry.
-#. Translators: This is a strftime()-format string for the dates displayed in search results.
-#. Translators: This is a strftime()-format string for the date displayed at the top of the main window.
-#: ../src/import-export-dialog.c:539 ../src/main-window.c:566
-#: ../src/main-window.c:596 ../src/printing.c:263 ../src/search-dialog.c:182
-#: ../src/widgets/calendar-button.c:309
-msgid "%A, %e %B %Y"
-msgstr "%A %e %B %Y"
-
-#: ../src/import-operation.c:46
-msgid ""
-"Select a _folder containing text files, one per entry, with names in the "
-"format 'yyyy-mm-dd', and no extension. Any and all such files will be "
-"imported."
-msgstr ""
-"Causissètz un _dorsièr que conten de fichièrs tèxte, un per element, que lo "
-"format de son nom correspond a « aaaa-mm-jj » e sens extension. Totes los "
-"fichièrs correspondents seràn importats."
-
-#: ../src/import-operation.c:51
-msgid "Select a database _file created by Almanah Diary to import."
-msgstr ""
-"Causissètz un _fichièr banca de donadas creat per Jornal Almanah per tal de "
-"l'importar."
-
-#: ../src/import-operation.c:248
-#, c-format
-msgid "Error deserializing imported entry into buffer: %s"
-msgstr ""
-"Error al moment de la deserializacion de l'element importat dins lo tampon : "
-"%s"
-
-#: ../src/import-operation.c:264
-#, c-format
-msgid ""
-"Error deserializing existing entry into buffer; overwriting with imported "
-"entry: %s"
-msgstr ""
-"Error al moment de la deserializacion de l'entrada existenta dins lo tampon ;"
-" espotiment per l'element importat : %s"
-
-#. Append some header text for the imported entry
-#. Translators: This text is appended to an existing entry when an entry is being imported to the same date.
-#. * The imported entry is appended to this text.
-#: ../src/import-operation.c:305
-#, c-format
-msgid ""
-"\n"
-"\n"
-"Entry imported from \"%s\":\n"
-"\n"
+#. Translators: appended when importing an entry for a date that already has one
+#: src/vala/model/import-export-operations.vala:152
+#, fuzzy, c-format
+msgid "Entry imported from \"%s\":"
 msgstr ""
 "\n"
 "\n"
 "Element importat de « %s » :\n"
 "\n"
 
-#: ../src/main-window.c:570
-#, c-format
-msgid "Are you sure you want to edit this diary entry for %s?"
-msgstr "Sètz segur que volètz modifier aquesta entrada de jornal del %s ?"
+#: src/vala/model/import-export-operations.vala:242
+#, fuzzy
+msgid "Error changing exported file permissions."
+msgstr "Erreur lors du changement des permissions du fichier exporté : %s"
 
-#: ../src/main-window.c:600
-#, c-format
-msgid "Are you sure you want to delete this diary entry for %s?"
-msgstr "Sètz segur que volètz suprimir aquesta entrada de jornal del %s ?"
-
-#. Print a warning about the unknown tag
-#: ../src/main-window.c:709
-#, c-format
-msgid "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
-msgstr "Etiqueta tèxte « %s » de l'entrada desconeguda o en doble. Ignorada."
-
-#: ../src/main-window.c:908
-msgid "Error opening URI"
-msgstr "Error al moment de la dobertura de l'URI"
-
-#. Translators: this is an event source name (like Calendar appointment) and the time when the event takes place
-#: ../src/main-window.c:1082
-#, c-format
-msgid "%s @ %s"
-msgstr "%s @ %s"
-
-#: ../src/main-window.c:1161
-msgid "Entry content could not be loaded"
-msgstr "Lo contengut de l'entrada a pas pogut èsser cargat"
-
-#: ../src/main-window.c:1326
-msgid "Spelling checker could not be initialized"
-msgstr "Lo corrector ortografic a pas pogut èsser inicializat"
-
-#: ../src/preferences-dialog.c:91
-msgid "Almanah Preferences"
-msgstr "Preferéncias d'Almanah"
-
-#. Grab our child widgets
-#: ../src/preferences-dialog.c:217
-msgid "Encryption key: "
-msgstr "Clau de chiframent : "
-
-#: ../src/preferences-dialog.c:222
-msgid "None (don't encrypt)"
-msgstr "Pas cap (de chifrar pas)"
-
-#: ../src/preferences-dialog.c:246
-msgid "New _Key"
-msgstr "_Clau novèla"
-
-#. Set up the "Enable spell checking" check button
-#: ../src/preferences-dialog.c:253
-msgid "Enable _spell checking"
-msgstr "Activar la _verificacion ortografica"
-
-#: ../src/preferences-dialog.c:279
-msgid "Error saving the encryption key"
-msgstr "Error al moment de l'enregistrament de la clau de chiframent"
-
-#: ../src/preferences-dialog.c:298
-msgid "Error opening Seahorse"
-msgstr "Error al moment de la dobertura de Seahorse"
-
-#: ../src/printing.c:277
-msgid "This entry is marked as important."
-msgstr "Aqueste article es marcat coma important."
-
-#: ../src/printing.c:298
-msgid "No entry for this date."
-msgstr "Pas cap d'entrada per aquesta data."
-
-#: ../src/printing.c:453
-msgid "Start date:"
-msgstr "Data de començament :"
-
-#: ../src/printing.c:455
-msgid "End date:"
-msgstr "Data de fin :"
-
-#. Line spacing
-#: ../src/printing.c:471
-msgid "Line spacing:"
-msgstr "Interlinha :"
-
-#: ../src/search-dialog.c:223
-msgid "Search canceled."
-msgstr "Recèrca anullada."
-
-#. Translators: This is an error message wrapper for when searches encounter an error. The placeholder is for an error message.
-#: ../src/search-dialog.c:226
-#, c-format
-msgid "Error: %s"
-msgstr "Error : %s"
-
-#. Success!
-#: ../src/search-dialog.c:231
-#, c-format
-msgid "Found %d entry:"
-msgid_plural "Found %d entries:"
-msgstr[0] "%d entrada trobada :"
-msgstr[1] "%d entradas trobadas :"
-
-#: ../src/search-dialog.c:280
+#: src/vala/ui/search-dialog.vala:108 src/vala/ui/search-dialog.vala:113
 msgid "Searching…"
 msgstr "Recèrca en cors…"
 
-#: ../src/storage-manager.c:275
-#, c-format
-msgid "GPGME is not at least version %s"
-msgstr "La version de GPGME es inferiora a %s"
+#: src/vala/ui/search-dialog.vala:142
+#, fuzzy, c-format
+msgid "Found %d entry:"
+msgstr "%d entrada trobada :"
 
-#: ../src/storage-manager.c:284
-#, c-format
-msgid "GPGME doesn't support OpenPGP: %s"
-msgstr "GPGME pren pas en carga OpenPGP : %s"
+#: src/vala/ui/search-dialog.vala:144
+#, fuzzy, c-format
+msgid "Found %d entries:"
+msgstr "%d entrada trobada :"
 
-#: ../src/storage-manager.c:293
-#, c-format
-msgid "Error creating cipher context: %s"
-msgstr "Error al moment de la creacion del contèxte de chiframent : %s"
+#: src/vala/ui/preferences-dialog.vala:19
+#, fuzzy
+msgid "Preferences"
+msgstr "Pref_eréncias"
 
-#: ../src/storage-manager.c:322
-#, c-format
-msgid "Error opening encrypted database file \"%s\": %s"
-msgstr ""
-"Error al moment de la dobertura del fichièr chifrat de la banca de donadas « "
-"%s » : %s"
+#: src/vala/ui/preferences-dialog.vala:40
+msgid "Error opening Seahorse"
+msgstr "Error al moment de la dobertura de Seahorse"
 
-#: ../src/storage-manager.c:341
-#, c-format
-msgid "Error opening plain database file \"%s\": %s"
-msgstr ""
-"Error al moment de la dobertura del fichièr en clar de la banca de donadas « "
-"%s » : %s"
-
-#: ../src/storage-manager.c:389
-msgid ""
-"The encrypted database is empty. The plain database file has been left "
-"undeleted as backup."
-msgstr ""
-"La banca de donadas chifrada es voida. Lo fichièr de banca de donadas en "
-"clar es pas estat suprimit e es disponible coma sauvegarde."
-
-#. Delete the plain file
-#: ../src/storage-manager.c:392
-#, c-format
-msgid "Could not delete plain database file \"%s\"."
-msgstr ""
-"Impossible de suprimir lo fichièr en clar de la banca de donadas « %s »."
-
-#: ../src/storage-manager.c:433
-#, c-format
-msgid "Error decrypting database: %s"
-msgstr "Error al moment del deschiframent de la banca de donadas : %s"
-
-#: ../src/storage-manager.c:467
-#, c-format
-msgid "Error getting encryption key: %s"
-msgstr "Error al moment de l'obtencion de la clau de chiframent : %s"
-
-#: ../src/storage-manager.c:488
-#, c-format
-msgid "Error encrypting database: %s"
-msgstr "Error al moment del chiframent de la banca de donadas : %s"
-
-#: ../src/storage-manager.c:590
-#, c-format
-msgid ""
-"Could not open database \"%s\". SQLite provided the following error message: "
-"%s"
-msgstr ""
-"Impossible de dobrir la banca de donadas « %s ». SQLite a provesit lo "
-"messatge d'error seguent : %s"
-
-#: ../src/storage-manager.c:667
-#, c-format
-msgid ""
-"Could not run query \"%s\". SQLite provided the following error message: %s"
-msgstr ""
-"Impossible d'aviar la requèsta « %s ». SQLite a provesit lo messatge d'error "
-"seguent : %s"
-
-#: ../src/storage-manager.c:973
-msgid "Error deserializing entry into buffer while searching."
-msgstr ""
-"Error al moment de la deserializacion de l'entrada dins lo tampon pendent la "
-"recèrca."
-
-#: ../src/uri-entry-dialog.c:71
+#: src/vala/ui/uri-entry-dialog.vala:29
 msgid "Enter URI"
 msgstr "Picatz l'URI"
 
-#: ../src/widgets/calendar-button.c:140
-#, c-format
-msgid "UI file \"%s\" could not be loaded: %s"
-msgstr "Lo fichièr d'interfàcia « %s » a pas pogut èsser cargat : %s"
-
-#: ../src/widgets/calendar-button.c:150
-msgid "Can't load calendar window object from UI file"
+#: src/vala/ui/uri-entry-dialog.vala:66 src/vala/ui/date-entry-dialog.vala:67
+msgid "_OK"
 msgstr ""
-"Impossible de cargar l'objècte fenèstra del calendièr a partir del fichièr "
-"d'interfàcia"
 
-#. Translators: This is the detail string for important days as displayed in the calendar.
-#: ../src/widgets/calendar.c:176
-msgid "Important!"
-msgstr "Important !"
+#: src/vala/ui/date-entry-dialog.vala:30
+msgid "Select Date"
+msgstr "Seleccionar la data"
 
-#: ../src/widgets/calendar-window.c:80
-msgid "Unknown input device"
-msgstr "Periferic d'entrada desconegut"
+#: src/vala/ui/import-export-dialog.vala:37
+#, fuzzy
+msgid "Import"
+msgstr "_Importar"
 
-#. Looks like gtk_widget_set_tooltip_text don't works here, even in the init... ?
-#: ../src/widgets/tag.c:400
+#: src/vala/ui/import-export-dialog.vala:37
+#, fuzzy
+msgid "Export"
+msgstr "_Exportar"
+
+#: src/vala/ui/import-export-dialog.vala:46
+#, fuzzy
+msgid "Text files"
+msgstr "Fichièrs tèxte"
+
+#: src/vala/ui/import-export-dialog.vala:46
+msgid "Database"
+msgstr "Banca de donadas"
+
+#: src/vala/ui/import-export-dialog.vala:118
+#, fuzzy
+msgid ""
+"Select a folder containing text files, one per entry, with names in the "
+"format \"yyyy-mm-dd\", and no extension. Any and all such files will be "
+"imported."
+msgstr ""
+"Causissètz un _dorsièr que conten de fichièrs tèxte, un per element, que lo "
+"format de son nom correspond a « aaaa-mm-jj » e sens extension. Totes los "
+"fichièrs correspondents seràn importats."
+
+#: src/vala/ui/import-export-dialog.vala:120
+#, fuzzy
+msgid "Select a database file created by Almanah Diary to import."
+msgstr ""
+"Causissètz un _fichièr banca de donadas creat per Jornal Almanah per tal de "
+"l'importar."
+
+#: src/vala/ui/import-export-dialog.vala:124
+msgid "Select a folder to export all entries as plain text files."
+msgstr ""
+
+#: src/vala/ui/import-export-dialog.vala:126
+#, fuzzy
+msgid "Select a filename for an unencrypted copy of the diary database."
+msgstr ""
+"Causissètz un nom de _fichièr per una còpia completa e non chifrada de la "
+"banca de donadas del jornal Almanah."
+
+#: src/vala/ui/import-export-dialog.vala:238
+#, fuzzy
+msgid "Import complete"
+msgstr "L'importation a fracassat"
+
+#: src/vala/ui/import-export-dialog.vala:238
+#, fuzzy
+msgid "Export complete"
+msgstr "L'exportacion a fracassat"
+
+#: src/vala/ui/import-export-dialog.vala:238
+#, fuzzy
+msgid "Error"
+msgstr "Error : %s"
+
+#: src/vala/ui/import-export-dialog.vala:240
+msgid "Entries have been imported."
+msgstr ""
+
+#: src/vala/ui/import-export-dialog.vala:240
+msgid "Entries have been exported."
+msgstr ""
+
+#: src/vala/ui/import-export-dialog.vala:241
+msgid "An unknown error occurred"
+msgstr ""
+
+#: src/vala/ui/import-export-dialog.vala:243
+msgid "OK"
+msgstr ""
+
+#: src/vala/widgets/tag.vala:31
 msgid "Remove tag"
 msgstr "Suprimir l'etiqueta"
 
-#~ msgid ""
-#~ "Almanah Diary is an application to allow you to keep a diary of your life."
-#~ msgstr ""
-#~ "Almanah Diary est une application qui vous permet de garder un journal de "
-#~ "votre vie."
+#: src/vala/widgets/tag-entry.vala:49 src/vala/widgets/entry-tags-area.vala:31
+msgid "add tag"
+msgstr "ajouter une étiquette"
+
+#: src/vala/widgets/tag-entry.vala:50
+msgid "Write the tag and press enter to save it"
+msgstr "Écrire l'étiquette et appuyer sur entrée pour enregistrer"
+
+#~ msgid "Toggle whether the currently selected text is bold."
+#~ msgstr "Indica se le tèxte actualament seleccionat es en gras."
+
+#~ msgid "Toggle whether the currently selected text is italic."
+#~ msgstr "Indica se le tèxte actualament seleccionat es en italica."
+
+#~ msgid "Toggle whether the currently selected text is underlined."
+#~ msgstr "Indica se le tèxte actualament seleccionat es solinhat."
 
 #~ msgid ""
-#~ "You can encrypt the diary to preserve your privacy. It has editing "
-#~ "abilities, including text formatting and printing and shows you a lists of "
-#~ "events which happened (on your computer) for each day (such as tasks and "
-#~ "appointments from Evolution)."
+#~ "Add or remove a hyperlink from the currently selected text to a specified "
+#~ "URI."
 #~ msgstr ""
-#~ "Vous pouvez chiffrer le journal pour protéger votre vie privée. Il est "
-#~ "possible d'éditer et de formater le texte, de l'imprimer et d'afficher une "
-#~ "liste d'événements sur votre ordinateur pour chaque jour (tel que les taches "
-#~ "et les rendez vous d'Evolution)."
+#~ "Apond o lèva un iperligam del tèxte actualament seleccionat cap a un URI "
+#~ "donat."
 
-#, fuzzy
-#~| msgid "Go to _Today"
-#~ msgid "Go to Today"
-#~ msgstr "Aller à _aujourd'hui"
+#~ msgid "I_mportant"
+#~ msgstr "I_mportant"
+
+#~ msgid "Toggle whether the current entry is marked as important."
+#~ msgstr "Indica se l'element actual es marcat coma important."
+
+#~ msgid "_Help"
+#~ msgstr "Ajud_a"
+
+#~ msgid "Go to _Today"
+#~ msgstr "Anar a _uèi"
+
+#~ msgid "Jump to the current date in the diary."
+#~ msgstr "Sauta a la data actuala del jornal."
+
+#~ msgid "Entry editing area"
+#~ msgstr "Zòna de picada de las entradas"
+
+#~ msgid "Past Event List"
+#~ msgstr "Lista dels eveniments passats"
+
+#~ msgid "Result List"
+#~ msgstr "Lista dels resultats"
+
+#~ msgid "Successful Entries"
+#~ msgstr "Elements corrèctes"
+
+#~ msgid "Merged Entries"
+#~ msgstr "Elements fusionats"
+
+#~ msgid "Failed Entries"
+#~ msgstr "Elements pas importats"
+
+#~ msgid "Import Results List"
+#~ msgstr "Lista dels resultats de l'importacion"
+
+#~ msgid "Error opening database"
+#~ msgstr "Error al moment de la dobertura de la banca de donadas"
+
+#, c-format
+#~ msgid ""
+#~ "Couldn't load the CSS file '%s'. The interface might not be styled "
+#~ "correctly"
+#~ msgstr ""
+#~ "Impossible de cargar lo fichièr CSS « %s ». Es possible que l'interfàcia "
+#~ "siá pas corrèctament agençada"
+
+#~ msgid "Enable debug mode"
+#~ msgstr "Activar lo mòde de desbugatge"
+
+#~ msgid ""
+#~ "Manage your diary. Only one instance of the program may be open at any "
+#~ "time."
+#~ msgstr ""
+#~ "Gerir vòstre jornal. Una sola instància del programa pòt èsser aviada "
+#~ "quora que siá."
+
+#, c-format
+#~ msgid "Command line options could not be parsed: %s\n"
+#~ msgstr ""
+#~ "Las opcions de la linha de comanda an pas pogut èsser analisadas : %s\n"
+
+#~ msgid "Error encrypting database"
+#~ msgstr "Error al moment del chiframent de la banca de donadas"
+
+#, c-format
+#~ msgid "UI file \"%s\" could not be loaded"
+#~ msgstr "Lo fichièr d'interfàcia « %s » a pas pogut èsser cargat"
+
+#~ msgid ""
+#~ "Almanah is free software: you can redistribute it and/or modify it under "
+#~ "the terms of the GNU General Public License as published by the Free "
+#~ "Software Foundation, either version 3 of the License, or (at your option) "
+#~ "any later version."
+#~ msgstr ""
+#~ "Almanah es un logicial liure ; lo podètz redistribuir e/o lo modificar al "
+#~ "títol de las clausas de la Licéncia Publica Generala GNU, tala coma "
+#~ "publicada per la Free Software Foundation ; siá la version 3 de la "
+#~ "Licéncia, o (coma volètz) una version ulteriora quina que siá."
+
+#~ msgid ""
+#~ "Almanah is distributed in the hope that it will be useful, but WITHOUT "
+#~ "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+#~ "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+#~ "more details."
+#~ msgstr ""
+#~ "Almanah es distribuit dins l'esper que serà utile, mas SENS CAP DE "
+#~ "GARANTIDA ; sens la quita garantida implicita de COMERCIABILITAT o DE "
+#~ "CONFORMITAT A UNA UTILIZACION PARTICULARA. Veire la Licéncia Publica "
+#~ "Generala GNU per mai de detalhs."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with Almanah.  If not, see <http://www.gnu.org/licenses/>."
+#~ msgstr ""
+#~ "Vos caldriá aver recebut un exemplar de la Licéncia Publica Generala GNU "
+#~ "amb Almanah. S'es pas lo cas, consultatz <http://www.gnu.org/licences/>."
+
+#~ msgid "Copyright © 2008-2009 Philip Withnall"
+#~ msgstr "Copyright © 2008-2009 Philip Withnall"
+
+#~ msgid "translator-credits"
+#~ msgstr "Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>"
+
+#~ msgid "Almanah Website"
+#~ msgstr "Site Web d'Almanah"
+
+#, c-format
+#~ msgid "Invalid data version number %u."
+#~ msgstr "Numèro de version de las donadas %u invalid."
+
+#~ msgid "Calendar Appointment"
+#~ msgstr "Rendètz-vos d'Agenda"
+
+#~ msgid "An appointment on an Evolution calendar."
+#~ msgstr "Un rendètz-vos dins un calendièr Evolution."
+
+#, c-format
+#~ msgid "%.2d:%.2d"
+#~ msgstr "%.2d:%.2d"
+
+#~ msgid "Error launching Evolution"
+#~ msgstr "Error al moment de l'aviada d'Evolution"
+
+#~ msgid "Calendar Task"
+#~ msgstr "Prètzfach d'Agenda"
+
+#~ msgid "A task on an Evolution calendar."
+#~ msgstr "Un prètzfach dins un calendièr Evolution."
+
+#~ msgid ""
+#~ "Select a _folder to export the entries to as text files, one per entry, "
+#~ "with names in the format 'yyyy-mm-dd', and no extension. All entries will "
+#~ "be exported, unencrypted in plain text format."
+#~ msgstr ""
+#~ "Causissètz un _dorsièr per i exportar los articles jos la forma de "
+#~ "fichièrs tèxte, un per article. Los noms de fichièr son creats segon lo "
+#~ "modèl « aaaa-mm-jj », sens extension. Totes los articles son exportats "
+#~ "dins un format tèxte brut, pas chifrat."
+
+#~ msgid "Import _mode: "
+#~ msgstr "_Mòde d'importacion : "
+
+#~ msgid "Export _mode: "
+#~ msgstr "Mòde d'e_xportacion : "
+
+#~ msgid "Import Entries"
+#~ msgstr "Importar los elements"
+
+#~ msgid "Export Entries"
+#~ msgstr "Exportar los elements"
+
+#~ msgid "Export successful"
+#~ msgstr "L'exportacion a capitat"
+
+#~ msgid "The diary was successfully exported."
+#~ msgstr "Lo jornal es estat exportat amb succès."
+
+#~ msgid "%A, %e %B %Y"
+#~ msgstr "%A %e %B %Y"
+
+#, c-format
+#~ msgid "Error deserializing imported entry into buffer: %s"
+#~ msgstr ""
+#~ "Error al moment de la deserializacion de l'element importat dins lo "
+#~ "tampon : %s"
+
+#, c-format
+#~ msgid ""
+#~ "Error deserializing existing entry into buffer; overwriting with imported "
+#~ "entry: %s"
+#~ msgstr ""
+#~ "Error al moment de la deserializacion de l'entrada existenta dins lo "
+#~ "tampon ; espotiment per l'element importat : %s"
+
+#, c-format
+#~ msgid "Are you sure you want to edit this diary entry for %s?"
+#~ msgstr "Sètz segur que volètz modifier aquesta entrada de jornal del %s ?"
+
+#, c-format
+#~ msgid "Are you sure you want to delete this diary entry for %s?"
+#~ msgstr "Sètz segur que volètz suprimir aquesta entrada de jornal del %s ?"
+
+#, c-format
+#~ msgid "Unknown or duplicate text tag \"%s\" in entry. Ignoring."
+#~ msgstr ""
+#~ "Etiqueta tèxte « %s » de l'entrada desconeguda o en doble. Ignorada."
+
+#~ msgid "Error opening URI"
+#~ msgstr "Error al moment de la dobertura de l'URI"
+
+#, c-format
+#~ msgid "%s @ %s"
+#~ msgstr "%s @ %s"
+
+#~ msgid "Entry content could not be loaded"
+#~ msgstr "Lo contengut de l'entrada a pas pogut èsser cargat"
+
+#~ msgid "Spelling checker could not be initialized"
+#~ msgstr "Lo corrector ortografic a pas pogut èsser inicializat"
+
+#~ msgid "Almanah Preferences"
+#~ msgstr "Preferéncias d'Almanah"
+
+#~ msgid "None (don't encrypt)"
+#~ msgstr "Pas cap (de chifrar pas)"
+
+#~ msgid "Error saving the encryption key"
+#~ msgstr "Error al moment de l'enregistrament de la clau de chiframent"
+
+#~ msgid "This entry is marked as important."
+#~ msgstr "Aqueste article es marcat coma important."
+
+#~ msgid "No entry for this date."
+#~ msgstr "Pas cap d'entrada per aquesta data."
+
+#~ msgid "Start date:"
+#~ msgstr "Data de començament :"
+
+#~ msgid "End date:"
+#~ msgstr "Data de fin :"
+
+#~ msgid "Line spacing:"
+#~ msgstr "Interlinha :"
+
+#~ msgid "Search canceled."
+#~ msgstr "Recèrca anullada."
+
+#, c-format
+#~ msgid "GPGME is not at least version %s"
+#~ msgstr "La version de GPGME es inferiora a %s"
+
+#, c-format
+#~ msgid "GPGME doesn't support OpenPGP: %s"
+#~ msgstr "GPGME pren pas en carga OpenPGP : %s"
+
+#, c-format
+#~ msgid "Error creating cipher context: %s"
+#~ msgstr "Error al moment de la creacion del contèxte de chiframent : %s"
+
+#, c-format
+#~ msgid "Error opening encrypted database file \"%s\": %s"
+#~ msgstr ""
+#~ "Error al moment de la dobertura del fichièr chifrat de la banca de "
+#~ "donadas « %s » : %s"
+
+#, c-format
+#~ msgid "Error opening plain database file \"%s\": %s"
+#~ msgstr ""
+#~ "Error al moment de la dobertura del fichièr en clar de la banca de "
+#~ "donadas « %s » : %s"
+
+#~ msgid ""
+#~ "The encrypted database is empty. The plain database file has been left "
+#~ "undeleted as backup."
+#~ msgstr ""
+#~ "La banca de donadas chifrada es voida. Lo fichièr de banca de donadas en "
+#~ "clar es pas estat suprimit e es disponible coma sauvegarde."
+
+#, c-format
+#~ msgid "Could not delete plain database file \"%s\"."
+#~ msgstr ""
+#~ "Impossible de suprimir lo fichièr en clar de la banca de donadas « %s »."
+
+#, c-format
+#~ msgid "Error decrypting database: %s"
+#~ msgstr "Error al moment del deschiframent de la banca de donadas : %s"
+
+#, c-format
+#~ msgid "Error getting encryption key: %s"
+#~ msgstr "Error al moment de l'obtencion de la clau de chiframent : %s"
+
+#, c-format
+#~ msgid "Error encrypting database: %s"
+#~ msgstr "Error al moment del chiframent de la banca de donadas : %s"
+
+#, c-format
+#~ msgid ""
+#~ "Could not open database \"%s\". SQLite provided the following error "
+#~ "message: %s"
+#~ msgstr ""
+#~ "Impossible de dobrir la banca de donadas « %s ». SQLite a provesit lo "
+#~ "messatge d'error seguent : %s"
+
+#, c-format
+#~ msgid ""
+#~ "Could not run query \"%s\". SQLite provided the following error message: "
+#~ "%s"
+#~ msgstr ""
+#~ "Impossible d'aviar la requèsta « %s ». SQLite a provesit lo messatge "
+#~ "d'error seguent : %s"
+
+#~ msgid "Error deserializing entry into buffer while searching."
+#~ msgstr ""
+#~ "Error al moment de la deserializacion de l'entrada dins lo tampon pendent "
+#~ "la recèrca."
+
+#, c-format
+#~ msgid "UI file \"%s\" could not be loaded: %s"
+#~ msgstr "Lo fichièr d'interfàcia « %s » a pas pogut èsser cargat : %s"
+
+#~ msgid "Can't load calendar window object from UI file"
+#~ msgstr ""
+#~ "Impossible de cargar l'objècte fenèstra del calendièr a partir del "
+#~ "fichièr d'interfàcia"
+
+#~ msgid "Important!"
+#~ msgstr "Important !"
+
+#~ msgid "Unknown input device"
+#~ msgstr "Periferic d'entrada desconegut"
 
 #, fuzzy, c-format
 #~| msgid ""
@@ -717,17 +761,13 @@ msgstr "Suprimir l'etiqueta"
 #~ "Couldn't load the CSS resources. The interface might not be styled "
 #~ "correctly: %s"
 #~ msgstr ""
-#~ "Impossible de charger le fichier CSS « %s ». Il se peut que l'interface ne "
-#~ "soit pas correctement agencée"
+#~ "Impossible de charger le fichier CSS « %s ». Il se peut que l'interface "
+#~ "ne soit pas correctement agencée"
 
 #, fuzzy
 #~| msgid "UI file \"%s\" could not be loaded"
 #~ msgid "UI data could not be loaded"
 #~ msgstr "Le fichier d'interface « %s » n'a pas pu être chargé"
-
-#, c-format
-#~ msgid "Error changing exported file permissions: %s"
-#~ msgstr "Erreur lors du changement des permissions du fichier exporté : %s"
 
 #, fuzzy, c-format
 #~| msgid "Error decrypting database: %s"
@@ -738,7 +778,8 @@ msgstr "Suprimir l'etiqueta"
 #~| msgid "Error changing database file permissions: %s"
 #~ msgid "Error copying the file from %s to %s: %s"
 #~ msgstr ""
-#~ "Erreur lors du changement des permissions du fichier de base de données : %s"
+#~ "Erreur lors du changement des permissions du fichier de base de données : "
+#~ "%s"
 
 #, c-format
 #~ msgid "Error changing database backup file permissions: %s"
@@ -758,27 +799,19 @@ msgstr "Suprimir l'etiqueta"
 #, c-format
 #~ msgid "Error changing database file permissions: %s"
 #~ msgstr ""
-#~ "Erreur lors du changement des permissions du fichier de base de données : %s"
+#~ "Erreur lors du changement des permissions du fichier de base de données : "
+#~ "%s"
 
 #, fuzzy, c-format
 #~| msgid "UI file \"%s\" could not be loaded: %s"
 #~ msgid "UI data could not be loaded: %s"
 #~ msgstr "Le fichier d'interface « %s » n'a pas pu être chargé : %s"
 
-#~ msgid "add tag"
-#~ msgstr "ajouter une étiquette"
-
-#~ msgid "Write the tag and press enter to save it"
-#~ msgstr "Écrire l'étiquette et appuyer sur entrée pour enregistrer"
-
 #~ msgid "Remove the tag from the entry"
 #~ msgstr "Retirer l'étiquette de l'entrée"
 
 #~ msgid "Tag entry"
 #~ msgstr "Ajout d'étiquette"
-
-#~ msgid "Show tags"
-#~ msgstr "Afficher les étiquettes"
 
 #~| msgid "Jump to the current date in the diary."
 #~ msgid "Show tags for the current entry"
