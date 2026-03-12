@@ -1,0 +1,31 @@
+{
+  "app-id": "org.gnome.Almanah",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "49",
+  "sdk": "org.gnome.Sdk",
+  "command": "almanah",
+  "finish-args": [
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--share=ipc",
+    "--share=network",
+    "--device=dri"
+  ],
+  "modules": [
+    {
+      "name": "almanah",
+      "buildsystem": "meson",
+      "run-tests": true,
+      "config-opts": [
+        "-Dbuildtype=release",
+        "-Db_ndebug=true"
+      ],
+      "sources": [
+        {
+          "type": "dir",
+          "path": "."
+        }
+      ]
+    }
+  ]
+}

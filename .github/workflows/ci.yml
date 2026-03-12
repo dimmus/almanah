@@ -34,7 +34,7 @@ jobs:
             libecal2.0-dev \
             libedataserver1.2-dev \
             libspelling-1-dev \
-            gi-docgen
+            blueprint-compiler
 
       - name: Configure (Meson)
         run: |

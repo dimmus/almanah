@@ -1,0 +1,50 @@
+{
+  "app-id": "org.gnome.Almanah.Devel",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "49",
+  "sdk": "org.gnome.Sdk",
+  "command": "almanah",
+  "tags": [
+    "devel"
+  ],
+  "finish-args": [
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--share=ipc",
+    "--share=network",
+    "--device=dri",
+    "--filesystem=home"
+  ],
+  "build-options": {
+    "env": {
+      "G_MESSAGES_DEBUG": "all"
+    }
+  },
+  "modules": [
+    {
+      "name": "libspelling",
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/GNOME/libspelling.git",
+          "branch": "main"
+        }
+      ]
+    },
+    {
+      "name": "almanah",
+      "buildsystem": "meson",
+      "run-tests": true,
+      "config-opts": [
+        "-Dbuildtype=debug"
+      ],
+      "sources": [
+        {
+          "type": "dir",
+          "path": "."
+        }
+      ]
+    }
+  ]
+}
