@@ -34,6 +34,3 @@ under the `doc/` directory:
  * `doc/usage.md` – basic usage overview
  * `doc/build.md` – how to build with Meson/Ninja
  * `doc/debug.md` – tips for debugging and profiling
- 
-The `doc/meson.build` file integrates these pages with [gi-docgen](https://gnome.pages.gitlab.gnome.org/gi-docgen/)
-so API and developer documentation can be built as part of the Meson project.
