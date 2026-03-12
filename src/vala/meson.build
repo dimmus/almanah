@@ -132,4 +132,5 @@ test('widgets', widgets_test,
   env: {
     'GSETTINGS_SCHEMA_DIR': meson.project_build_root() / 'data',
   },
+  suite: ['gui'],
 )
