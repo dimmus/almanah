@@ -44,6 +44,12 @@ public class MainWindow : Adw.ApplicationWindow {
         Object (application: app);
     }
 
+    construct {
+#if DEVEL_BUILD
+        add_css_class ("devel");
+#endif
+    }
+
     public void init_with_storage (StorageManager? storage_manager) {
         this.storage_manager = storage_manager;
         if (entry_tags_area != null && storage_manager != null) {
@@ -59,6 +65,7 @@ public class MainWindow : Adw.ApplicationWindow {
         add_window_actions ();
         setup_events_list ();
         setup_hyperlink_click ();
+        setup_hyperlink_tooltip ();
 
         var style_manager = Adw.StyleManager.get_default ();
         style_manager_handler_id = style_manager.notify["dark"].connect (() => {
@@ -70,8 +77,13 @@ public class MainWindow : Adw.ApplicationWindow {
         select_date (today);
 
         if (events_expander != null && events_list_view != null && events_count_label != null) {
+#if HAVE_EVOLUTION
             events_provider = new EvolutionEventsProvider ();
+            events_expander.visible = true;
             update_past_events ();
+#else
+            events_expander.visible = false;
+#endif
         }
     }
 
@@ -197,6 +209,75 @@ public class MainWindow : Adw.ApplicationWindow {
         if (calendar_button != null) {
             select_date (calendar_button.get_date ());
         }
+    }
+
+    void setup_hyperlink_tooltip () {
+        var motion = new Gtk.EventControllerMotion ();
+        motion.motion.connect ((x, y) => {
+            var buffer = (Gtk.TextBuffer?) entry_view.buffer;
+            if (buffer == null) {
+                entry_view.set_tooltip_text (null);
+                return;
+            }
+
+            int bx, by;
+            entry_view.window_to_buffer_coords (Gtk.TextWindowType.WIDGET, (int) x, (int) y, out bx, out by);
+            int trailing;
+            Gtk.TextIter iter;
+            if (!entry_view.get_iter_at_position (out iter, out trailing, bx, by)) {
+                entry_view.set_tooltip_text (null);
+                return;
+            }
+
+            HyperlinkTag? link_tag = null;
+            iter.get_tags ().foreach ((tag) => {
+                if (link_tag == null)
+                    link_tag = tag as HyperlinkTag;
+            });
+
+            if (link_tag != null)
+                entry_view.set_tooltip_text (link_tag.uri);
+            else
+                entry_view.set_tooltip_text (null);
+        });
+
+        entry_view.add_controller (motion);
+    }
+
+    Gee.ArrayList<EntryLink> collect_hyperlinks (Gtk.TextBuffer buffer) {
+        var links = new Gee.ArrayList<EntryLink> ();
+
+        Gtk.TextIter start, end;
+        buffer.get_bounds (out start, out end);
+
+        var iter = start;
+        while (iter.compare (end) < 0) {
+            HyperlinkTag? link_tag = null;
+            iter.get_tags ().foreach ((tag) => {
+                if (link_tag == null)
+                    link_tag = tag as HyperlinkTag;
+            });
+
+            if (link_tag != null) {
+                Gtk.TextIter range_start = iter;
+                Gtk.TextIter range_end = iter;
+
+                range_start.backward_to_tag_toggle (link_tag);
+                range_end.forward_to_tag_toggle (link_tag);
+
+                int start_offset = range_start.get_offset ();
+                int end_offset = range_end.get_offset ();
+
+                links.add (new EntryLink (start_offset, end_offset, link_tag.uri));
+
+                iter = range_end;
+            } else {
+                if (!iter.forward_char ())
+                    break;
+            }
+        }
+
+        return links;
     }
 
     void apply_formatting (string tag_name, bool applying) {
@@ -465,6 +546,19 @@ public class MainWindow : Adw.ApplicationWindow {
         ensure_entry_buffer_tags (buffer);
         buffer.text = current_entry.content;
 
+        // Re-apply stored hyperlink tags, if any.
+        if (current_entry.links != null && current_entry.links.size > 0) {
+            foreach (var link in current_entry.links) {
+                var tag = new HyperlinkTag (link.uri);
+                buffer.get_tag_table ().add (tag);
+                Gtk.TextIter link_start;
+                Gtk.TextIter link_end;
+                buffer.get_iter_at_offset (out link_start, link.start_offset);
+                buffer.get_iter_at_offset (out link_end, link.end_offset);
+                buffer.apply_tag (tag, link_start, link_end);
+            }
+        }
+
         setup_spellchecking ();
 
         update_entry_style_scheme ();
@@ -493,6 +587,7 @@ public class MainWindow : Adw.ApplicationWindow {
         var buffer = (GtkSource.Buffer?) entry_view.buffer;
         if (buffer != null) {
             current_entry.content = buffer.text;
+            current_entry.links = collect_hyperlinks (buffer);
             try {
                 storage_manager.set_entry (current_entry);
             } catch (Error e) {

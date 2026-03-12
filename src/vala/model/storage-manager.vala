@@ -73,6 +73,10 @@ public class StorageManager : Object {
             "CREATE TABLE IF NOT EXISTS entry_tag (" +
               "year INTEGER, month INTEGER, day INTEGER, tag TEXT)",
             "CREATE INDEX IF NOT EXISTS idx_tag ON entry_tag(tag)",
+            "CREATE TABLE IF NOT EXISTS entry_link (" +
+              "year INTEGER, month INTEGER, day INTEGER, " +
+              "start_offset INTEGER, end_offset INTEGER, uri TEXT)",
+            "CREATE INDEX IF NOT EXISTS idx_entry_link_date ON entry_link(year, month, day)",
             null
         };
 
@@ -176,6 +180,9 @@ public class StorageManager : Object {
             entry.last_edited = edited;
         }
 
+        // Load stored hyperlinks, if any.
+        entry.links = get_entry_links (date);
+
         return entry;
     }
 
@@ -226,6 +233,9 @@ public class StorageManager : Object {
         if (!ok) {
             throw new StorageError.RUNNING_QUERY ("Could not execute REPLACE statement: %s", db.errmsg ());
         }
+
+        // Persist hyperlink ranges associated with this entry.
+        save_entry_links (entry);
 
         return existed_before;
     }
@@ -574,6 +584,107 @@ public class StorageManager : Object {
         bool ok = (stmt.step () == Sqlite.DONE);
         if (!ok) {
             throw new StorageError.RUNNING_QUERY ("Could not execute DELETE statement: %s", db.errmsg ());
+        }
+    }
+
+    Gee.ArrayList<EntryLink> get_entry_links (Date date) {
+        var links = new Gee.ArrayList<EntryLink> ();
+
+        if (db == null) {
+            return links;
+        }
+
+        Statement stmt;
+        int ec = db.prepare_v2 (
+            "SELECT start_offset, end_offset, uri FROM entry_link " +
+            "WHERE year = ?1 AND month = ?2 AND day = ?3 " +
+            "ORDER BY start_offset",
+            -1,
+            out stmt
+        );
+        if (ec != Sqlite.OK) {
+            return links;
+        }
+
+        stmt.bind_int (1, date.get_year ());
+        stmt.bind_int (2, date.get_month ());
+        stmt.bind_int (3, date.get_day ());
+
+        while (stmt.step () == Sqlite.ROW) {
+            int start_offset = stmt.column_int (0);
+            int end_offset = stmt.column_int (1);
+            string? uri = stmt.column_text (2);
+            if (uri != null) {
+                links.add (new EntryLink (start_offset, end_offset, uri));
+            }
+        }
+
+        return links;
+    }
+
+    void clear_entry_links (Date date) throws StorageError {
+        if (db == null) {
+            throw new StorageError.RUNNING_QUERY ("Database not connected");
+        }
+
+        Statement stmt;
+        int ec = db.prepare_v2 (
+            "DELETE FROM entry_link WHERE year = ?1 AND month = ?2 AND day = ?3",
+            -1,
+            out stmt
+        );
+        if (ec != Sqlite.OK) {
+            throw new StorageError.RUNNING_QUERY ("Could not prepare DELETE statement for entry_link: %s", db.errmsg ());
+        }
+
+        stmt.bind_int (1, date.get_year ());
+        stmt.bind_int (2, date.get_month ());
+        stmt.bind_int (3, date.get_day ());
+
+        bool ok = (stmt.step () == Sqlite.DONE);
+        if (!ok) {
+            throw new StorageError.RUNNING_QUERY ("Could not execute DELETE statement for entry_link: %s", db.errmsg ());
+        }
+    }
+
+    void save_entry_links (Entry entry) throws StorageError {
+        if (db == null) {
+            throw new StorageError.RUNNING_QUERY ("Database not connected");
+        }
+
+        // Clear old links for the date.
+        clear_entry_links (entry.date);
+
+        if (entry.links == null || entry.links.size == 0) {
+            return;
+        }
+
+        Statement stmt;
+        int ec = db.prepare_v2 (
+            "INSERT INTO entry_link (year, month, day, start_offset, end_offset, uri) " +
+            "VALUES (?1, ?2, ?3, ?4, ?5, ?6)",
+            -1,
+            out stmt
+        );
+        if (ec != Sqlite.OK) {
+            throw new StorageError.RUNNING_QUERY ("Could not prepare INSERT statement for entry_link: %s", db.errmsg ());
+        }
+
+        foreach (var link in entry.links) {
+            stmt.reset ();
+            stmt.clear_bindings ();
+
+            stmt.bind_int (1, entry.date.get_year ());
+            stmt.bind_int (2, entry.date.get_month ());
+            stmt.bind_int (3, entry.date.get_day ());
+            stmt.bind_int (4, link.start_offset);
+            stmt.bind_int (5, link.end_offset);
+            stmt.bind_text (6, link.uri);
+
+            bool ok = (stmt.step () == Sqlite.DONE);
+            if (!ok) {
+                throw new StorageError.RUNNING_QUERY ("Could not execute INSERT statement for entry_link: %s", db.errmsg ());
+            }
         }
     }
 }
