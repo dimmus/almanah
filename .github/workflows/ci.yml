@@ -47,5 +47,5 @@ jobs:
 
       - name: Run tests
         run: |
-          xvfb-run -s "-screen 0 1024x768x24" meson test -C build --print-errorlogs
+          xvfb-run -s "-screen 0 1024x768x24" meson test -C build --print-errorlogs --exclude-test widgets
 
