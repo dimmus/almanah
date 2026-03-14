@@ -1,5 +1,5 @@
 {
-  "app-id": "org.gnome.Almanah",
+  "app-id": "io.github.dimmus.almanah",
   "runtime": "org.gnome.Platform",
   "runtime-version": "49",
   "sdk": "org.gnome.Sdk",

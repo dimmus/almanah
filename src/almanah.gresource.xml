@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/org/gnome/Almanah">
+  <gresource prefix="/io/github/dimmus/almanah">
     <file>css/almanah.css</file>
     <file preprocess="xml-stripblanks">ui/calendar-button.ui</file>
     <file preprocess="xml-stripblanks">ui/main-window.ui</file>
     <file preprocess="xml-stripblanks">ui/search-dialog.ui</file>
     <file preprocess="xml-stripblanks">ui/preferences-dialog.ui</file>
-    <file>icons/scalable/org.gnome.Almanah-tags-symbolic.svg</file>
+    <file>icons/scalable/io.github.dimmus.almanah-tags-symbolic.svg</file>
   </gresource>
 </gresources>

@@ -18,7 +18,7 @@ public class Application : Adw.Application {
 
     public Application () {
         Object (
-            application_id: "org.gnome.Almanah",
+            application_id: "io.github.dimmus.almanah",
             flags: ApplicationFlags.DEFAULT_FLAGS
         );
 
@@ -59,7 +59,7 @@ public class Application : Adw.Application {
             Log.default_handler (domain, level, message);
         });
 
-        settings = new GLib.Settings ("org.gnome.almanah");
+        settings = new GLib.Settings ("io.github.dimmus.almanah");
 
         if (debug_logging) {
             Log.set_handler (null, LogLevelFlags.LEVEL_DEBUG, (domain, level, message) => {
@@ -69,7 +69,7 @@ public class Application : Adw.Application {
 
         // Application CSS (tags etc.) from resources
         var css = new Gtk.CssProvider ();
-        css.load_from_resource ("/org/gnome/Almanah/css/almanah.css");
+        css.load_from_resource ("/io/github/dimmus/almanah/css/almanah.css");
         var display = Gdk.Display.get_default ();
         if (display != null) {
             add_css_provider_for_display (display, css, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
@@ -123,6 +123,9 @@ public class Application : Adw.Application {
         set_accels_for_action ("app.quit", {"<Ctrl>q"});
         set_accels_for_action ("win.select-date", {"<Ctrl>d"});
         set_accels_for_action ("win.paste", {"<Ctrl>v"});
+        set_accels_for_action ("win.bold", {"<Ctrl>b"});
+        set_accels_for_action ("win.italic", {"<Ctrl>i"});
+        set_accels_for_action ("win.underline", {"<Ctrl>u"});
     }
 
     protected override void activate () {
@@ -177,7 +180,7 @@ public class Application : Adw.Application {
 
     void action_about_cb (SimpleAction action, Variant? parameter) {
         var about = new Adw.AboutDialog ();
-        about.application_icon = "org.gnome.Almanah";
+        about.application_icon = "io.github.dimmus.almanah";
         about.application_name = _ ("Almanah Diary");
         about.developer_name = "Almanah Developers";
         about.version = PROJECT_VERSION;

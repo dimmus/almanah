@@ -1,7 +1,7 @@
 # List of source files containing translatable strings.
-data/org.gnome.Almanah.metainfo.xml.in
-data/org.gnome.Almanah.desktop.in
-data/org.gnome.almanah.gschema.xml
+data/io.github.dimmus.almanah.metainfo.xml.in
+data/io.github.dimmus.almanah.desktop.in
+data/io.github.dimmus.almanah.gschema.xml
 src/ui/calendar-button.blp
 src/ui/main-window.blp
 src/ui/date-entry-dialog.blp

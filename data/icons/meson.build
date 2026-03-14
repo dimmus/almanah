@@ -1,15 +1,15 @@
 install_data(
-  '256x256' / 'org.gnome.Almanah.svg',
+  '256x256' / 'io.github.dimmus.almanah.svg',
   install_dir: icondir / 'scalable' / 'apps',
-  rename: 'org.gnome.Almanah.svg',
+  rename: 'io.github.dimmus.almanah.svg',
 )
 
 install_data(
-  'scalable' / 'org.gnome.Almanah-tags-symbolic.svg',
+  'scalable' / 'io.github.dimmus.almanah-tags-symbolic.svg',
   install_dir: icondir / 'scalable' / 'actions',
 )
 
 install_data(
-  'scalable' / 'org.gnome.Almanah-symbolic.svg',
+  'scalable' / 'io.github.dimmus.almanah-symbolic.svg',
   install_dir: icondir / 'scalable' / 'apps',
 )

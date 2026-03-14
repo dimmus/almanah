@@ -1,7 +1,7 @@
 service_conf = configuration_data()
 service_conf.set('bindir', get_option('prefix') / get_option('bindir'))
 
-service = 'org.gnome.Almanah.service'
+service = 'io.github.dimmus.almanah.service'
 configure_file(
   input: service + '.in',
   output: service,
@@ -10,7 +10,7 @@ configure_file(
   configuration: service_conf,
 )
 
-desktop = 'org.gnome.Almanah.desktop'
+desktop = 'io.github.dimmus.almanah.desktop'
 i18n.merge_file(
   type: 'desktop',
   input: desktop + '.in',
@@ -28,7 +28,7 @@ if desktop_file_validate.found()
   )
 endif
 
-appdata = 'org.gnome.Almanah.metainfo.xml'
+appdata = 'io.github.dimmus.almanah.metainfo.xml'
 i18n.merge_file(
   input: appdata + '.in',
   output: appdata,
@@ -45,7 +45,7 @@ if (appstreamcli.found())
   )
 endif
 
-gschema_xml = 'org.gnome.almanah.gschema.xml'
+gschema_xml = 'io.github.dimmus.almanah.gschema.xml'
 install_data(
   gschema_xml,
   install_dir: schemadir,

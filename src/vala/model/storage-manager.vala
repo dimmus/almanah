@@ -77,6 +77,10 @@ public class StorageManager : Object {
               "year INTEGER, month INTEGER, day INTEGER, " +
               "start_offset INTEGER, end_offset INTEGER, uri TEXT)",
             "CREATE INDEX IF NOT EXISTS idx_entry_link_date ON entry_link(year, month, day)",
+            "CREATE TABLE IF NOT EXISTS entry_format (" +
+              "year INTEGER, month INTEGER, day INTEGER, " +
+              "start_offset INTEGER, end_offset INTEGER, tag_name TEXT)",
+            "CREATE INDEX IF NOT EXISTS idx_entry_format_date ON entry_format(year, month, day)",
             null
         };
 
@@ -180,8 +184,9 @@ public class StorageManager : Object {
             entry.last_edited = edited;
         }
 
-        // Load stored hyperlinks, if any.
+        // Load stored hyperlinks and format tags, if any.
         entry.links = get_entry_links (date);
+        entry.formats = get_entry_formats (date);
 
         return entry;
     }
@@ -234,8 +239,9 @@ public class StorageManager : Object {
             throw new StorageError.RUNNING_QUERY ("Could not execute REPLACE statement: %s", db.errmsg ());
         }
 
-        // Persist hyperlink ranges associated with this entry.
+        // Persist hyperlink ranges and format tags associated with this entry.
         save_entry_links (entry);
+        save_entry_formats (entry);
 
         return existed_before;
     }
@@ -428,7 +434,7 @@ public class StorageManager : Object {
             return results;
         }
 
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
 
         while (stmt.step () == Sqlite.ROW) {
             var date = Date ();
@@ -684,6 +690,106 @@ public class StorageManager : Object {
             bool ok = (stmt.step () == Sqlite.DONE);
             if (!ok) {
                 throw new StorageError.RUNNING_QUERY ("Could not execute INSERT statement for entry_link: %s", db.errmsg ());
+            }
+        }
+    }
+
+    Gee.ArrayList<EntryFormat> get_entry_formats (Date date) {
+        var formats = new Gee.ArrayList<EntryFormat> ();
+
+        if (db == null) {
+            return formats;
+        }
+
+        Statement stmt;
+        int ec = db.prepare_v2 (
+            "SELECT start_offset, end_offset, tag_name FROM entry_format " +
+            "WHERE year = ?1 AND month = ?2 AND day = ?3 " +
+            "ORDER BY start_offset",
+            -1,
+            out stmt
+        );
+        if (ec != Sqlite.OK) {
+            return formats;
+        }
+
+        stmt.bind_int (1, date.get_year ());
+        stmt.bind_int (2, date.get_month ());
+        stmt.bind_int (3, date.get_day ());
+
+        while (stmt.step () == Sqlite.ROW) {
+            int start_offset = stmt.column_int (0);
+            int end_offset = stmt.column_int (1);
+            string? tag_name = stmt.column_text (2);
+            if (tag_name == "bold" || tag_name == "italic" || tag_name == "underline") {
+                formats.add (new EntryFormat (start_offset, end_offset, tag_name));
+            }
+        }
+
+        return formats;
+    }
+
+    void clear_entry_formats (Date date) throws StorageError {
+        if (db == null) {
+            throw new StorageError.RUNNING_QUERY ("Database not connected");
+        }
+
+        Statement stmt;
+        int ec = db.prepare_v2 (
+            "DELETE FROM entry_format WHERE year = ?1 AND month = ?2 AND day = ?3",
+            -1,
+            out stmt
+        );
+        if (ec != Sqlite.OK) {
+            throw new StorageError.RUNNING_QUERY ("Could not prepare DELETE statement for entry_format: %s", db.errmsg ());
+        }
+
+        stmt.bind_int (1, date.get_year ());
+        stmt.bind_int (2, date.get_month ());
+        stmt.bind_int (3, date.get_day ());
+
+        bool ok = (stmt.step () == Sqlite.DONE);
+        if (!ok) {
+            throw new StorageError.RUNNING_QUERY ("Could not execute DELETE statement for entry_format: %s", db.errmsg ());
+        }
+    }
+
+    void save_entry_formats (Entry entry) throws StorageError {
+        if (db == null) {
+            throw new StorageError.RUNNING_QUERY ("Database not connected");
+        }
+
+        clear_entry_formats (entry.date);
+
+        if (entry.formats == null || entry.formats.size == 0) {
+            return;
+        }
+
+        Statement stmt;
+        int ec = db.prepare_v2 (
+            "INSERT INTO entry_format (year, month, day, start_offset, end_offset, tag_name) " +
+            "VALUES (?1, ?2, ?3, ?4, ?5, ?6)",
+            -1,
+            out stmt
+        );
+        if (ec != Sqlite.OK) {
+            throw new StorageError.RUNNING_QUERY ("Could not prepare INSERT statement for entry_format: %s", db.errmsg ());
+        }
+
+        foreach (var fmt in entry.formats) {
+            stmt.reset ();
+            stmt.clear_bindings ();
+
+            stmt.bind_int (1, entry.date.get_year ());
+            stmt.bind_int (2, entry.date.get_month ());
+            stmt.bind_int (3, entry.date.get_day ());
+            stmt.bind_int (4, fmt.start_offset);
+            stmt.bind_int (5, fmt.end_offset);
+            stmt.bind_text (6, fmt.tag_name);
+
+            bool ok = (stmt.step () == Sqlite.DONE);
+            if (!ok) {
+                throw new StorageError.RUNNING_QUERY ("Could not execute INSERT statement for entry_format: %s", db.errmsg ());
             }
         }
     }

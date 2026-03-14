@@ -12,7 +12,7 @@ extern void pango_cairo_show_layout (Cairo.Context cr, Pango.Layout layout);
 
 namespace Almanah {
 
-[GtkTemplate (ui = "/org/gnome/Almanah/ui/main-window.ui")]
+[GtkTemplate (ui = "/io/github/dimmus/almanah/ui/main-window.ui")]
 public class MainWindow : Adw.ApplicationWindow {
     [GtkChild] unowned EntryTagsArea entry_tags_area;
     [GtkChild] unowned CalendarButton calendar_button;
@@ -25,6 +25,7 @@ public class MainWindow : Adw.ApplicationWindow {
     private Entry? current_entry;
     private Date current_date;
     private bool updating_formatting = false;
+    private bool formatting_state_sync_connected = false;
     private ulong style_manager_handler_id = 0;
     private Spelling.Checker? spell_checker;
     private Spelling.TextBufferAdapter? spell_adapter;
@@ -122,6 +123,44 @@ public class MainWindow : Adw.ApplicationWindow {
             buffer.create_tag ("italic", "style", Pango.Style.ITALIC, null);
             buffer.create_tag ("underline", "underline", Pango.Underline.SINGLE, null);
         }
+    }
+
+    void setup_formatting_state_sync () {
+        if (formatting_state_sync_connected)
+            return;
+        var buffer = (Gtk.TextBuffer?) entry_view.buffer;
+        if (buffer == null)
+            return;
+        formatting_state_sync_connected = true;
+        buffer.mark_set.connect_after ((loc, mark) => {
+            if (mark.name == "insert" || mark.name == "selection_bound")
+                update_formatting_actions_state ();
+        });
+        update_formatting_actions_state ();
+    }
+
+    void update_formatting_actions_state () {
+        if (updating_formatting)
+            return;
+        var buffer = (Gtk.TextBuffer?) entry_view.buffer;
+        if (buffer == null)
+            return;
+        updating_formatting = true;
+        Gtk.TextIter start, end;
+        if (!buffer.get_selection_bounds (out start, out end)) {
+            buffer.get_iter_at_mark (out start, buffer.get_insert ());
+            end = start;
+        }
+        foreach (var tag_name in new string[] { "bold", "italic", "underline" }) {
+            var tag = buffer.tag_table.lookup (tag_name);
+            if (tag == null)
+                continue;
+            bool has_tag = start.has_tag (tag);
+            var act = lookup_action (tag_name) as GLib.SimpleAction?;
+            if (act != null)
+                act.set_state (new GLib.Variant.boolean (has_tag));
+        }
+        updating_formatting = false;
     }
 
     void add_window_actions () {
@@ -244,6 +283,40 @@ public class MainWindow : Adw.ApplicationWindow {
         entry_view.add_controller (motion);
     }
 
+    Gee.ArrayList<EntryFormat> collect_formats (Gtk.TextBuffer buffer) {
+        var formats = new Gee.ArrayList<EntryFormat> ();
+
+        string[] tag_names = { "bold", "italic", "underline" };
+        foreach (var tag_name in tag_names) {
+            Gtk.TextTag? tag = buffer.tag_table.lookup (tag_name);
+            if (tag == null)
+                continue;
+
+            Gtk.TextIter start, end;
+            buffer.get_bounds (out start, out end);
+
+            var iter = start;
+            while (iter.compare (end) < 0) {
+                if (!iter.has_tag (tag)) {
+                    if (!iter.forward_char ())
+                        break;
+                    continue;
+                }
+                Gtk.TextIter range_start = iter;
+                Gtk.TextIter range_end = iter;
+                if (!range_start.backward_to_tag_toggle (tag))
+                    range_start = iter;
+                range_end.forward_to_tag_toggle (tag);
+                int so = range_start.get_offset ();
+                int eo = range_end.get_offset ();
+                formats.add (new EntryFormat (so, eo, tag_name));
+                iter = range_end;
+            }
+        }
+
+        return formats;
+    }
+
     Gee.ArrayList<EntryLink> collect_hyperlinks (Gtk.TextBuffer buffer) {
         var links = new Gee.ArrayList<EntryLink> ();
 
@@ -262,7 +335,10 @@ public class MainWindow : Adw.ApplicationWindow {
                 Gtk.TextIter range_start = iter;
                 Gtk.TextIter range_end = iter;
 
-                range_start.backward_to_tag_toggle (link_tag);
+                /* backward_to_tag_toggle sets iter to buffer start when no toggle found
+                 * (e.g. we're already at the link start). Use current position in that case. */
+                if (!range_start.backward_to_tag_toggle (link_tag))
+                    range_start = iter;
                 range_end.forward_to_tag_toggle (link_tag);
 
                 int start_offset = range_start.get_offset ();
@@ -293,6 +369,7 @@ public class MainWindow : Adw.ApplicationWindow {
             buffer.apply_tag_by_name (tag_name, start, end);
         else
             buffer.remove_tag_by_name (tag_name, start, end);
+        update_formatting_actions_state ();
     }
 
     void set_important (bool important) {
@@ -334,7 +411,7 @@ public class MainWindow : Adw.ApplicationWindow {
         entry_view.insert_action_group ("spelling", spell_adapter);
 
         // Apply settings
-        var s = new GLib.Settings ("org.gnome.almanah");
+        var s = new GLib.Settings ("io.github.dimmus.almanah");
         var lang = s.get_string ("spelling-language");
         if (lang == null || lang.strip () == "") {
             var env_lang = Environment.get_variable ("LANG");
@@ -534,6 +611,8 @@ public class MainWindow : Adw.ApplicationWindow {
             current_entry.content = model_entry.content;
             current_entry.important = model_entry.important;
             current_entry.last_edited = model_entry.last_edited;
+            current_entry.links = model_entry.links;
+            current_entry.formats = model_entry.formats;
         } else {
             current_entry = new Entry (date);
         }
@@ -548,14 +627,41 @@ public class MainWindow : Adw.ApplicationWindow {
 
         // Re-apply stored hyperlink tags, if any.
         if (current_entry.links != null && current_entry.links.size > 0) {
+            int char_count = buffer.get_char_count ();
             foreach (var link in current_entry.links) {
+                int start_off = link.start_offset;
+                int end_off = link.end_offset;
+                if (start_off < 0)
+                    start_off = 0;
+                if (start_off > char_count)
+                    start_off = char_count;
+                if (end_off < 0)
+                    end_off = 0;
+                if (end_off > char_count)
+                    end_off = char_count;
+                if (start_off >= end_off)
+                    continue;
                 var tag = new HyperlinkTag (link.uri);
                 buffer.get_tag_table ().add (tag);
                 Gtk.TextIter link_start;
                 Gtk.TextIter link_end;
-                buffer.get_iter_at_offset (out link_start, link.start_offset);
-                buffer.get_iter_at_offset (out link_end, link.end_offset);
+                buffer.get_iter_at_offset (out link_start, start_off);
+                buffer.get_iter_at_offset (out link_end, end_off);
                 buffer.apply_tag (tag, link_start, link_end);
+            }
+        }
+
+        // Re-apply stored format tags (bold, italic, underline).
+        if (current_entry.formats != null && current_entry.formats.size > 0) {
+            foreach (var fmt in current_entry.formats) {
+                var tag = buffer.tag_table.lookup (fmt.tag_name);
+                if (tag != null && fmt.start_offset < buffer.get_char_count () && fmt.end_offset <= buffer.get_char_count ()) {
+                    Gtk.TextIter fmt_start;
+                    Gtk.TextIter fmt_end;
+                    buffer.get_iter_at_offset (out fmt_start, fmt.start_offset);
+                    buffer.get_iter_at_offset (out fmt_end, fmt.end_offset);
+                    buffer.apply_tag (tag, fmt_start, fmt_end);
+                }
             }
         }
 
@@ -578,6 +684,8 @@ public class MainWindow : Adw.ApplicationWindow {
         if (calendar_button != null) {
             calendar_button.select_date (current_date);
         }
+
+        setup_formatting_state_sync ();
     }
 
     void save_current_entry () {
@@ -588,6 +696,7 @@ public class MainWindow : Adw.ApplicationWindow {
         if (buffer != null) {
             current_entry.content = buffer.text;
             current_entry.links = collect_hyperlinks (buffer);
+            current_entry.formats = collect_formats (buffer);
             try {
                 storage_manager.set_entry (current_entry);
             } catch (Error e) {

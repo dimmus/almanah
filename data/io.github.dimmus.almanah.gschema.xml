@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-	<schema id="org.gnome.almanah" path="/org/gnome/Almanah/" gettext-domain="almanah">
+	<schema id="io.github.dimmus.almanah" path="/io/github/dimmus/almanah/" gettext-domain="almanah">
 		<key name="encryption-key" type="s">
 			<default>''</default>
 			<summary>Database encryption key ID</summary>

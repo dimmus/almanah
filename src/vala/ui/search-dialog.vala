@@ -24,7 +24,7 @@ public class SearchResultRow : Object {
     }
 }
 
-[GtkTemplate (ui = "/org/gnome/Almanah/ui/search-dialog.ui")]
+[GtkTemplate (ui = "/io/github/dimmus/almanah/ui/search-dialog.ui")]
 public class SearchDialog : Adw.Dialog {
     [GtkChild] unowned Gtk.Entry sd_search_entry;
     [GtkChild] unowned Gtk.Button sd_search_button;

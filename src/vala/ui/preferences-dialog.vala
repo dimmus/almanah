@@ -6,7 +6,7 @@ using GLib;
 
 namespace Almanah {
 
-[GtkTemplate (ui = "/org/gnome/Almanah/ui/preferences-dialog.ui")]
+[GtkTemplate (ui = "/io/github/dimmus/almanah/ui/preferences-dialog.ui")]
 public class PreferencesDialog : Adw.PreferencesDialog {
     [GtkChild] unowned Gtk.DropDown key_combo;
     [GtkChild] unowned Gtk.CheckButton spell_checking_enabled_check_button;

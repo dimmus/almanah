@@ -13,7 +13,7 @@ private enum UserEvent {
     MONTH
 }
 
-[GtkTemplate (ui = "/org/gnome/Almanah/ui/calendar-button.ui")]
+[GtkTemplate (ui = "/io/github/dimmus/almanah/ui/calendar-button.ui")]
 public class CalendarButton : Gtk.Button {
     [GtkChild] unowned Gtk.Popover dock;
     [GtkChild] unowned Gtk.Calendar calendar;
