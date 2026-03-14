@@ -39,10 +39,10 @@
 }
 
 /* Lighten calendar background inside the date popover to better match the surrounding panel. */
-calendar {
-    background-color: @view_bg_color;
-}
+/* calendar { */
+/*     background-color: @view_bg_color; */
+/* } */
 
-calendar:backdrop {
-    background-color: @view_bg_color;
-}
+/* calendar:backdrop { */
+/*     background-color: @view_bg_color; */
+/* } */
