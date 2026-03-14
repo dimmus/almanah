@@ -79,6 +79,35 @@ void add_entry_tests () {
         assert (e.last_edited.get_month () == 5);
         assert (e.last_edited.get_year () == 2024);
     });
+
+    Test.add_func ("/entry/links-and-formats-defaults", () => {
+        Date d = Date ();
+        d.set_dmy (1, 1, 2024);
+        var e = new Entry (d);
+        assert (e.links != null);
+        assert (e.links.size == 0);
+        assert (e.formats != null);
+        assert (e.formats.size == 0);
+    });
+
+    Test.add_func ("/entry/links-and-formats-mutability", () => {
+        Date d = Date ();
+        d.set_dmy (1, 1, 2024);
+        var e = new Entry (d);
+
+        e.links.add (new EntryLink (0, 5, "https://example.com"));
+        e.formats.add (new EntryFormat (0, 4, "bold"));
+
+        assert (e.links.size == 1);
+        assert (e.links[0].uri == "https://example.com");
+        assert (e.links[0].start_offset == 0);
+        assert (e.links[0].end_offset == 5);
+
+        assert (e.formats.size == 1);
+        assert (e.formats[0].tag_name == "bold");
+        assert (e.formats[0].start_offset == 0);
+        assert (e.formats[0].end_offset == 4);
+    });
 }
 
 public static int main (string[] args) {
@@ -86,8 +115,6 @@ public static int main (string[] args) {
 
     add_entry_tests ();
 
-    int result = Test.run ();
-    stdout.printf ("# entry tests: 3\n");
-    return result;
+    return Test.run ();
 }
 

@@ -27,7 +27,7 @@ void add_entry_roundtrip_tests () {
         if (FileUtils.test (path, FileTest.EXISTS)) {
             FileUtils.remove (path);
         }
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -75,7 +75,7 @@ void add_entry_roundtrip_tests () {
         if (FileUtils.test (path, FileTest.EXISTS)) {
             FileUtils.remove (path);
         }
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -110,7 +110,7 @@ void add_entry_roundtrip_tests () {
         if (FileUtils.test (path, FileTest.EXISTS)) {
             FileUtils.remove (path);
         }
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -140,6 +140,76 @@ void add_entry_roundtrip_tests () {
         assert (loaded.last_edited.get_month () == 6);
         assert (loaded.last_edited.get_year () == 2024);
     });
+
+    Test.add_func ("/storage/links-roundtrip", () => {
+        string path = Path.build_filename (Environment.get_tmp_dir (), "almanah-test-db-links.sqlite");
+        if (FileUtils.test (path, FileTest.EXISTS)) {
+            FileUtils.remove (path);
+        }
+        var settings = new Settings ("io.github.dimmus.almanah");
+        var sm = new StorageManager (path, settings);
+
+        Error? err = null;
+        assert (sm.open (out err));
+
+        Date date = Date ();
+        date.set_dmy (10, 3, 2024);
+
+        var entry = new Entry (date);
+        entry.content = "See https://example.com and more";
+        entry.links.add (new EntryLink (4, 23, "https://example.com"));
+
+        try {
+            sm.set_entry (entry);
+        } catch (StorageError e) {
+            assert_not_reached ();
+        }
+
+        var loaded = sm.get_entry (date);
+        assert (loaded != null);
+        assert (loaded.content == "See https://example.com and more");
+        assert (loaded.links.size == 1);
+        assert (loaded.links[0].start_offset == 4);
+        assert (loaded.links[0].end_offset == 23);
+        assert (loaded.links[0].uri == "https://example.com");
+    });
+
+    Test.add_func ("/storage/formats-roundtrip", () => {
+        string path = Path.build_filename (Environment.get_tmp_dir (), "almanah-test-db-formats.sqlite");
+        if (FileUtils.test (path, FileTest.EXISTS)) {
+            FileUtils.remove (path);
+        }
+        var settings = new Settings ("io.github.dimmus.almanah");
+        var sm = new StorageManager (path, settings);
+
+        Error? err = null;
+        assert (sm.open (out err));
+
+        Date date = Date ();
+        date.set_dmy (11, 3, 2024);
+
+        var entry = new Entry (date);
+        entry.content = "Bold and italic text";
+        entry.formats.add (new EntryFormat (0, 4, "bold"));
+        entry.formats.add (new EntryFormat (9, 15, "italic"));
+
+        try {
+            sm.set_entry (entry);
+        } catch (StorageError e) {
+            assert_not_reached ();
+        }
+
+        var loaded = sm.get_entry (date);
+        assert (loaded != null);
+        assert (loaded.content == "Bold and italic text");
+        assert (loaded.formats.size == 2);
+        assert (loaded.formats[0].tag_name == "bold");
+        assert (loaded.formats[0].start_offset == 0);
+        assert (loaded.formats[0].end_offset == 4);
+        assert (loaded.formats[1].tag_name == "italic");
+        assert (loaded.formats[1].start_offset == 9);
+        assert (loaded.formats[1].end_offset == 15);
+    });
 }
 
 void add_open_and_null_db_tests () {
@@ -148,7 +218,7 @@ void add_open_and_null_db_tests () {
         string invalid_dir = Path.build_filename (Environment.get_tmp_dir (), "almanah-nonexistent-dir");
         string path = Path.build_filename (invalid_dir, "db.sqlite");
 
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -160,7 +230,7 @@ void add_open_and_null_db_tests () {
     Test.add_func ("/storage/null-db-behaviour", () => {
         // Exercise branches that are taken when the database has not been opened.
         string path = Path.build_filename (Environment.get_tmp_dir (), "almanah-test-db-null.sqlite");
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         // get_month_marked_days should return an array of the right size, all false.
@@ -238,7 +308,7 @@ void add_month_marked_days_tests () {
         if (FileUtils.test (path, FileTest.EXISTS)) {
             FileUtils.remove (path);
         }
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -276,7 +346,7 @@ void add_month_marked_days_tests () {
         if (FileUtils.test (path, FileTest.EXISTS)) {
             FileUtils.remove (path);
         }
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -297,7 +367,7 @@ void add_tag_tests () {
         if (FileUtils.test (path, FileTest.EXISTS)) {
             FileUtils.remove (path);
         }
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -349,7 +419,7 @@ void add_tag_tests () {
         if (FileUtils.test (path, FileTest.EXISTS)) {
             FileUtils.remove (path);
         }
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -384,7 +454,7 @@ void add_listing_and_search_tests () {
         if (FileUtils.test (path, FileTest.EXISTS)) {
             FileUtils.remove (path);
         }
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -399,7 +469,7 @@ void add_listing_and_search_tests () {
         if (FileUtils.test (path, FileTest.EXISTS)) {
             FileUtils.remove (path);
         }
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -437,7 +507,7 @@ void add_listing_and_search_tests () {
         if (FileUtils.test (path, FileTest.EXISTS)) {
             FileUtils.remove (path);
         }
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -481,7 +551,7 @@ void add_listing_and_search_tests () {
         if (FileUtils.test (path, FileTest.EXISTS)) {
             FileUtils.remove (path);
         }
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -521,7 +591,7 @@ void add_listing_and_search_tests () {
         if (FileUtils.test (path, FileTest.EXISTS)) {
             FileUtils.remove (path);
         }
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;
@@ -564,7 +634,7 @@ void add_listing_and_search_tests () {
         }
 
         // Create a normal database with one plaintext entry first.
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (path, settings);
 
         Error? err = null;

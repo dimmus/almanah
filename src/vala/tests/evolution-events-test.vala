@@ -24,8 +24,6 @@ public static int main (string[] args) {
 
     add_evolution_events_tests ();
 
-    int result = Test.run ();
-    stdout.printf ("# evolution-events tests: 1\n");
-    return result;
+    return Test.run ();
 }
 

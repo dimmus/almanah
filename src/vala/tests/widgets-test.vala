@@ -61,7 +61,7 @@ void add_widgets_tests () {
     Test.add_func ("/widgets/entry-tags-area/storage-manager-propagation", () => {
         var area = new EntryTagsArea ();
 
-        var settings = new GLib.Settings ("org.gnome.almanah");
+        var settings = new GLib.Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (":memory:", settings);
         Error? err = null;
         assert (sm.open (out err));
@@ -99,7 +99,7 @@ void add_widgets_tests () {
     });
 
     Test.add_func ("/widgets/entry-tags-area/tag-activation-adds-tag", () => {
-        var settings = new GLib.Settings ("org.gnome.almanah");
+        var settings = new GLib.Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (":memory:", settings);
         Error? err = null;
         assert (sm.open (out err));
@@ -161,8 +161,6 @@ public static int main (string[] args) {
 
     add_widgets_tests ();
 
-    int result = Test.run ();
-    stdout.printf ("# widgets tests: 7\n");
-    return result;
+    return Test.run ();
 }
 

@@ -10,7 +10,7 @@ void add_import_export_tests () {
             FileUtils.remove (db_path);
         }
 
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (db_path, settings);
 
         Error? err = null;
@@ -59,7 +59,7 @@ void add_import_export_tests () {
             FileUtils.remove (db_path);
         }
 
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (db_path, settings);
 
         Error? err = null;
@@ -128,7 +128,7 @@ void add_import_export_tests () {
             FileUtils.remove (db_path);
         }
 
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (db_path, settings);
 
         Error? err = null;
@@ -163,7 +163,7 @@ void add_import_export_tests () {
             FileUtils.remove (db_path);
         }
 
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (db_path, settings);
 
         Error? err = null;
@@ -195,7 +195,7 @@ void add_import_export_tests () {
             FileUtils.remove (db_path);
         }
 
-        var settings = new Settings ("org.gnome.almanah");
+        var settings = new Settings ("io.github.dimmus.almanah");
         var sm = new StorageManager (db_path, settings);
 
         Error? err = null;
@@ -254,8 +254,6 @@ public static int main (string[] args) {
 
     add_import_export_tests ();
 
-    int result = Test.run ();
-    stdout.printf ("# import-export tests: 5\n");
-    return result;
+    return Test.run ();
 }
 
