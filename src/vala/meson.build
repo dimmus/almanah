@@ -40,97 +40,37 @@ almanah_vala = executable(meson.project_name(),
   install: true,
 )
 
-storage_manager_test = executable('storage-manager-test',
-  [
-    'tests/storage-manager-test.vala',
-    'model/entry.vala',
-    'model/storage-manager.vala',
-  ],
-  almanah_resources,
-  dependencies: vala_deps,
-  vala_args: [
-    '--pkg=posix',
-    '--target-glib=2.74',
-  ],
-)
+vala_glib = '--target-glib=2.74'
+vala_gres = [
+  '--gresources=' + meson.project_source_root() / 'src' / 'almanah.gresource.xml',
+  '--gresourcesdir=' + meson.project_build_root(),
+  '--gresourcesdir=' + meson.project_source_root() / 'src',
+]
+schema_env = {'GSETTINGS_SCHEMA_DIR': meson.project_build_root() / 'data'}
 
-test('storage-manager', storage_manager_test,
-  env: {
-    'GSETTINGS_SCHEMA_DIR': meson.project_build_root() / 'data',
-  },
-)
-
-entry_test = executable('entry-test',
-  [
-    'tests/entry-test.vala',
-    'model/entry.vala',
-  ],
-  dependencies: vala_deps,
-  vala_args: [
-    '--target-glib=2.74',
-  ],
-)
-
-test('entry', entry_test)
-
-import_export_test = executable('import-export-operations-test',
-  [
-    'tests/import-export-operations-test.vala',
-    'model/entry.vala',
-    'model/storage-manager.vala',
-    'model/import-export-operations.vala',
-  ],
-  almanah_resources,
-  dependencies: vala_deps,
-  vala_args: [
-    '--pkg=posix',
-    '--target-glib=2.74',
-  ],
-)
-
-test('import-export-operations', import_export_test,
-  env: {
-    'GSETTINGS_SCHEMA_DIR': meson.project_build_root() / 'data',
-  },
-)
-
-evolution_events_test = executable('evolution-events-test',
-  [
-    'tests/evolution-events-test.vala',
-    'model/evolution-events.vala',
-  ],
-  dependencies: vala_deps,
-  vala_args: [
-    '--target-glib=2.74',
-  ],
-)
-
-test('evolution-events', evolution_events_test)
+foreach name : ['storage-manager', 'entry', 'import-export-operations', 'evolution-events']
+  exe_name = name + '-test'
+  sources = {
+    'storage-manager': ['tests/storage-manager-test.vala', 'model/entry.vala', 'model/storage-manager.vala'],
+    'entry': ['tests/entry-test.vala', 'model/entry.vala'],
+    'import-export-operations': ['tests/import-export-operations-test.vala', 'model/entry.vala', 'model/storage-manager.vala', 'model/import-export-operations.vala'],
+    'evolution-events': ['tests/evolution-events-test.vala', 'model/evolution-events.vala'],
+  }[name]
+  args = [vala_glib]
+  exe_sources = sources
+  needs_schema = false
+  if name in ['storage-manager', 'import-export-operations']
+    args = ['--pkg=posix'] + args
+    exe_sources = sources + [almanah_resources]
+    needs_schema = true
+  endif
+  exe = executable(exe_name, exe_sources, dependencies: vala_deps, vala_args: args)
+  test(name, exe, env: needs_schema ? schema_env : {})
+endforeach
 
 widgets_test = executable('widgets-test',
-  [
-    'tests/widgets-test.vala',
-    'widgets/tag.vala',
-    'widgets/tag-entry.vala',
-    'widgets/entry-tags-area.vala',
-    'widgets/calendar-button.vala',
-    'widgets/hyperlink-tag.vala',
-    'model/storage-manager.vala',
-    'model/entry.vala',
-  ],
-  almanah_resources,
-  dependencies: vala_deps,
-  vala_args: [
-    '--target-glib=2.74',
-    '--gresources=' + meson.project_source_root() / 'src' / 'almanah.gresource.xml',
-    '--gresourcesdir=' + meson.project_build_root(),
-    '--gresourcesdir=' + meson.project_source_root() / 'src',
-  ],
-)
-
-test('widgets', widgets_test,
-  env: {
-    'GSETTINGS_SCHEMA_DIR': meson.project_build_root() / 'data',
-  },
-  suite: ['gui'],
-)
+  ['tests/widgets-test.vala', 'widgets/tag.vala', 'widgets/tag-entry.vala', 'widgets/entry-tags-area.vala',
+   'widgets/calendar-button.vala', 'widgets/hyperlink-tag.vala', 'model/storage-manager.vala', 'model/entry.vala'],
+  almanah_resources, dependencies: vala_deps,
+  vala_args: [vala_glib] + vala_gres)
+test('widgets', widgets_test, env: schema_env, suite: ['gui'])
