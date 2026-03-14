@@ -8,14 +8,27 @@
     "--socket=wayland",
     "--socket=fallback-x11",
     "--share=ipc",
-    "--share=network",
     "--device=dri"
   ],
   "modules": [
     {
+      "name": "libspelling",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Ddocs=false"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://gitlab.gnome.org/GNOME/libspelling.git",
+          "branch": "main"
+        }
+      ]
+    },
+    {
       "name": "almanah",
       "buildsystem": "meson",
-      "run-tests": true,
+      "run-tests": false,
       "config-opts": [
         "-Dbuildtype=release",
         "-Db_ndebug=true"
@@ -25,6 +38,9 @@
           "type": "dir",
           "path": "."
         }
+      ],
+      "post-install": [
+        "install -Dm0644 COPYING -t $FLATPAK_DEST/share/licenses/io.github.dimmus.almanah/almanah"
       ]
     }
   ]

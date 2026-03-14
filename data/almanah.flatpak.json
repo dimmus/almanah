@@ -8,7 +8,6 @@
     "--socket=wayland",
     "--socket=fallback-x11",
     "--share=ipc",
-    "--share=network",
     "--device=dri"
   ],
   "modules": [
@@ -39,6 +38,9 @@
           "type": "dir",
           "path": ".."
         }
+      ],
+      "post-install": [
+        "install -Dm0644 COPYING -t $FLATPAK_DEST/share/licenses/io.github.dimmus.almanah/almanah"
       ]
     }
   ]

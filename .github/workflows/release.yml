@@ -24,7 +24,7 @@ jobs:
     - uses: flatpak/flatpak-github-actions/flatpak-builder@v6.6
       with:
         bundle: almanah.flatpak
-        manifest-path: dimmus.almanah.json
+        manifest-path: io.github.dimmus.almanah.json
         cache-key: "flatpak-builder-${{ github.sha }}-${{ matrix.arch }}"
         arch: ${{ matrix.arch }}
 
